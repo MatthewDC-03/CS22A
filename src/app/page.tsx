@@ -337,7 +337,7 @@ gsap.to("#aboutArrowThree",{
           {/* ANIMATION CONTAINER */}
           <div className="absolute left-1/2 top-[1105px] translate-x-[-5px] flex flex-col items-center" >
           {/* ABOUT MAIN PAGE*/}
-          <span id="about" className="text-[#1E1E1E] bg-[#F6F6F6] border-[#1E1E1E] border-[3px] py-2 px-6" >ABOUTT</span>
+          <span id="about" className="text-[#1E1E1E] bg-[#F6F6F6] border-[#1E1E1E] border-[3px] py-2 px-6" >ABOUT</span>
           {/* ABOUT ARROW 1️⃣ */}
           <div id="aboutArrowOne" className=" relative top-[0] w-[3px] h-0 bg-[#008DDA] opacity-0 before:content-[''] before:absolute before:w-0 before:h-0 before:border-l-[10px] before:right-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] before:bottom-[-10px] before:border-r-[10px] before:border-t-[10px] before:border-l-transparent before:border-r-transparent before:border-[#008DDA]"></div>
           {/* ABOUT ARROW 2️⃣ */}
