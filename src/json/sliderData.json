@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image": "/images/Autumn.jpg",
+        "heading": "2Neque porro quisquam est qui dolorem ipsum.",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nunc at mauris aliquet vulputate. Morbi risus tortor, maximus in libero ut, rutrum pharetra odio."
+    },
+    {
+        "id": 2,
+        "image": "/images/Spring.jpg",
+        "heading": "2Neque porro quisquam est qui dolorem ipsum.",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nunc at mauris aliquet vulputate. Morbi risus tortor, maximus in libero ut, rutrum pharetra odio."
+    },
+    {
+        "id": 3,
+        "image": "/images/Rain.jpg",
+        "heading": "2Neque porro quisquam est qui dolorem ipsum.",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nunc at mauris aliquet vulputate. Morbi risus tortor, maximus in libero ut, rutrum pharetra odio."
+    }
+]

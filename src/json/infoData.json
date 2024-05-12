@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Luffy",
+        "clicked": "cardOne",
+        "bool": true,
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur interdum mi pharetra gravida. Nam tempus eu lacus congue elementum. Morbi dictum molestie tellus, pretium faucibus dolor auctor ut. Nullam porta sem eros, in eleifend risus fermentum mattis."
+    },
+    {
+        "id": 2,
+        "name": "Luffy2",
+        "clicked": "cardOne",
+        "bool": true,
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur interdum mi pharetra gravida. Nam tempus eu lacus congue elementum. Morbi dictum molestie tellus, pretium faucibus dolor auctor ut. Nullam porta sem eros, in eleifend risus fermentum mattis."
+    },
+    {
+        "id": 3,
+        "name": "Luffy3",
+        "clicked": "cardOne",
+        "bool": true,
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur interdum mi pharetra gravida. Nam tempus eu lacus congue elementum. Morbi dictum molestie tellus, pretium faucibus dolor auctor ut. Nullam porta sem eros, in eleifend risus fermentum mattis."
+    },
+    {
+        "id": 4,
+        "name": "Luffy4",
+        "clicked": "cardOne",
+        "bool": true,
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur interdum mi pharetra gravida. Nam tempus eu lacus congue elementum. Morbi dictum molestie tellus, pretium faucibus dolor auctor ut. Nullam porta sem eros, in eleifend risus fermentum mattis."
+    },
+    {
+        "id": 5,
+        "name": "Luffy5",
+        "clicked": "cardOne",
+        "bool": true,
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur interdum mi pharetra gravida. Nam tempus eu lacus congue elementum. Morbi dictum molestie tellus, pretium faucibus dolor auctor ut. Nullam porta sem eros, in eleifend risus fermentum mattis."
+    },
+    {
+        "id": 6,
+        "name": "Luffy6",
+        "clicked": "cardOne",
+        "bool": true,
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur interdum mi pharetra gravida. Nam tempus eu lacus congue elementum. Morbi dictum molestie tellus, pretium faucibus dolor auctor ut. Nullam porta sem eros, in eleifend risus fermentum mattis."
+    },
+    {
+        "id": 7,
+        "name": "Luffy7",
+        "clicked": "cardOne",
+        "bool": true,
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur interdum mi pharetra gravida. Nam tempus eu lacus congue elementum. Morbi dictum molestie tellus, pretium faucibus dolor auctor ut. Nullam porta sem eros, in eleifend risus fermentum mattis."
+    },
+    {
+        "id": 8,
+        "name": "Luffy8",
+        "clicked": "cardOne",
+        "bool": true,
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur interdum mi pharetra gravida. Nam tempus eu lacus congue elementum. Morbi dictum molestie tellus, pretium faucibus dolor auctor ut. Nullam porta sem eros, in eleifend risus fermentum mattis."
+    },
+    {
+        "id": 9,
+        "name": "Luffy9",
+        "clicked": "cardOne",
+        "bool": true,
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur interdum mi pharetra gravida. Nam tempus eu lacus congue elementum. Morbi dictum molestie tellus, pretium faucibus dolor auctor ut. Nullam porta sem eros, in eleifend risus fermentum mattis."
+    },
+    {
+        "id": 10,
+        "name": "Rogin Supot",
+        "clicked": "cardOne",
+        "bool": true,
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur interdum mi pharetra gravida. Nam tempus eu lacus congue elementum. Morbi dictum molestie tellus, pretium faucibus dolor auctor ut. Nullam porta sem eros, in eleifend risus fermentum mattis."
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "frontendPercentage": 40,
+        "backendPercentage": 40,
+        "uiuxdesingPercentage": 60,
+        "fieldResearchPercentage": 10,
+        "websitePresenterPercentage": 60,
+        "gsap": {
+            "name": "cardOne",
+            "delay": 0.5
+        },
+        "source": "/images/DummyImage/cat.jpeg",
+        "fullname": "Daisy",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt. Duis scelerisque nec augue quis congue. Donec ac ex tristique, vestibulum ex at"
+    },
+    {
+        "id": 2,
+        "frontendPercentage": 40,
+        "backendPercentage": 40,
+        "uiuxdesingPercentage": 60,
+        "fieldResearchPercentage": 10,
+        "websitePresenterPercentage": 60,
+        "gsap": {
+            "name": "cardTwo",
+            "delay": 1
+        },
+        "source": "/images/DummyImage/cat.jpeg",
+        "fullname": "Daisy",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt. Duis scelerisque nec augue quis congue. Donec ac ex tristique, vestibulum ex at"
+    },
+    {
+        "id": 3,
+        "frontendPercentage": 40,
+        "backendPercentage": 40,
+        "uiuxdesingPercentage": 60,
+        "fieldResearchPercentage": 10,
+        "websitePresenterPercentage": 60,
+        "gsap": {
+            "name": "cardThree",
+            "delay": 1.5
+        },
+        "source": "/images/DummyImage/cat.jpeg",
+        "fullname": "Daisy",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt. Duis scelerisque nec augue quis congue. Donec ac ex tristique, vestibulum ex at"
+    },
+    {
+        "id": 4,
+        "frontendPercentage": 40,
+        "backendPercentage": 40,
+        "uiuxdesingPercentage": 60,
+        "fieldResearchPercentage": 10,
+        "websitePresenterPercentage": 60,
+        "gsap": {
+            "name": "cardFour",
+            "delay": 2
+        },
+        "source": "/images/DummyImage/cat.jpeg",
+        "fullname": "Daisy",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt. Duis scelerisque nec augue quis congue. Donec ac ex tristique, vestibulum ex at"
+    }
+]
