@@ -54,11 +54,11 @@ export default function About(){
     },{scope: container})
     return(
         <div className="w-full h-full" ref={container} >
-            <div id="sectionOne" className=" w-[120px] overflow-hidden z-0 h-[300px] left-[-150px] rotate-[25deg] bg-cover border-2 bg-center rounded-r-full top-[750px] absolute" >
+            <div id="sectionOne" className=" w-[120px] overflow-hidden z-0 h-[300px] lg:left-[-200px] left-[-150px] rotate-[25deg] bg-cover border-2 bg-center rounded-r-full top-[750px] absolute" >
                 <Image src={Rain} className="w-full h-full" width={1000} height={1000} alt="..." ></Image>
             </div>
-            <Image src={Laptop} id="laptop" className="w-auto h-auto scale-0 drop-shadow-2xl relative z-20 left-[900px] top-[100px] flex items-center justify-center origin-center" alt="..." width={300} height={300}></Image>
-            <Image id="infoEasometric" src={Info} className="w-auto h-auto scale-0 drop-shadow-2xl relative left-[950px] z-10 top-[-450px] flex items-center justify-center origin-center" alt="..." width={300} height={300} ></Image>
+            <Image src={Laptop} id="laptop" className="w-auto h-auto scale-0 drop-shadow-2xl relative z-20 left-[900px] lg:left-[650px] lg:top-[130px] top-[100px] flex items-center justify-center origin-center" alt="..." width={300} height={300}></Image>
+            <Image id="infoEasometric" src={Info} className="w-auto h-auto scale-0 drop-shadow-2xl relative left-[950px] lg:left-[680px] lg:top-[-350px] z-10 top-[-450px] flex items-center justify-center origin-center" alt="..." width={300} height={300} ></Image>
             <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         </div>
     )

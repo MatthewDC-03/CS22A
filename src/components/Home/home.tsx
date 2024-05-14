@@ -136,7 +136,7 @@ export default function Home() {
 
         </div>
 
-        <div className="z-50 absolute bottom-[14%] right-[26%]">
+        <div className="z-50 absolute bottom-[14%] lg:bottom-[16%] right-[26%]">
         <button
             id="nextBtn"
             onClick={()=> {nextBtn()}}
@@ -171,7 +171,7 @@ export default function Home() {
         </div>
         <div className={`absolute h-1 w-0 bg-white top-[11%] z-50 ${isBar && 'w-full animate-timeRunning'} `} ></div>
       {/* Thumbnail */}
-        <div className={`top-[65%] right-1 absolute flex flex-col gap-5`}>
+        <div className={`top-[65%] lg:top-[60%] right-1 lg:-right-28 absolute flex flex-col gap-5`}>
         <div
             id="thumpnailList"
             className={`w-fit h-fit flex gap-7 z-50 /* same goes here also 👉*/ ${isNext && 'translate-x-[150px] animate-transformThumbnail'}`}

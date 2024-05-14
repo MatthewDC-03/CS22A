@@ -60,9 +60,9 @@ gsap.to("#home",{
   scrollTrigger: {
     trigger: "#home",
     start: "top 70%",
-    markers: false,
+    markers: true,
     toggleClass: "red",
-    toggleActions: "play restart play reverse"
+    toggleActions: "play pause play reverse"
   }
 })
 /* About */
@@ -325,17 +325,17 @@ gsap.to("#aboutArrowThree",{
     <>
     <Loading />
     <main className="w-full h-full relative" ref={container}  >
-      <div id="endPoint" className="absolute left-0 top-0 bottom-[20%] w-full h-fit" >
+      <div id="endPoint" className="absolute left-0 top-0 b bottom-[20%] w-full h-fit" >
         {/* GUIDE */}
           <div id="homeArrowPin" className=" absolute left-1/2 translate-x-[59px] opacity-0 top-[450px] z-0 w-[3px] h-[700px] bg-[#008DDA] opacity-1"></div>
         <div className="w-full h-full relative z-50 text-xl font-medium tracking-widest">
           {/* HOME ARROW */}
-          <div className="absolute left-1/2 top-[650px] flex flex-col items-center" >
+          <div className="absolute left-1/2 top-[650px] lg:top-[550px] flex flex-col items-center" >
           <span id="home" className="text-[#F6F6F6] border-[#F6F6F6] border-[3px] rounded-full py-2 px-6" >HOME</span>
-          <div id="homeArrow" className=" relative top-[0] w-[3px] h-[3px] right-[-2px] bg-[#008DDA] opacity-0"></div>
+          <div id="homeArrow" className=" relative top-[0] w-[3px] h-[3px] lg:right-[-1px] right-[-2px] bg-[#008DDA] opacity-0"></div>
           </div>
           {/* ANIMATION CONTAINER */}
-          <div className="absolute left-1/2 top-[1105px] translate-x-[-5px] flex flex-col items-center" >
+          <div className="absolute left-1/2 top-[1105px] lg:top-[1000px] translate-x-[-5px] flex flex-col items-center" >
           {/* ABOUT MAIN PAGE*/}
           <span id="about" className="text-[#1E1E1E] bg-[#F6F6F6] border-[#1E1E1E] border-[3px] py-2 px-6" >ABOUT</span>
           {/* ABOUT ARROW 1️⃣ */}
@@ -348,23 +348,22 @@ gsap.to("#aboutArrowThree",{
           </div>
           
           {/* INFO */}
-          <span id="info" className="absolute left-1/2 bg-[#F6F6F6] translate-x-[5px] top-[2180px] text-[#1E1E1E] border-[#1E1E1E] border-[3px] py-2 px-6" >INFO</span>
+          <span id="info" className="absolute left-1/2 bg-[#F6F6F6] translate-x-[5px] lg:top-[2000px] top-[2180px] text-[#1E1E1E] border-[#1E1E1E] border-[3px] py-2 px-6" >INFO</span>
           {/* EVENT */}
-          <span id="event" className="absolute bg-[#F6F6F6] left-1/2 translate-x-[-5px] top-[3250px] text-[#1E1E1E] border-[#1E1E1E] border-[3px] py-2 px-6" >EVENT</span>
+          <span id="event" className="absolute bg-[#F6F6F6] left-1/2 translate-x-[-5px] top-[3700px] text-[#1E1E1E] border-[#1E1E1E] border-[3px] py-2 px-6" >EVENT</span>
           {/* BASKETBALL */}
-          <div id="baskitball" className="absolute h-20 w-20 grid place-items-center bg-[#F6F6F6] border-[3px] border-[#1E1E1E] left-1/2 z-50 translate-x-[20.5px] rotate-45 top-[3500px]" >
+          <div id="baskitball" className="absolute h-20 w-20 grid place-items-center bg-[#F6F6F6] border-[3px] border-[#1E1E1E] left-1/2 z-50 translate-x-[20.5px] rotate-45 top-[4200px]" >
           <Image id="basketballIcon" src={Basketball} width={60} height={60} alt="basketball" ></Image>
           </div>
-          <div className=" w-[251px] absolute left-[10%] top-[1230px] flex flex-col items-center" >
-          <span id="website" className="relative text-[#1E1E1E] border-[#1E1E1E] border-[3px] py-2 px-6" >About the Website</span>
-          <p className="w-[500px] top-20 left-0 text-lg absolute text-left" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia risus sem, nec elementum ligula suscipit sit amet. Praesent sit amet maximus augue, quis pulvinar lorem. Aliquam vitae augue at nunc elementum tempus a condimentum elit.</p>
+          <div className=" w-[251px] absolute left-[10%] top-[1230px] lg:top-[1125px] flex flex-col items-center" >
+          <span id="website" className="relative text-[#1E1E1E] border-[#1E1E1E] bg-[#F6F6F6] border-[3px] py-2 px-6" >About the Website</span>
+          <p className="w-[500px] lg:w-[400px] top-20 left-0 text-lg absolute text-left" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia risus sem, nec elementum ligula suscipit sit amet. Praesent sit amet maximus augue, quis pulvinar lorem. Aliquam vitae augue at nunc elementum tempus a condimentum elit.</p>
           </div>
-          <div className="absolute left-[80%] top-[1475px] flex flex-col items-center" >
+          <div className="absolute left-[80%] top-[1475px] lg:top-[1370px] flex flex-col items-center" >
           <span id="cs22" className=" text-[#1E1E1E] border-[#1E1E1E] relative bg-[#F6F6F6] border-[3px] py-2 px-6" >About CS22A</span>
-          <p className="w-[500px] top-20 right-0 text-lg absolute text-right" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia risus sem, nec elementum ligula suscipit sit amet. Praesent sit amet maximus augue, quis pulvinar lorem. Aliquam vitae augue at nunc elementum tempus a condimentum elit.</p>
+          <p className="w-[500px] lg:w-[400px] top-20 right-0 text-lg absolute text-right" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia risus sem, nec elementum ligula suscipit sit amet. Praesent sit amet maximus augue, quis pulvinar lorem. Aliquam vitae augue at nunc elementum tempus a condimentum elit.</p>
           </div>
           <div className="absolute left-[80%] top-[1475px] flex flex-col items-center" >
-          <span id="cs22" className=" text-[#1E1E1E] border-[#1E1E1E] relative border-[3px] py-2 px-6" >About CS22A</span>
           </div>
         </div>
         <header className={`navbar w-full z-50 ${scrolled ? "bg-[#1E1E1E] h-12" : "bg-[black]/20 h-16 backdrop-blur-sm"} sticky top-0 left-0 z-10`}> 
@@ -376,17 +375,19 @@ gsap.to("#aboutArrowThree",{
       <div id="aboutPage" className="h-[190vh] w-full relative" >
         <About/>
       </div>
-      <div id="infoPage" className="h-[100vh] w-full relative z-40 overflow-hidden -skew-y-3 grid place-items-center bg-[#008DDA] " >
+      {/* Members */}
+      <div className="h-[200vh] w-full origin-top-right overflow-hidden skew-y-3" >
+      <Member></Member>
+      </div>
+      <div id="eventPage" className="bg-red-500" >
+        <Event></Event>
+      </div>
+      <span id="member" className="absolute z-10 bg-[#F6F6F6] left-1/2 translate-x-[-35px] top-[8300px] text-[#1E1E1E] border-[#1E1E1E] border-[3px] py-2 px-6" >TEAM MEMBERS</span>
+      
+      <div id="infoPage" className="h-[100vh] w-full relative mt-[350px] z-40 overflow-hidden -skew-y-3 grid place-items-center bg-[#008DDA] " >
         <Image className="absolute h-auto w-auto top-[-70px] left-0" src={Camera} alt="..." width={600} height={600} ></Image>
         <Image className="absolute h-auto w-auto top-[-140px] right-0" src={Facebook} alt="..." width={600} height={600} ></Image>
         <Info/>
-      </div>
-      <div id="eventPage" >
-        <Event></Event>
-      </div>
-      <span id="member" className="absolute z-10 bg-[#F6F6F6] left-1/2 translate-x-[-35px] top-[7700px] text-[#1E1E1E] border-[#1E1E1E] border-[3px] py-2 px-6" >TEAM MEMBERS</span>
-      <div className="h-[200vh] w-full mt-10 origin-top-right overflow-hidden skew-y-3" >
-      <Member></Member>
       </div>
       
       <span id="feedback" className="absolute bg-[#F6F6F6] left-1/2 translate-x-[-5px] top-[9600px] text-[#1E1E1E] border-[#1E1E1E] border-[3px] py-2 px-6" >FEEDBACK</span>
@@ -394,8 +395,8 @@ gsap.to("#aboutArrowThree",{
         <Feedback></Feedback>
       </div>
       
-      <span id="thank" className="absolute bg-[#F6F6F6] left-1/2 translate-x-[-10px] top-[10300px] text-[#1E1E1E] rounded-full border-[#1E1E1E] border-[3px] py-2 px-6" >THANK YOU</span>
-        <div className="absolute bg-[#008DDA] h-[10vh] -bottom-20 w-full" >Footer</div>
+      <span id="thank" className="absolute bg-[#F6F6F6] left-1/2 translate-x-[-10px] lg:top-[10100px] top-[10300px] text-[#1E1E1E] rounded-full border-[#1E1E1E] border-[3px] py-2 px-6" >THANK YOU</span>
+        <div className="absolute bg-[#008DDA] h-[10vh] lg:bottom-[-250px] w-full" >Footer</div>
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>

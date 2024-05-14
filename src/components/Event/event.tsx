@@ -82,9 +82,9 @@ const Event = () => {
       })
     },{scope: eventContainer})
   return (
-    <main className="mt-[100px]" ref={eventContainer} >
+    <main className="mt-[100px] lg:mt-[500px]" ref={eventContainer} >
       <div id="eventContainer" className="w-full relative h-[600vh] overflow-hidden mt-10 flex" >
-        <div id="left" className="w-1/2 h-full relative pt-[500px] pl-[40px]">
+        <div id="left" className="w-1/2 lg:w-[70%] h-full relative pt-[500px] pl-[40px]">
           <div id="textContainer" className="absolute w-full top-0 left-0 py-[100px] flex-col h-[600px] flex justify-center items-center">
 
             {
@@ -93,7 +93,7 @@ const Event = () => {
                         <div
                         key={item.id}
               id={`${item.gsap.idName}`}
-              className="absolute w-fit h-fit flex flex-col px-5 gap-5 opacity-0 translate-x-[-700px]"
+              className="absolute w-fit h-fit flex flex-col px-5 gap-5 opacity-0 lg:w-[95%] translate-x-[-700px]"
             >
               <h1 className="font-bold text-3xl">
                 {item.content.heading}
@@ -110,13 +110,13 @@ const Event = () => {
         </div>
         <div
           id="right"
-          className="w-1/2 h-full relative"
+          className="w-1/2 h-full relative bg-blue-300"
         >
           
-          <div id="trophyContainer" className="relative top-0 right-[-50px] w-full h-[600px]" >
+          <div id="trophyContainer" className="relative top-0 right-[-50px] lg:right-[-40px] w-full h-[600px]" >
             <Spline scene="https://prod.spline.design/5vG7OCMJUKlG9K0H/scene.splinecode" ></Spline>
           </div>
-          <div id="eventImageContainer" className="absolute w-full top-0 left-0 flex-col h-[600px] flex justify-center items-center">
+          <div id="eventImageContainer" className="absolute w-full top-0 left-0 lg:border-2 lg:border-purple-500 flex-col h-[600px] flex justify-center items-center">
             {
                 eventData.map(item => {
                     return (
