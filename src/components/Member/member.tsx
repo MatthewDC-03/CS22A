@@ -72,13 +72,13 @@ const Member = ()=>{
             {
                 Data.map(item => {
                     return(
-                        <div id={`${item.gsap.name}`} key={item.id} className="relative w-[350px] lg:w-[300px] px-4 pb-4 flex flex-col gap-3 justify-around pt-[100px] lg:pt-[50px] items-center rounded-lg translate-x-0 scale-0 h-[500px] lg:h-fit bg-[#F6F6F6] shadow-2xl" >
-                            <div className=" h-40 w-40 lg:h-32 lg:w-32 rounded-full bg-red-500 overflow-hidden left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-80 lg:-translate-y-[275px] border-4 border-[#F6F6F6]" >
+                        <div id={`${item.gsap.name}`} key={item.id} className="relative w-[350px] lg:w-[300px] px-4 pb-4 flex flex-col justify-around pt-[100px] lg:pt-[50px] items-center rounded-lg translate-x-0 scale-0 h-[450px] bg-[#F6F6F6] shadow-2xl" >
+                            <div className=" h-40 w-40 lg:h-32 lg:w-32 rounded-full bg-red-500 overflow-hidden left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-[300px] border-4 border-[#F6F6F6]" >
                                 <Image src={item.source} width={1000} height={1000} className="h-full w-full bg-cover" alt="..." ></Image>
                             </div>
                             <h1 className="text-3xl lg:text-xl font-bold text-[#1E1E1E]" >Daisy</h1>
                             <p className="w-full text-sm lg:text-xs text-center font-thin" >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt. Duis scelerisque nec augue quis congue. Donec ac ex tristique, vestibulum ex at,
+                            {item.paragraph}
                             </p>
                             <div className="flex flex-col w-full text-xs tracking-widest lg:font-medium font-bold h-fit gap-2">
                                 <div className="flex flex-col items-center justify-between gap-1" >

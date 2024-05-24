@@ -107,7 +107,7 @@ export default function Home() {
         <div id="item" key={item.id} className="w-full h-full absolute item-2">
         <Image src={item.image} alt="..." width={1000} height={1000} className='w-full h-full skew-y-[0deg] brightness-50 object-cover' ></Image>
           {/* Content -- 1 */}
-            <div className="absolute top-1/4 left-20 z-0 w-2/4 flex flex-col gap-5">
+            <div className="absolute top-1/4 left-20 w-2/4 flex flex-col gap-5">
             <h1
                 className=" text-[#F6F6F6] text-5xl font-semibold w-fit"
                 style={{ animationDelay: "1.2s" }}
@@ -136,7 +136,7 @@ export default function Home() {
 
         </div>
 
-        <div className="z-50 absolute bottom-[14%] lg:bottom-[16%] right-[26%]">
+        <div className="z-10 absolute bottom-[14%] lg:bottom-[16%] right-[26%]">
         <button
             id="nextBtn"
             onClick={()=> {nextBtn()}}
@@ -158,7 +158,7 @@ export default function Home() {
             </svg>
         </button>
         </div>
-        <div className="absolute top-[35%] z-50 right-[4%] text-3xl font-thin" >
+        <div className="absolute top-[35%] z-10 right-[4%] text-3xl font-thin" >
         <div id="numList" className="relative
                                     [&>*:nth-child(2)]:relative [&>*:nth-child(2)]:bottom-[-24px] [&>*:nth-child(2)]:left-[5px] [&>*:nth-child(2)]:opacity-0 [&>*:nth-child(2)]:animate-numTranslate [&>*:nth-child(2)]:text-base [&>*:nth-child(2)]:text-black/45  [&>*:nth-child(2)]:font-bold
                                     [&>*:nth-child(1)]:text-[#F6F6F6] [&>*:nth-child(1)]:left-0 [&>*:nth-child(1)]:bottom-[-24px] [&>*:nth-child(1)]:text-[22px] [&>*:nth-child(1)]:relative [&>*:nth-child(1)]:opacity-0 [&>*:nth-child(1)]:animate-numBlackTranslate
@@ -171,10 +171,10 @@ export default function Home() {
         </div>
         <div className={`absolute h-1 w-0 bg-white top-[11%] z-50 ${isBar && 'w-full animate-timeRunning'} `} ></div>
       {/* Thumbnail */}
-        <div className={`top-[65%] lg:top-[60%] right-1 lg:-right-28 absolute flex flex-col gap-5`}>
+        <div className={`top-[65%] lg:top-[60%] xl:right-1 lg:-right-28 absolute flex flex-col gap-5`}>
         <div
             id="thumpnailList"
-            className={`w-fit h-fit flex gap-7 z-50 /* same goes here also 👉*/ ${isNext && 'translate-x-[150px] animate-transformThumbnail'}`}
+            className={`w-fit h-fit flex gap-7 z-10 /* same goes here also 👉*/ ${isNext && 'translate-x-[150px] animate-transformThumbnail'}`}
         >
             {
                 SliderData.map(item => {

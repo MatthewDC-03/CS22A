@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className=" scroll-smooth">
-      <body className={`${roboto.className} bg-[#F6F6F6] select-none overflow-x-hidden p-0 m-0` }>{children}</body>
+      <body className={`${roboto.className} bg-[#F6F6F6] select-none overflow-x-hidden` }>{children}</body>
     </html>
   );
 }

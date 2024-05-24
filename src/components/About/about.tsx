@@ -13,20 +13,8 @@ export default function About(){
     const container = useRef<HTMLInputElement>(null)
     gsap.registerPlugin(ScrollTrigger)
     useGSAP(()=>{
-        gsap.to("#sectionOne",{
-            width: "750px",
-            duration: 2,
-            ease: "power4.out",
-            scrollTrigger: {
-                trigger: "#sectionOne",
-                markers: false,
-                toggleClass: "red",
-                start: "top 65%",
-                toggleActions: "play play pause reverse"
-            }
-        })
         gsap.to("#laptop",{
-            scale: "1",
+            scale: 1,
             delay: 0.5,
             duration: 2,
             ease: "elastic.out(1,0.3)",
@@ -35,30 +23,39 @@ export default function About(){
                 markers: false,
                 toggleClass: "red",
                 start: "top 70%",
-                toggleActions: "restart play play reverse"
-            }
-        })
-        gsap.to("#infoEasometric",{
-            scale: "1",
-            delay: 1,
-            duration: 2,
-            ease: "elastic.out(1,0.3)",
-            scrollTrigger: {
-                trigger: "#laptop",
-                markers: false,
-                toggleClass: "red",
-                start: "top 70%",
-                toggleActions: "restart play play reverse"
+                toggleActions: "play none none reverse"
             }
         })
     },{scope: container})
     return(
         <div className="w-full h-full" ref={container} >
-            <div id="sectionOne" className=" w-[120px] overflow-hidden z-0 h-[300px] lg:left-[-200px] left-[-150px] rotate-[25deg] bg-cover border-2 bg-center rounded-r-full top-[750px] absolute" >
-                <Image src={Rain} className="w-full h-full" width={1000} height={1000} alt="..." ></Image>
+            {/* About the Website */}
+            <div className="w-full h-1/2 flex relative lg:translate-y-[95px] xl:translate-y-0 " >
+
+                <div className="w-1/2 h-full py-[150px] px-10 flex flex-col gap-5" >
+                    <span id="websiteSpan" className=" px-10 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold border-[#1E1E1E] bg-[#F6F6F6] " >About the Website</span>
+                    <p className="text-[#1E1E1E] text-lg pr-14 font-semibold " >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies auctor ultricies. In hac habitasse platea dictumst. Nam cursus ullamcorper felis vel finibus. Donec congue ultricies ligula vel consequat.
+                    </p>
+                </div>
+                
+                <div className="w-1/2 h-full relative " >
+                    <Image src={Laptop} id="laptop" className="absolute left-[200px] z-10 w-auto h-auto scale-0 drop-shadow-2xl " alt="..." width={300} height={300}></Image>
+                </div>
+
             </div>
-            <Image src={Laptop} id="laptop" className="w-auto h-auto scale-0 drop-shadow-2xl relative z-20 left-[900px] lg:left-[650px] lg:top-[130px] top-[100px] flex items-center justify-center origin-center" alt="..." width={300} height={300}></Image>
-            <Image id="infoEasometric" src={Info} className="w-auto h-auto scale-0 drop-shadow-2xl relative left-[950px] lg:left-[680px] lg:top-[-350px] z-10 top-[-450px] flex items-center justify-center origin-center" alt="..." width={300} height={300} ></Image>
+            {/* About CS22A */}
+            <div className="w-full h-1/2 flex xl:translate-y-0 lg:translate-y-[175px] " >
+                <div className="w-1/2 h-full" >
+
+                </div>
+                <div className="w-1/2 h-full px-10 flex flex-col gap-5 items-end" >
+                    <span id="cs22aSpan" className=" px-10 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold border-[#1E1E1E] bg-[#F6F6F6] " >About CS22A</span>
+                    <p className="font-semibold  text-[#1E1E1E] text-lg pl-14 text-right" >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies auctor ultricies. In hac habitasse platea dictumst. Nam cursus ullamcorper felis vel finibus. Donec congue ultricies ligula vel consequat.
+                    </p>
+                </div>
+            </div>
             <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         </div>
     )

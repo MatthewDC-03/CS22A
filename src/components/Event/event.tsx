@@ -10,7 +10,6 @@ import Rain from "../../../public/images/Rain.jpg"
 import Spline from '@splinetool/react-spline';
 
 /* Data */
-import eventData from "../../json/eventData.json"
 
 const Event = () => {
     const eventContainer = useRef(null)
@@ -41,33 +40,6 @@ const Event = () => {
           pin: "#textContainer"
         }
       })
-      /* Texts */
-      eventData.map((item)=>{
-        gsap.to(`#${item.gsap.idName}`,{
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-                trigger: "#eventContainer",
-                start: `${item.gsap.start} center`,
-                toggleActions: "restart reverse restart reverse",
-                end: `${item.gsap.end} top`,
-                markers: false
-            }
-          })
-        
-      gsap.to(`#${item.image.idNameImage}`,{
-        scale: 1,
-        opacity: 1,
-        filter: "blur(0)",
-        scrollTrigger: {
-            trigger: "#eventContainer",
-            start: `${item.gsap.start} center`,
-            end: "85% top",
-            toggleActions: "restart reverse restart reverse",
-            markers: false
-        }
-      })
-      })
 
 /* ================================================== */
       /* Image Container */
@@ -80,56 +52,78 @@ const Event = () => {
           pin: "#eventImageContainer"
         }
       })
+      gsap.to("#img1",{
+        scale: 1,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "10% center",
+          markers: true,
+          toggleActions: "play none none reverse"
+        }
+      })
+      gsap.to("#img2",{
+        scale: 1,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "20% center",
+          markers: true,
+          toggleActions: "play none none reverse"
+        }
+      })
+      gsap.to("#img3",{
+        scale: 1,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "30% center",
+          markers: true,
+          toggleActions: "play none none reverse"
+        }
+      })
+      gsap.to("#img4",{
+        scale: 1,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "40% center",
+          markers: true,
+          toggleActions: "play none none reverse"
+        }
+      })
+      gsap.to("#img5",{
+        scale: 1,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "50% center",
+          markers: true,
+          toggleActions: "play none none reverse"
+        }
+      })
     },{scope: eventContainer})
   return (
-    <main className="mt-[100px] lg:mt-[500px]" ref={eventContainer} >
+    <main id="eventWrapper" className="mt-[100px] w-full h-full lg:mt-[500px]" ref={eventContainer} >
       <div id="eventContainer" className="w-full relative h-[600vh] overflow-hidden mt-10 flex" >
-        <div id="left" className="w-1/2 lg:w-[70%] h-full relative pt-[500px] pl-[40px]">
-          <div id="textContainer" className="absolute w-full top-0 left-0 py-[100px] flex-col h-[600px] flex justify-center items-center">
-
-            {
-                eventData.map(item => {
-                    return(
-                        <div
-                        key={item.id}
-              id={`${item.gsap.idName}`}
-              className="absolute w-fit h-fit flex flex-col px-5 gap-5 opacity-0 lg:w-[95%] translate-x-[-700px]"
-            >
-              <h1 className="font-bold text-3xl">
-                {item.content.heading}
-              </h1>
-              <p className=" font-medium">
-                {item.content.paragraph}
-              </p>
-            </div>
-                    )
-                })
-            }
-
+        <div id="left" className="w-1/2 h-full relative pt-[500px] pl-[40px]">
+          <div id="textContainer" className="absolute text-lg font-medium lg:w-[500px] xl:w-[650px] pl-[10px] border-2 border-green-500 top-0 left-0 flex-col h-[600px] flex justify-center items-center">
+          {/* Paragraphs Here... */}
+          <p>
+          Vestibulum dictum lectus diam, sed dictum augue cursus pulvinar. Integer pulvinar nibh mi. Sed commodo pretium lectus, malesuada laoreet nisi ultricies at. Duis mattis metus eu efficitur mollis.
+          </p>
           </div>
         </div>
         <div
           id="right"
-          className="w-1/2 h-full relative bg-blue-300"
+          className="w-1/2 h-full relative "
         >
           
           <div id="trophyContainer" className="relative top-0 right-[-50px] lg:right-[-40px] w-full h-[600px]" >
             <Spline scene="https://prod.spline.design/5vG7OCMJUKlG9K0H/scene.splinecode" ></Spline>
           </div>
-          <div id="eventImageContainer" className="absolute w-full top-0 left-0 lg:border-2 lg:border-purple-500 flex-col h-[600px] flex justify-center items-center">
-            {
-                eventData.map(item => {
-                    return (
-                        <div
-                        key={item.id}
-              id={`${item.image.idNameImage}`}
-              className={`left-[${item.image.translateXImage}px] top-[${item.image.translateYImage}px] relative z-50 w-fit h-fit blur-[2px] scale-0 overflow-hidden rounded-lg`}
-            >
-              <Image src={item.image.source} alt="..." width={200} height={300} className="w-auto h-auto"></Image>
-            </div>
-                    )
-                })
-            }
+          <div id="eventImageContainer" className="absolute w-full top-0 left-0 border-2 border-black flex-col h-[600px] flex justify-center items-center">
+          {/* PHotos Here... */}
+          <Image id="img1" src={Rain} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl left-[10px] top-[50px]" ></Image>
+          <Image id="img2" src={Rain} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl right-[10px] top-[300px]" ></Image>
+          <Image id="img3" src={Rain} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl right-[40px] top-[170px]" ></Image>
+          <Image id="img4" src={Rain} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl left-[30px] top-[240px]" ></Image>
+          <Image id="img5" src={Rain} width={400} height={400} alt="..." className="rounded-sm scale-0 shadow-xl z-10 " ></Image>
           </div>
 
         </div>
