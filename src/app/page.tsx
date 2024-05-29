@@ -75,14 +75,14 @@ export default function Home() {
   return (
     <>
     <Loading />
-    <main className="w-full h-full relative " ref={container}  >
+    <main className="w-full h-full relative" ref={container}  >
       <Flow/>
         {/* Navbar */}
       <header className={`navbar w-full ${scrolled ? "bg-[#1E1E1E] h-12" : "bg-[black]/20 h-16 backdrop-blur-sm"} sticky top-0 left-0 z-50`}> 
         <Navbar isBlog={true} ></Navbar>
       </header>
       {/* Home */}
-      <section className="h-[110vh] translate-y-[-65px] w-full overflow-hidden z-10 skew-y-3 origin-top-right">
+      <section id="homePage" className="h-[110vh] translate-y-[-65px] w-full overflow-hidden z-10 skew-y-3 origin-top-right">
         <HomePage></HomePage>
       </section>
         {/* ABOUT */}

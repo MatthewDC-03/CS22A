@@ -1,20 +1,26 @@
 [
     {
         "id": 1,
-        "image": "/images/Autumn.jpg",
-        "heading": "2Neque porro quisquam est qui dolorem ipsum.",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nunc at mauris aliquet vulputate. Morbi risus tortor, maximus in libero ut, rutrum pharetra odio."
+        "image": "/images/HomepagePhotos/AclcBuilding.svg",
+        "heading": "Discover ACLC College of Sta. Maria",
+        "text": "Learn More!",
+        "link": "https://aclcsm.com/index.html#",
+        "paragraph": "Visit the ACLC College of Sta. Maria website to know more about what we have to offer. Our site is a comprehensive resource for prospective students, parents, and community members interested in our academic programs, faculty expertise, admission requirements, campus amenities, and student life activities. By exploring our website, you can gain insights into how ACLC College of Sta. Maria can help you achieve your educational and career aspirations. Discover why we are a premier choice for higher education in the region—visit us online today!"
     },
     {
         "id": 2,
-        "image": "/images/Spring.jpg",
-        "heading": "2Neque porro quisquam est qui dolorem ipsum.",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nunc at mauris aliquet vulputate. Morbi risus tortor, maximus in libero ut, rutrum pharetra odio."
+        "image": "/images/HomepagePhotos/OurSection.svg",
+        "heading": "Explore the World of CS22A",
+        "text": "Read More!",
+        "link": "/Blog",
+        "paragraph": "Welcome to the CS22A blog at ACLC College of Sta. Maria! This section is dedicated to sharing updates, insights, and stories from our CS22A community. Discover student projects, faculty research, upcoming events, and tips for excelling in computer science. Whether you're a current student, prospective student, or a tech enthusiast, our blog offers valuable information and inspiration."
     },
     {
         "id": 3,
-        "image": "/images/Rain.jpg",
-        "heading": "2Neque porro quisquam est qui dolorem ipsum.",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nunc at mauris aliquet vulputate. Morbi risus tortor, maximus in libero ut, rutrum pharetra odio."
+        "image": "/images/HomepagePhotos/FacebookPage.svg",
+        "heading": "Stay Connected with Our School Community!",
+        "text": "Visit Now!",
+        "link": "https://www.facebook.com/aclc.santamaria",
+        "paragraph": "Discover the latest updates, events, and highlights from our school by following us on Facebook. Our page is a vibrant hub where you can engage with the school community, celebrate student achievements, and stay informed about important announcements. Join us today and be a part of the conversation!"
     }
 ]

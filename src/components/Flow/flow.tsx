@@ -1,12 +1,17 @@
 "use client"
+
+import Icon from "../../../public/images/Icon/Baskitball.svg"
+
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useRef } from "react"
+import Image from "next/image"
+import { ScrollTrigger } from "gsap/all";
 
 const Flow = () => {
     const gsapRef = useRef(null)
     useGSAP(()=>{
-        gsap.registerPlugin(ScrollTrigger)
+      gsap.registerPlugin(ScrollTrigger)
         
       // [ ARROWS ]
       gsap.to("#arrPinned",{
@@ -14,7 +19,7 @@ const Flow = () => {
         duration: .1,
         scrollTrigger: {
             trigger: "#arrContainer",
-            start: "6.5% center",
+            start: "8% center",
             end: "93% center",
             markers: false,
             toggleActions: "play none none reverse",
@@ -77,6 +82,18 @@ const Flow = () => {
             toggleActions: "play none none reverse"
         }
       })
+      gsap.to("#basketballDiv",{
+        filter: "brightness(0) saturate(100%) invert(40%) sepia(89%) saturate(2243%) hue-rotate(176deg) brightness(92%) contrast(101%)",
+        borderColor: "#008DDA",
+        boxShadow: "0 0 15px 1px #008DDA",
+        duration: .1,
+        scrollTrigger:{
+            trigger: "#basketballDiv",
+            start: "top 90%",
+            markers: false,
+            toggleActions: "play none none reverse"
+        }
+      })
       gsap.to("#infoSpan",{
         color: "#008DDA",
         borderColor: "#008DDA",
@@ -107,8 +124,9 @@ const Flow = () => {
             <span id="aboutSpan" className="relative px-10 xl:top-[900px] lg:top-[800px] z-20 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold border-[#1E1E1E] bg-[#F6F6F6] " >ABOUT</span>
             <span id="memberSpan" className="relative px-10 lg:top-[1810px] xl:top-[2000px] py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >TEAM MEMBERS</span>
             <span id="eventSpan" className="relative px-10 lg:top-[3250px] xl:top-[3700px] py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >EVENTS</span>
-            <span id="infoSpan" className="relative px-10 lg:top-[7900px] xl:top-[8750px] py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >PERSONAL INFORMATION</span>
-            <span id="feedSpan" className="relative px-10 lg:top-[8850px] xl:top-[9980px] py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] rounded-full text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >FEEDBACK</span>
+            <Image id="basketballDiv" className="relative z-10 bg-[transparent] border-[3px] border-[#1E1E1E] p-3 xl:top-[3900px] lg:top-[3500px] rotate-45" src={Icon} alt="..." width={100} height={100} ></Image>
+            <span id="infoSpan" className="relative px-10 lg:top-[7800px] xl:top-[8750px] py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >PERSONAL INFORMATION</span>
+            <span id="feedSpan" className="relative px-10 lg:top-[8700px] xl:top-[9820px] py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] rounded-full text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >FEEDBACK</span>
 
             <div id="arrPinned" className="relative xl:h-[650px] lg:h-[500px] opacity-0 w-[3px] bg-[#008DDA]" ></div>
             <div id="arr1" className="h-0 w-[3px] bg-[#008DDA] top-[655px] absolute z-10 " ></div>

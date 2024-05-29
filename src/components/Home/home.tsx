@@ -1,12 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Autumn from '/public/images/Autumn.jpg'
-import Spring from '/public/images/Spring.jpg'
-import Rain from '/public/images/Rain.jpg'
 import SliderData from '../../json/sliderData.json'
 import { useState } from "react";
 import { clearTimeout } from "timers";
+import Link from "next/link";
 export default function Home() {
     const nextStyle = `
     [&>*:nth-child(1)>:nth-child(1)]:z-[1]
@@ -124,9 +122,9 @@ export default function Home() {
                 className="bg-[#F6F6F6] border-0 outline-none relative rounded-full text-lg h-11 overflow-hidden w-32 before:content[''] before:w-0 before:h-full before:ease-out before:bg-[#008DDA] before:z-0 before:absolute before:inset-0 before:rounded-full hover:before:w-full before:duration-500 before:transition-[width,left] hover:text-[#F6F6F6]"
                 style={{ animationDelay: "1.6s" }}
             >
-                <span className="absolute left-[50%] w-full top-[50%] translate-x-[-50%] translate-y-[-50%]">
-                Visit now!
-                </span>
+                <Link href={item.link} className="absolute left-[50%] w-full top-[50%] translate-x-[-50%] translate-y-[-50%]">
+                {item.text}
+                </Link>
             </button>
             </div>
         </div>
@@ -136,7 +134,7 @@ export default function Home() {
 
         </div>
 
-        <div className="z-10 absolute bottom-[14%] lg:bottom-[16%] right-[26%]">
+        <div className="z-10 absolute bottom-[14%] lg:bottom-[16%] lg:right-[33%] xl:right-[26%]">
         <button
             id="nextBtn"
             onClick={()=> {nextBtn()}}
@@ -171,7 +169,7 @@ export default function Home() {
         </div>
         <div className={`absolute h-1 w-0 bg-white top-[11%] z-50 ${isBar && 'w-full animate-timeRunning'} `} ></div>
       {/* Thumbnail */}
-        <div className={`top-[65%] lg:top-[60%] xl:right-1 lg:-right-28 absolute flex flex-col gap-5`}>
+        <div className={`top-[65%] lg:top-[60%] xl:right-1 lg:-right-10 absolute flex flex-col gap-5`}>
         <div
             id="thumpnailList"
             className={`w-fit h-fit flex gap-7 z-10 /* same goes here also 👉*/ ${isNext && 'translate-x-[150px] animate-transformThumbnail'}`}

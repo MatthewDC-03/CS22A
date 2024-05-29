@@ -4,10 +4,17 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import Video from "next-video"
+import Video1 from "Video.mp4"
 
 /* Images */
 import Rain from "../../../public/images/Rain.jpg"
+import Photo1 from "../../../public/images/EventPhotos/Basketball/Photo1.svg"
+import Photo2 from "../../../public/images/EventPhotos/Basketball/Photo2.svg"
+import Photo3 from "../../../public/images/EventPhotos/Basketball/Photo3.svg"
+import Photo4 from "../../../public/images/EventPhotos/Basketball/Photo4.svg"
 import Spline from '@splinetool/react-spline';
+
 
 /* Data */
 
@@ -57,8 +64,9 @@ const Event = () => {
         scrollTrigger: {
           trigger: "#eventContainer",
           start: "10% center",
-          markers: true,
-          toggleActions: "play none none reverse"
+          end: "60% center",
+          markers: false,
+          toggleActions: "play reverse play reverse"
         }
       })
       gsap.to("#img2",{
@@ -66,8 +74,9 @@ const Event = () => {
         scrollTrigger: {
           trigger: "#eventContainer",
           start: "20% center",
-          markers: true,
-          toggleActions: "play none none reverse"
+          end: "60% center",
+          markers: false,
+          toggleActions: "play reverse play reverse"
         }
       })
       gsap.to("#img3",{
@@ -75,8 +84,9 @@ const Event = () => {
         scrollTrigger: {
           trigger: "#eventContainer",
           start: "30% center",
-          markers: true,
-          toggleActions: "play none none reverse"
+          end: "60% center",
+          markers: false,
+          toggleActions: "play reverse play reverse"
         }
       })
       gsap.to("#img4",{
@@ -84,8 +94,9 @@ const Event = () => {
         scrollTrigger: {
           trigger: "#eventContainer",
           start: "40% center",
-          markers: true,
-          toggleActions: "play none none reverse"
+          end: "60% center",
+          markers: false,
+          toggleActions: "play reverse play reverse"
         }
       })
       gsap.to("#img5",{
@@ -93,8 +104,29 @@ const Event = () => {
         scrollTrigger: {
           trigger: "#eventContainer",
           start: "50% center",
-          markers: true,
-          toggleActions: "play none none reverse"
+          end: "60% center",
+          markers: false,
+          toggleActions: "play reverse play reverse"
+        }
+      })
+      gsap.to("#paragraph1",{
+        translateX: 0,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "10% center",
+          end: "30% center",
+          markers: false,
+          toggleActions: "play reverse play reverse"
+        }
+      })
+      gsap.to("#paragraph2",{
+        translateX: 0,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "30% center",
+          end: "60% center",
+          markers: false,
+          toggleActions: "play reverse play reverse"
         }
       })
     },{scope: eventContainer})
@@ -102,11 +134,19 @@ const Event = () => {
     <main id="eventWrapper" className="mt-[100px] w-full h-full lg:mt-[500px]" ref={eventContainer} >
       <div id="eventContainer" className="w-full relative h-[600vh] overflow-hidden mt-10 flex" >
         <div id="left" className="w-1/2 h-full relative pt-[500px] pl-[40px]">
-          <div id="textContainer" className="absolute text-lg font-medium lg:w-[500px] xl:w-[650px] pl-[10px] border-2 border-green-500 top-0 left-0 flex-col h-[600px] flex justify-center items-center">
+          <div id="textContainer" className="absolute text-lg font-medium lg:w-[500px] xl:w-[650px] pl-[10px] top-0 left-0 flex-col h-[600px] flex justify-center items-center">
           {/* Paragraphs Here... */}
-          <p>
-          Vestibulum dictum lectus diam, sed dictum augue cursus pulvinar. Integer pulvinar nibh mi. Sed commodo pretium lectus, malesuada laoreet nisi ultricies at. Duis mattis metus eu efficitur mollis.
-          </p>
+
+          <div id="paragraph1" className="absolute translate-x-[-650px]" >
+            <h1 className=" font-bold text-3xl mb-10" >Unstoppable Force: Our Basketball Team Wins Big in Intramurals 2024!</h1>
+            <p>Our basketball team dominated the court in the Intramurals 2024 championship game, securing a decisive victory in a fierce battle against the Arctic Wolves, Valiant Cerulean Griffins, Green Soaring Falcons, and Red Eagles. Their incredible teamwork and relentless drive led to an unforgettable win. Congratulations to our champions for their outstanding performance and dedication!</p>
+          </div>
+
+          <div id="paragraph2" className="absolute translate-x-[-650px]" >
+            <h1 className=" font-bold text-3xl mb-10" >Victorious Moment: Our Basketball Team Shines in Intramurals 2024!</h1>
+            <p>Our team achieved a remarkable victory in the Intramurals 2024 championship game, demonstrating exceptional skill and determination. Each member of the team played a crucial role, showcasing their unique talents and unwavering dedication. Key players such as <span className=" font-bold text-[#008DDA]" >Raymond Jay Torlao, Juben, Jethro Ortega, Kianne Dave Balderas, Dave and Rogin Nuza Duran</span> led the charge, contributing significantly to the team's success. Hats off to our champions for their impressive performance and hard-earned triumph!</p>
+          </div>
+
           </div>
         </div>
         <div
@@ -117,13 +157,12 @@ const Event = () => {
           <div id="trophyContainer" className="relative top-0 right-[-50px] lg:right-[-40px] w-full h-[600px]" >
             <Spline scene="https://prod.spline.design/5vG7OCMJUKlG9K0H/scene.splinecode" ></Spline>
           </div>
-          <div id="eventImageContainer" className="absolute w-full top-0 left-0 border-2 border-black flex-col h-[600px] flex justify-center items-center">
+          <div id="eventImageContainer" className="absolute w-full top-0 left-0 flex-col h-[600px] flex justify-center items-center">
           {/* PHotos Here... */}
-          <Image id="img1" src={Rain} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl left-[10px] top-[50px]" ></Image>
-          <Image id="img2" src={Rain} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl right-[10px] top-[300px]" ></Image>
-          <Image id="img3" src={Rain} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl right-[40px] top-[170px]" ></Image>
-          <Image id="img4" src={Rain} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl left-[30px] top-[240px]" ></Image>
-          <Image id="img5" src={Rain} width={400} height={400} alt="..." className="rounded-sm scale-0 shadow-xl z-10 " ></Image>
+          <Image id="img1" src={Photo1} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl left-[10px] top-[50px]" ></Image>
+          <Image id="img2" src={Photo3} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl right-[10px] top-[180px]" ></Image>
+          <Image id="img3" src={Photo2} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl right-[150px] top-[10px]" ></Image>
+          <Image id="img4" src={Photo4} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl left-[100px] top-[190px]" ></Image>
           </div>
 
         </div>

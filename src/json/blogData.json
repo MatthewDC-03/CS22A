@@ -2,25 +2,59 @@
     {
         "id": 1,
         "blogId": "1",
-        "heading": "Blog Heading One",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt."
+        "heading": "Chair Champion",
+        "creteBy": "By Rogin Nuza Duran • May 14, 2024",
+        "createdByLink": "images/BlogPhotos/CreatedBy.svg",
+        "creatorHeading": "Hey, everyone! I'm Rogin",
+        "creatorParagraph": " I'm stoked to have you here! While I might be just your average student, my passion knows no bounds when it comes to fitness and staying active. Whether it's hitting the gym, going for a run, or trying out new workout routines, I'm all in! But hey, life's not all about crunches and cardio. When I'm not breaking a sweat, you'll often find me at the billiards table, honing my skills and sinking those tricky shots. Here at my corner of the web, I'm all about sharing my journey as an average student navigating the world of fitness and embracing my love for billiards. So grab a seat, stay awhile, and let's embark on this adventure together!",
+        "link": "images/BlogPhotos/gudali.jpg",
+        "paragraph": "Cedrick, an academic rebel, seeks the ultimate nap. With just a chair and determination, he defies norms, finding solace amidst chaos. Join us as we delve deeper into Cedrick's nap quest!",
+        "heading1": "Chair Champion: Cedrick's Nap Quest",
+        "paragraph1": "In the labyrinthine halls of academia, amidst the hum of computers and the shuffle of students, Cedrick emerges as an unlikely hero on a quest for the holy grail of midday rejuvenation: the perfect nap. Armed with nothing but a trusty chair and an indomitable spirit, Cedrick defies the norms of productivity, choosing instead to embrace the sweet embrace of slumber. With a nonchalant disregard for the chaos around him, Cedrick reclines in his throne of comfort, his eyelids heavy with the promise of blissful oblivion. Little does he know, his quest for the perfect nap will not only challenge the status quo but inspire a revolution in the art of midday rest. Cedrick, the Chair Champion, is ready to defy convention and awaken the world to the power of the humble nap.",
+        "heading2": "Meet Cedrick: The ComLab's Chair Champion",
+        "paragraph2": "At just 19 years old, Cedrick brings a youthful exuberance to our midst that's as infectious as it is endearing. A lover of all things gaming, Cedrick's laptop is his trusty sidekick, and he's always up for a digital adventure whenever the opportunity arises. But there's more to Cedrick than meets the eye – despite his age, he's developed a reputation for being fashionably late to class, a trait he humorously attributes to his laid-back, easygoing nature, jokingly likening himself to the stereotypical behavior of a girl. Whether he's immersed in the latest gaming craze or fashionably tardy to the party, Cedrick's playful spirit and carefree attitude never fail to brighten our days in the comlab. Join us as we unravel the quirks and charms of Cedrick, our beloved Chair Champion, whose antics never fail to entertain and delight."
     },
     {
         "id": 2,
         "blogId": "2",
         "heading": "Blog Heading Two",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt."
+        "createdByLink": "images/BlogPhotos/CreatedBy.svg",
+        "link": "images/BlogPhotos/gudali.jpg",
+        "creatorHeading": "Hey, everyone! I'm Rogin",
+        "creatorParagraph": " I'm stoked to have you here! While I might be just your average student, my passion knows no bounds when it comes to fitness and staying active. Whether it's hitting the gym, going for a run, or trying out new workout routines, I'm all in! But hey, life's not all about crunches and cardio. When I'm not breaking a sweat, you'll often find me at the billiards table, honing my skills and sinking those tricky shots. Here at my corner of the web, I'm all about sharing my journey as an average student navigating the world of fitness and embracing my love for billiards. So grab a seat, stay awhile, and let's embark on this adventure together!",
+        "creteBy": "By Rogin Nuza Duran • May 14, 2024",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt.312u39891273982173891278qjwio1981y98y1298y198nx189yn89x1yne9ynx1891yexy1n2eyx891eynx912xyn198n1yx91nx981y98xe19",
+        "heading1": "Chair Champion: Cedrick's Nap Quest",
+        "paragraph1": "In the labyrinthine halls of academia, amidst the hum of computers and the shuffle of students, Cedrick emerges as an unlikely hero on a quest for the holy grail of midday rejuvenation: the perfect nap. Armed with nothing but a trusty chair and an indomitable spirit, Cedrick defies the norms of productivity, choosing instead to embrace the sweet embrace of slumber. With a nonchalant disregard for the chaos around him, Cedrick reclines in his throne of comfort, his eyelids heavy with the promise of blissful oblivion. Little does he know, his quest for the perfect nap will not only challenge the status quo but inspire a revolution in the art of midday rest. Cedrick, the Chair Champion, is ready to defy convention and awaken the world to the power of the humble nap.",
+        "heading2": "",
+        "paragraph2": ""
     },
     {
         "id": 3,
         "blogId": "3",
         "heading": "Blog Heading Three",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt."
+        "link": "images/BlogPhotos/gudali.jpg",
+        "createdByLink": "images/BlogPhotos/CreatedBy.svg","creatorHeading": "Hey, everyone! I'm Rogin",
+        "creatorParagraph": " I'm stoked to have you here! While I might be just your average student, my passion knows no bounds when it comes to fitness and staying active. Whether it's hitting the gym, going for a run, or trying out new workout routines, I'm all in! But hey, life's not all about crunches and cardio. When I'm not breaking a sweat, you'll often find me at the billiards table, honing my skills and sinking those tricky shots. Here at my corner of the web, I'm all about sharing my journey as an average student navigating the world of fitness and embracing my love for billiards. So grab a seat, stay awhile, and let's embark on this adventure together!",
+        "creteBy": "By Rogin Nuza Duran • May 14, 2024",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt.",
+        "heading1": "Chair Champion: Cedrick's Nap Quest",
+        "paragraph1": "In the labyrinthine halls of academia, amidst the hum of computers and the shuffle of students, Cedrick emerges as an unlikely hero on a quest for the holy grail of midday rejuvenation: the perfect nap. Armed with nothing but a trusty chair and an indomitable spirit, Cedrick defies the norms of productivity, choosing instead to embrace the sweet embrace of slumber. With a nonchalant disregard for the chaos around him, Cedrick reclines in his throne of comfort, his eyelids heavy with the promise of blissful oblivion. Little does he know, his quest for the perfect nap will not only challenge the status quo but inspire a revolution in the art of midday rest. Cedrick, the Chair Champion, is ready to defy convention and awaken the world to the power of the humble nap.",
+        "heading2": "",
+        "paragraph2": ""
     },
     {
         "id": 4,
         "blogId": "4",
         "heading": "Blog Heading Four",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt."
+        "link": "images/BlogPhotos/gudali.jpg",
+        "createdByLink": "images/BlogPhotos/CreatedBy.svg",
+        "creteBy": "By Rogin Nuza Duran • May 14, 2024","creatorHeading": "Hey, everyone! I'm Rogin",
+        "creatorParagraph": " I'm stoked to have you here! While I might be just your average student, my passion knows no bounds when it comes to fitness and staying active. Whether it's hitting the gym, going for a run, or trying out new workout routines, I'm all in! But hey, life's not all about crunches and cardio. When I'm not breaking a sweat, you'll often find me at the billiards table, honing my skills and sinking those tricky shots. Here at my corner of the web, I'm all about sharing my journey as an average student navigating the world of fitness and embracing my love for billiards. So grab a seat, stay awhile, and let's embark on this adventure together!",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt.",
+        "heading1": "Chair Champion: Cedrick's Nap Quest",
+        "paragraph1": "In the labyrinthine halls of academia, amidst the hum of computers and the shuffle of students, Cedrick emerges as an unlikely hero on a quest for the holy grail of midday rejuvenation: the perfect nap. Armed with nothing but a trusty chair and an indomitable spirit, Cedrick defies the norms of productivity, choosing instead to embrace the sweet embrace of slumber. With a nonchalant disregard for the chaos around him, Cedrick reclines in his throne of comfort, his eyelids heavy with the promise of blissful oblivion. Little does he know, his quest for the perfect nap will not only challenge the status quo but inspire a revolution in the art of midday rest. Cedrick, the Chair Champion, is ready to defy convention and awaken the world to the power of the humble nap.",
+        "heading2": "",
+        "paragraph2": ""
     }
 ]

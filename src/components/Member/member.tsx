@@ -68,7 +68,7 @@ const Member = ()=>{
             <div id="left" className="absolute z-20 left-0 top-0 translate-y-[-1600px] bg-[#008DDA] h-full w-[33.33%]" ></div>
             <div id="center" className="absolute z-20 left-1/2 top-1/2 -translate-x-1/2 translate-y-[800px] bg-[#008DDA] h-full w-[34%]" ></div>
             <div id="right" className="absolute z-20 right-0 top-0 translate-y-[-1600px] bg-[#008DDA] h-full w-[33.33%]" ></div>
-            <div id="cardContainer" className="absolute p-7 left-0 grid place-items-center grid-cols-3 z-30 top-0 w-full -skew-y-3 h-full" >
+            <div id="cardContainer" className="absolute p-7 left-0 grid place-items-center pt-20 grid-cols-3 z-30 top-0 w-full -skew-y-3 h-full" >
             {
                 Data.map(item => {
                     return(
