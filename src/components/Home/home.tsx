@@ -96,6 +96,7 @@ export default function Home() {
         
         `}
     >
+        
       {/* SLIDER */}
         <div id="list" className="h-full w-full">
 
