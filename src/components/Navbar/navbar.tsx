@@ -7,6 +7,7 @@ interface ArgType {
     isBlog: any
 }
 const Navbar: React.FC<ArgType> =({isBlog}) => {
+    
     const handleScrollHome = ()=>{
         document.getElementById("homePage")?.scrollIntoView()
     }
@@ -23,7 +24,7 @@ const Navbar: React.FC<ArgType> =({isBlog}) => {
         document.getElementById("feedbackPage")?.scrollIntoView()
     }
     return (
-        <nav className="h-full w-full text-[#F6F6F6] flex items-center justify-between px-14" >
+        <nav className=" h-full w-full text-[#F6F6F6] flex items-center justify-between px-14" >
             <span className='flex items-center gap-2' >
                 <Image src={AclcImage} height={40} alt='Aclc Icon' ></Image>
                 <span className=" text-2xl font-semibold tracking-wider" >CS22A</span>

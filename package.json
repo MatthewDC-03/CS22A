@@ -6,10 +6,13 @@
     "dev": "next dev & npx next-video sync -w",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "email": "email dev --dir src/emails"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@gsap/react": "^2.1.1",
+    "@react-email/components": "0.0.19",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.2.8",
     "framer-motion": "^11.1.7",
@@ -20,7 +23,9 @@
     "next-video": "^1.0.6",
     "react": "^18",
     "react-dom": "^18",
-    "react-router": "^6.23.1"
+    "react-email": "2.1.4",
+    "react-router": "^6.23.1",
+    "resend": "^3.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",

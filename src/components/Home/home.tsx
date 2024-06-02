@@ -114,7 +114,7 @@ export default function Home() {
                 {item.heading}
             </h1>
             <p
-                className="text-[#F6F6F6] font-thin text-sm0 w-fit antialiased "
+                className="text-[#F6F6F6] font-thin text-sm0 w-fit antialiased leading-7 "
                 style={{ animationDelay: "1.4s" }}
             >
                 {item.paragraph}
@@ -168,7 +168,7 @@ export default function Home() {
         </div>
         <div className="absolute w-10 rounded-full h-[2.5px] top-1/2 left-8 bg-[#F6F6F6]/70" ></div>
         </div>
-        <div className={`absolute h-1 w-0 bg-white top-[11%] z-50 ${isBar && 'w-full animate-timeRunning'} `} ></div>
+        <div className={`absolute left-0 h-1 w-0 bg-white translate-y-[103px] z-50 ${isBar && 'w-full animate-timeRunning'} `} ></div>
       {/* Thumbnail */}
         <div className={`top-[65%] lg:top-[60%] xl:right-1 lg:-right-10 absolute flex flex-col gap-5`}>
         <div

@@ -60,21 +60,23 @@ return (
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
-        className={`w-full relative z-10 overflow-x-hidden cursor-grab ${isMouseDown && "cursor-grabbing"} skew-y-3 p-5 h-[500px] mt-0`}>
+        className={`w-full relative z-10 overflow-hidden cursor-grab ${isMouseDown && "cursor-grabbing"} skew-y-3 p-5 h-[690px] mt-0`}>
         <div
         className=" gap-28 absolute w-fit h-fit flex mx-0" >
         {
             InfoData.map((item) => {
                 return (
-                    <div key={item.id} className="overflow-hidden justify-evenly relative transition-all duration-500 hover:translate-y-2 w-[320px] h-[450px] bg-neutral-50 rounded-lg shadow-xl flex flex-col items-center gap-2 pt-2 pb-0 px-2 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 before:h-1 before:bg-gray-500">
+                    <div key={item.id} className="justify-between relative transition-all duration-500 hover:translate-y-2 w-[500px] h-[700px] bg-neutral-50 rounded-lg shadow-xl flex flex-col items-center gap-2 py-12 px-3 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 overflow-hidden before:h-[5px] before:bg-gray-500">
                     <div>
-                    <Image src={Rain} width={100} alt={"..."} className="rounded-full" ></Image>
-                    <h1 className="mt-3 font-bold text-center" >{item.name}</h1>
+                    <div className=" h-32 w-32 rounded-full overflow-hidden" >
+                                <Image src={item.link} width={2000} height={2000} className="h-full w-full object-cover object-center" alt="..." ></Image>
+                            </div>
+                    <h1 className="mt-3 font-bold text-lg text-center" >{item.name}</h1>
                     </div>
-                    <div className="flex flex-col justify-center items-center w-full h-fit" >
-                    <p className="text-center text-sm" >{item.about}</p>
+                    <div className="flex flex-col justify-cente items-center w-full h-fit" >
+                    <p className="text-center text-sm leading-6" >{item.about}</p>
                     </div>
-                    <div className="flex w-full justify-evenly" >
+                    <div className="flex w-full justify-evenly " >
                         <div className="h-10 w-10 rounded-full cursor-pointer ">
                             <a href="#"><Image src={Tiktok} alt="Tiktok" width={500} height={500} ></Image></a>
                         </div>
@@ -84,8 +86,7 @@ return (
                         <div className="h-10 w-10 rounded-full cursor-pointer" >
                             <a href="#"><Image src={Instagram} alt="Tiktok" width={500} height={500} ></Image></a>
                         </div>
-                    </div>                                                                       {/* our Index in json file           and the click event  */}
-                    <div className="w-full h-10" ><Image className=" cursor-pointer"  onClick={()=>{handleClick(item.id)}}  src={click[item.id] ? HeartFill : HeartOutline } alt="..." width={40} height={40}></Image></div>
+                    </div>
                     </div>
                 )
             })

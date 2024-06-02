@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image";
+/* Component Imports */
 import HomePage from "../components/Home/home";
 import Navbar from "../components/Navbar/navbar";
 import About from "../components/About/about"
@@ -9,15 +9,19 @@ import Event from "../components/Event/event"
 import Member from "../components/Member/member"
 import Feedback from "../components/Feedback/feedback"
 import Flow from "../components/Flow/flow"
-import { useEffect, useState } from "react";
-/* Images */
+import Footer from "../components/Footer/footer"
+import Loading from './loading'
+/* Import Images */
 import Facebook from "../../public/images/Facebook.svg"
 import Camera from "../../public/images/Camera.svg"
 import Basketball from "../../public/images/Icon/Baskitball.svg"
-import Loading from './loading'
+/* Import */
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
+
 export default function Home() {
     const [scrolled, setScrolled] = useState(false);
     const container = useRef(null)
@@ -53,7 +57,7 @@ export default function Home() {
         boxShadow: "0 0 15px 1px #008DDA",
         scrollTrigger:{
             trigger: "#homeSpan",
-            start: "top 70%",
+            start: "top 80%",
             markers: false,
             toggleActions: "play none none reverse"
         }
@@ -64,7 +68,7 @@ export default function Home() {
         duration: .5,
         scrollTrigger:{
             trigger: "#homeSpan",
-            start: "top 70%",
+            start: "top 80%",
             markers: false,
             toggleActions: "play none none reverse"
         }
@@ -133,14 +137,18 @@ export default function Home() {
     },{scope: container})
   return (
     <>
+    {/* Loading Page */}
     <Loading />
     <main className="w-full h-full relative" ref={container}  >
-      
-      <Flow/>
+      {/* Flow / Arrow Guide */}
+
+      <div id="arrPinned" className="fixed lg:h-[600px] xl:h-[700px] left-1/2 -translate-x-1/2 w-[3px] bg-[#008DDA]" ></div>
+
         {/* Navbar */}
       <header className={`navbar w-full ${scrolled ? "bg-[#1E1E1E] h-12" : "bg-[black]/20 h-16 backdrop-blur-sm"} sticky top-0 left-0 z-50`}> 
         <Navbar isBlog={true} ></Navbar>
       </header>
+
       {/* Home */}
       <div className="relative" >
       <span id="homeSpan" className="absolute px-10 bottom-[220px] left-1/2 -translate-x-1/2 z-20 py-3 rounded-full tracking-widest border-[3px] h-fit w-fit text-[#F6F6F6] text-xl font-bold border-[#F6F6F6] bg-transparent " >HOME</span>
@@ -149,18 +157,22 @@ export default function Home() {
         <HomePage></HomePage>
       </section>
       </div>
+
         {/* ABOUT */}
       <div id="aboutPage" className="h-[190vh] w-full relative" >
       <span id="aboutSpan" className="absolute left-1/2 -translate-x-1/2 top-[10px] px-10 z-20 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold border-[#1E1E1E] bg-[#F6F6F6] " >ABOUT</span>
         <About/>
       </div>
+
       {/* Members */}
       <div className="relative" >
-      <span id="memberSpan" className="absolute top-[-200px] left-1/2 -translate-x-1/2 px-10 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >TEAM MEMBERS</span>
-      <div className="h-[170vh] w-full origin-top-right overflow-hidden skew-y-3" >
+      <span id="memberSpan" className="absolute top-[-150px] left-1/2 -translate-x-1/2 px-10 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >TEAM MEMBERS</span>
+      <div className="lg:h-[300vh] xl:h-[120vh] w-full origin-top-right overflow-hidden skew-y-3" >
       <Member></Member>
       </div>
       </div>
+
+      {/* Event */}
       <div id="eventPage" className=" relative" >
       <span id="eventSpan" className="absolute px-10 top-[-300px] left-1/2 -translate-x-1/2 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >EVENTS</span>
       <div className="absolute top-[-100px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
@@ -169,18 +181,25 @@ export default function Home() {
       <Event></Event>
       </div>
       
+      {/* Info */}
       <div className="relative" >
       <span id="infoSpan" className="absolute px-10 left-1/2 -translate-x-1/2 top-[-150px] py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >PERSONAL INFORMATION</span>
-      <div id="infoPage" className="h-[100vh] w-full relative mt-[350px] z-40 overflow-hidden -skew-y-3 grid place-items-center bg-[#008DDA] " >
+      <div id="infoPage" className="h-[130vh] w-full relative mt-[350px] z-40 overflow-hidden -skew-y-3 grid place-items-center bg-[#008DDA] " >
         <Image className="absolute h-auto w-auto top-[-70px] left-0" src={Camera} alt="..." width={600} height={600} ></Image>
         <Image className="absolute h-auto w-auto top-[-140px] right-0" src={Facebook} alt="..." width={600} height={600} ></Image>
         <Info/>
       </div>
       </div>
       
+      {/* Feedback */}
       <div id="feedbackPage" className="w-full h-[100vh]" >
       <span id="feedSpan" className="absolute px-10 left-1/2 -translate-x-1/2 translate-y-[70px] py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] rounded-full text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >FEEDBACK</span>
         <Feedback></Feedback>
+      </div>
+
+      {/* Footer */}
+      <div className="z-50" >
+      <Footer isNewsletter={true} />
       </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     </main>

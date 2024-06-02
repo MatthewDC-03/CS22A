@@ -1,62 +1,50 @@
 [
     {
         "id": 1,
-        "frontendPercentage": 40,
-        "backendPercentage": 40,
-        "uiuxdesingPercentage": 60,
-        "fieldResearchPercentage": 10,
-        "websitePresenterPercentage": 60,
+        "frontendPercentage": 100,
+        "backendPercentage": 100,
+        "uiuxdesingPercentage": 100,
+        "fieldResearchPercentage": 50,
+        "websitePresenterPercentage": 20,
+        "memberName": "Matthew Dela Cruz",
         "gsap": {
             "name": "cardOne",
             "delay": 0.5
         },
-        "source": "/images/DummyImage/cat.jpeg",
+        "source": "/images/MemberPhotos/memberMatthew.jpg",
         "fullname": "Daisy",
         "paragraph": "In our web blog project, I contribute to both backend and frontend development, as well as UI design. I ensure robust server-side logic, create dynamic and responsive interfaces, and design intuitive, visually appealing user experiences. This combination makes our web blog functional, engaging, and user-friendly."
     },
     {
         "id": 2,
-        "frontendPercentage": 40,
-        "backendPercentage": 40,
-        "uiuxdesingPercentage": 60,
-        "fieldResearchPercentage": 10,
-        "websitePresenterPercentage": 60,
+        "frontendPercentage": 0,
+        "backendPercentage": 0,
+        "uiuxdesingPercentage": 0,
+        "fieldResearchPercentage": 50,
+        "websitePresenterPercentage": 50,
+        "memberName": "Raymond Jay Torlao",
         "gsap": {
             "name": "cardTwo",
             "delay": 1
         },
-        "source": "/images/DummyImage/cat.jpeg",
-        "fullname": "Daisy",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt. Duis scelerisque nec augue quis congue. Donec ac ex tristique, vestibulum ex at"
+        "source": "/images/MemberPhotos/memberRaymond.jpg",
+        "fullname": "Raymond Jay Torlao",
+        "paragraph": "In this website development my contribution in more on Web presenter. As a student that has a hight confident that can face, construct, and explain the system in a proper way with my best I really offer my self to take this responsibility so that I can ensure that I can show to everyone the whole interface in our website so that they can understand and show to them how beautiful and functionable our website. Also to guide them properly to every functions or buttons that they can have once they use our website to make them familiar so that they can use it with ease."
     },
     {
         "id": 3,
-        "frontendPercentage": 40,
-        "backendPercentage": 40,
-        "uiuxdesingPercentage": 60,
-        "fieldResearchPercentage": 10,
-        "websitePresenterPercentage": 60,
+        "frontendPercentage": 0,
+        "backendPercentage": 0,
+        "uiuxdesingPercentage": 0,
+        "fieldResearchPercentage": 0,
+        "websitePresenterPercentage": 40,
+        "memberName": "Brian Paul Agsaoay",
         "gsap": {
             "name": "cardThree",
             "delay": 1.5
         },
-        "source": "/images/DummyImage/cat.jpeg",
-        "fullname": "Daisy",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt. Duis scelerisque nec augue quis congue. Donec ac ex tristique, vestibulum ex at"
-    },
-    {
-        "id": 4,
-        "frontendPercentage": 40,
-        "backendPercentage": 40,
-        "uiuxdesingPercentage": 60,
-        "fieldResearchPercentage": 10,
-        "websitePresenterPercentage": 60,
-        "gsap": {
-            "name": "cardFour",
-            "delay": 2
-        },
-        "source": "/images/DummyImage/cat.jpeg",
-        "fullname": "Daisy",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor a diam at maximus. Aenean sodales ultrices tincidunt. Duis scelerisque nec augue quis congue. Donec ac ex tristique, vestibulum ex at"
+        "source": "/images/MemberPhotos/memberBrian.jpg",
+        "fullname": "Brian Paul Agsaoay",
+        "paragraph": "As a student involved in our system, my dual role as the Data Collector and Website Presenter has been invaluable to our project's success. Through meticulous data collection and verification, I've ensured the integrity and accuracy of our information, laying a solid foundation for our analyses and decision making processes. Simultaneously, as the Website Presenter, I've crafted an intuitive and visually appealing online platform, effectively communicating our findings and progress to stakeholders and users alike, thereby enhancing the accessibility and impact of our project within the academic community and beyond."
     }
 ]

@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/navbar"
 import Loading from "../loading"
 import BlogData from "../../json/blogData.json"
 import { useRouter } from "next/navigation";
+import Footer from "../../components/Footer/footer"
 import Image from "next/image";
 /* import P from "../Blog/id" */
 import BlogImage from "../../../public/images/DummyImage/blog.jpg"
@@ -86,6 +87,7 @@ const Blog = () => {
             </div>
               <div className="h-[10vh]" ></div>
         </div>
+        <Footer isNewsletter={false} />
         </>
     )
 }

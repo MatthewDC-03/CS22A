@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import BlogData from "../../../json/blogData.json";
 import Navbar from "../../../components/Navbar/navbar";
+import Footer from "../../../components/Footer/footer"
 import Loading from "../../loading"
 import Image from "next/image";
 import Link from "next/link";
@@ -78,20 +79,23 @@ const MyBlog = ({ params }: { params: { id: string } }) => {
       >
         <BlogNavbar/>
       </header>
+      <div>
       <div className="py-[40px] pl-[40px] pr-[20px] w-full h-full flex flex-row lg:gap-3 xl:gap-5" >
-        <div className="w-3/4 flex flex-col lg:gap-5 xl:gap-10 justify-center items-center" >
-        <h3 className=" font-extrabold lg:text-4xl xl:text-5xl text-start w-full text-[#1E1E1E]">{description.heading}</h3>
+        <div className="w-3/4 flex flex-col gap-4 justify-center items-center " >
+        <h3 className=" font-extrabold lg:text-3xl xl:text-4xl text-start w-full text-[#1E1E1E]">{description.heading}</h3>
         <span className="xl:text-lg lg:text-base text-[#313a4b] text-start w-full" >{description.created}</span>
-        <p className="font-base leading-[35px] lg:text-xl xl:text-2xl text-[#313a4b] pr-10" >{description.paragraph}</p>
+        <p className="font-base leading-[50px] lg:text-lg xl:text-xl text-[#313a4b] pr-10" >{description.paragraph}</p>
         <Image width={600} height={600} alt="..." src={`/${description.image}`}  ></Image>
         <h3 className=" font-extrabold lg:text-3xl xl:text-4xl text-start w-full text-[#1E1E1E]">{description.headingTwo}</h3>
-        <p className="font-base leading-[35px] lg:text-xl xl:text-2xl text-[#313a4b] pr-10" >{description.paragraphTwo}</p>
+        <p className="font-base leading-[50px] lg:text-lg xl:text-xl text-[#313a4b] pr-10" >{description.paragraphTwo}</p>
         </div >
         <div className="w-1/4 h-fit flex flex-col items-center py-10 lg:gap-5 xl:gap-10" >
           <Image src={`/${description.createdLink}`} className="rounded-full aspect-square object-center object-cover" width={250} height={250} alt="..."></Image>
           <h3 className="xl:text-3xl lg:text-xl font-extrabold w-full text-start" >{description.creatorHeadings}</h3>
           <p className="w-full font-base h-fit xl:text-xl lg:text-lg leading-[35px]" >{description.creatorParagraphs}</p>
         </div>
+      </div>
+        <Footer isNewsletter={false} />
       </div>
     </>
   );

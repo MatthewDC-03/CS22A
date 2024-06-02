@@ -75,10 +75,6 @@ export default function About(){
                     Welcome to our website's Web Blog section! Here, you'll find a dynamic collection of articles, updates, and resources that cater to our diverse community. Our blog covers a wide array of topics, including academic insights, student achievements, event highlights, and expert tips on various subjects. Whether you're looking to catch up on the latest school news, delve into educational trends, or explore inspiring stories from our community, our Web Blog is your go-to destination. Stay informed, engaged, and inspired with our regularly updated posts. Dive in and discover the vibrant life and happenings of our school through our blog!
                     </p>
                 </div>
-                
-                <div className="w-1/2 h-full relative " >
-                    <Image src={Laptop} id="laptop" className="absolute left-[200px] z-10 w-auto h-auto scale-0 drop-shadow-2xl " alt="..." width={300} height={300}></Image>
-                </div>
 
             </div>
             {/* About CS22A */}
