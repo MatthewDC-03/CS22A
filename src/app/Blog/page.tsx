@@ -87,7 +87,7 @@ const Blog = () => {
             </div>
               <div className="h-[10vh]" ></div>
         </div>
-        <Footer isNewsletter={false} />
+        <Footer showNewsletter={false} />
         </>
     )
 }

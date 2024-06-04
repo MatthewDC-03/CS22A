@@ -199,7 +199,7 @@ export default function Home() {
 
       {/* Footer */}
       <div className="z-50" >
-      <Footer isNewsletter={true} />
+      <Footer showNewsletter={true} />
       </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     </main>

@@ -95,7 +95,7 @@ const MyBlog = ({ params }: { params: { id: string } }) => {
           <p className="w-full font-base h-fit xl:text-xl lg:text-lg leading-[35px]" >{description.creatorParagraphs}</p>
         </div>
       </div>
-        <Footer isNewsletter={false} />
+        <Footer showNewsletter={false} />
       </div>
     </>
   );

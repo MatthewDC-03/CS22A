@@ -3,19 +3,23 @@
 /* Imports */
 import Image from "next/image"
 import Link from "next/link"
+import { FC, useState } from "react"
+import NewsletterSubscribe from "./newsletterSubscribe"
 
 /* Import Image */
 import AclcImage from '/public/images/Aclc-Icon-White.svg'
 import Tiktok from "../../../public/images/Icon/Tiktok.svg"
 import Facebook from "../../../public/images/Icon/Facebook.svg"
 import Instagram from "../../../public/images/Icon/Instagram.svg"
-import CS22A from "../../../public/images/HomepagePhotos/OurSection.svg"
 
-export interface NewsletterType {
-    isNewsletter: boolean
+export interface showNewsletterType {
+    showNewsletter: boolean
 }
 
-const Footer = ({isNewsletter}: NewsletterType) => {
+const Footer: FC<showNewsletterType> = ({showNewsletter}) => {
+
+    const [email,setEmail] = useState("")
+    console.log(email)
 
     const handleScrollHome = ()=>{
         document.getElementById("homePage")?.scrollIntoView()
@@ -35,24 +39,12 @@ const Footer = ({isNewsletter}: NewsletterType) => {
 
     return (
         <div className="w-full h-fit relative" >
-        {
-            isNewsletter && <>
-            <div className="absolute left-1/2 -translate-x-1/2 rounded-lg shadow-2xl w-3/4 z-10 h-[420px]" >
-            <div className="h-full w-full text-[#F6F6F6] z-50 p-10 flex flex-col justify-center items-center gap-5" >
-                <h1 className=" uppercase text-5xl font-bold w-fit" >subscribe to our newsletter!</h1>
-                <p className="text-center" >Stay updated with the latest from CS22A! Subscribe to our newsletter for insights, course highlights, and important announcements. Be the first to know about guest speaker sessions, hands-on coding tips, and study group activities. Join our community and stay informed on all things CS22A. Subscribe now!</p>
-                <input type="email" placeholder="Email" className="w-full h-10 px-4 py-3 text-[#1E1E1E] border-none outline-none rounded-sm" />
-                <button type="submit" className="bg-[#008DDA] px-10 py-3 rounded-sm text-lg" >Subscribe</button>
-            </div>
-            <div className="absolute left-0 brightness-50 -z-10 top-0 h-full rounded-lg overflow-hidden shadow-2xl w-full" >
-                <Image src={CS22A} alt="..."  className="w-full h-full object-cover object-center" width={500} height={500} ></Image>
-            </div>
-        </div>
-        <div className="w-full h-[340px]" ></div>
-            </>
-        }
+            {/* NewsLetter */}
+                {
+                    showNewsletter && <NewsletterSubscribe/>
+                }
         <footer className="py-10 relative px-10 bg-[#008DDA] flex flex-col gap-7">
-        <div className={`w-full ${isNewsletter && "mt-20"} h-fit text-[#F6F6F6] overflow-x-hidden grid grid-cols-4 gap-x-7`} >
+        <div className={`w-full ${showNewsletter && "mt-16"} h-fit text-[#F6F6F6] overflow-x-hidden grid grid-cols-4 gap-x-7`} >
             {/* Section #1 */}
             <div className="w-62" >
                 <div className="flex items-center" >
