@@ -142,7 +142,7 @@ export default function Home() {
     <main className="w-full h-full relative" ref={container}  >
       {/* Flow / Arrow Guide Pinned */}
 
-      <div id="arrPinned" className="fixed h-[90vh] left-1/2 -translate-x-1/2 w-[3px] bg-red-500" ></div>
+      <div id="arrPinned" className="fixed h-[90vh] left-1/2 -translate-x-1/2 w-[3px] bg-[#008DDA]" ></div>
 
         {/* Navbar */}
       <header className={`navbar w-full ${scrolled ? "bg-[#1E1E1E] h-12" : "bg-[black]/20 h-16 backdrop-blur-sm"} sticky top-0 left-0 z-50`}> 

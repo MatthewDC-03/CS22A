@@ -135,7 +135,7 @@ export default function Home() {
 
         </div>
 
-        <div className="z-10 absolute bottom-[90px] xl:right-[380px] lg:right-[340px]">
+        <div className="z-10 absolute xl:bottom-[150px] lg:bottom-[130px] xl:right-[380px] lg:right-[340px]">
         <button
             id="nextBtn"
             onClick={()=> {nextBtn()}}

@@ -18,11 +18,11 @@ const Member = ()=>{
     useGSAP(()=>{
         gsap.to("#left",{
             transform: "translateY(0)",
-            duration: 2,
+            duration: 1.5,
             scrollTrigger: {
-                trigger: "#left",
-                start: "bottom top",
-                end: "+=1600",
+                trigger: "#memberContainer",
+                start: "top 25%",
+                end: "bottom top",
                 markers: false
             }
         })
@@ -32,19 +32,19 @@ const Member = ()=>{
             transform: "translateY(-50%) translateX(-50%)",
             duration: 1,
             scrollTrigger: {
-                trigger: "#center",
-                start: "-=1630px top",
-                end: "+=1600",
-                markers: false
+                trigger: "#memberContainer",
+                start: "top 25%",
+                end: "bottom top",
+                markers: true
             }
         })
         gsap.to("#right",{
             transform: "translateY(0)",
-            duration: 2,
+            duration: 1.5,
             scrollTrigger: {
-                trigger: "#right",
-                start: "96.9% top",
-                end: "+=1600",
+                trigger: "#memberContainer",
+                start: "top 25%",
+                end: "bottom top",
                 markers: false
             }
         })
@@ -65,9 +65,9 @@ const Member = ()=>{
     return (
         <div className="w-full h-full" ref={memberRef} >
         <div id="memberContainer" className="w-full h-full relative">
-            <div id="left" className="absolute z-20 left-0 top-0 translate-y-[-2000px] bg-[#008DDA] h-full w-[33.33%]" ></div>
-            <div id="center" className="absolute z-20 left-1/2 top-1/2 -translate-x-1/2 translate-y-[800px] bg-[#008DDA] h-full w-[34%]" ></div>
-            <div id="right" className="absolute z-20 right-0 top-0 translate-y-[-2000px] bg-[#008DDA] h-full w-[33.33%]" ></div>
+            <div id="left" className="absolute z-20 left-0 top-0 translate-y-[-210vw] bg-[#008DDA] h-full w-[33.33%]" ></div>
+            <div id="center" className="absolute z-20 left-1/2 top-1/2 -translate-x-1/2 translate-y-[110vw] bg-[#008DDA] h-full w-[34%]" ></div>
+            <div id="right" className="absolute z-20 right-0 top-0 translate-y-[-210vw] bg-[#008DDA] h-full w-[33.33%]" ></div>
             <div id="cardContainer" className="absolute p-7 left-0 grid place-items-center gap-x-9 gap-y-40 py-32 xl:grid-cols-3 lg:grid-cols-2 z-30 top-0 w-full -skew-y-3 h-full" >
             {
                 Data.map(item => {
