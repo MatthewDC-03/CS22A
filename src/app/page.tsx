@@ -140,9 +140,9 @@ export default function Home() {
     {/* Loading Page */}
     <Loading />
     <main className="w-full h-full relative" ref={container}  >
-      {/* Flow / Arrow Guide */}
+      {/* Flow / Arrow Guide Pinned */}
 
-      <div id="arrPinned" className="fixed h-[100px] left-1/2 -translate-x-1/2 w-[3px] bg-[#008DDA]" ></div>
+      <div id="arrPinned" className="fixed h-[90vh] left-1/2 -translate-x-1/2 w-[3px] bg-[#008DDA]" ></div>
 
         {/* Navbar */}
       <header className={`navbar w-full ${scrolled ? "bg-[#1E1E1E] h-12" : "bg-[black]/20 h-16 backdrop-blur-sm"} sticky top-0 left-0 z-50`}> 
@@ -151,8 +151,8 @@ export default function Home() {
 
       {/* Home */}
       <div className="relative" >
-      <span id="homeSpan" className="absolute px-10 bottom-[220px] left-1/2 -translate-x-1/2 z-20 py-3 rounded-full tracking-widest border-[3px] h-fit w-fit text-[#F6F6F6] text-xl font-bold border-[#F6F6F6] bg-transparent " >HOME</span>
-      <div id="arr1" className=" scale-y-0 h-[250px] origin-bottom w-[3px] bg-[#008DDA] rotate-180 bottom-[220px] left-1/2 -translate-x-1/2 absolute z-10 " ></div>
+      <span id="homeSpan" className="absolute px-10 bottom-[150px] left-1/2 -translate-x-1/2 z-20 py-3 rounded-full tracking-widest border-[3px] h-fit w-fit text-[#F6F6F6] text-xl font-bold border-[#F6F6F6] bg-transparent " >HOME</span>
+      <div id="arr1" className=" scale-y-0 h-[180px] origin-bottom w-[3px] bg-[#008DDA] rotate-180 bottom-[150px] left-1/2 -translate-x-1/2 absolute z-10 " ></div>
       <section id="homePage" className="h-[110vh] translate-y-[-65px] w-full overflow-hidden z-10 skew-y-3 origin-top-right">
         <HomePage></HomePage>
       </section>
