@@ -8,13 +8,13 @@ import Info from "../components/Info/info"
 import Event from "../components/Event/event"
 import Member from "../components/Member/member"
 import Feedback from "../components/Feedback/feedback"
-import Flow from "../components/Flow/flow"
 import Footer from "../components/Footer/footer"
 import Loading from './loading'
 /* Import Images */
 import Facebook from "../../public/images/Facebook.svg"
 import Camera from "../../public/images/Camera.svg"
 import Basketball from "../../public/images/Icon/Baskitball.svg"
+import Volleyball from "../../public/images/EventPhotos/Volleyball/Volleyball_Icon.svg"
 /* Import */
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -110,6 +110,19 @@ export default function Home() {
         }
       })
 
+      gsap.to("#volleyballDiv",{
+        filter: "brightness(0) saturate(100%) invert(40%) sepia(89%) saturate(2243%) hue-rotate(176deg) brightness(92%) contrast(101%)",
+        borderColor: "#008DDA",
+        boxShadow: "0 0 15px 1px #008DDA",
+        duration: .1,
+        scrollTrigger:{
+            trigger: "#volleyballDiv",
+            start: "top 80%",
+            markers: false,
+            toggleActions: "play none none reverse"
+        }
+      })
+
       gsap.to("#infoSpan",{
         color: "#008DDA",
         borderColor: "#008DDA",
@@ -165,9 +178,9 @@ export default function Home() {
       </div>
 
       {/* Members */}
-      <div className="relative" >
+      <div className="relative h-fit" >
       <span id="memberSpan" className="absolute top-[-150px] left-1/2 -translate-x-1/2 px-10 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >TEAM MEMBERS</span>
-      <div className="lg:h-[300vh] xl:h-[120vh] w-full origin-top-right overflow-hidden skew-y-3" >
+      <div className="h-fit w-full origin-top-right skew-y-3 overflow-hidden" >
       <Member></Member>
       </div>
       </div>
@@ -175,8 +188,13 @@ export default function Home() {
       {/* Event */}
       <div id="eventPage" className=" relative" >
       <span id="eventSpan" className="absolute px-10 top-[-300px] left-1/2 -translate-x-1/2 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >EVENTS</span>
+      {/* Basketball Icon */}
       <div className="absolute top-[-100px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
       <Image id="basketballDiv" className="z-10 border-[3px] border-[#1E1E1E] p-3" src={Basketball} alt="..." width={100} height={100} ></Image>
+      </div>
+      {/* Volleyball Icon */}
+      <div className="absolute top-[4000px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
+      <Image id="volleyballDiv" className="z-10 border-[3px] border-[#1E1E1E] p-3" src={Volleyball} alt="..." width={100} height={100} ></Image>
       </div>
       <Event></Event>
       </div>

@@ -5,7 +5,7 @@
         "backendPercentage": 100,
         "uiuxdesingPercentage": 100,
         "fieldResearchPercentage": 50,
-        "websitePresenterPercentage": 20,
+        "websitePresenterPercentage": 10,
         "memberName": "Matthew Dela Cruz",
         "gsap": {
             "name": "cardOne",
@@ -20,8 +20,8 @@
         "frontendPercentage": 0,
         "backendPercentage": 0,
         "uiuxdesingPercentage": 0,
-        "fieldResearchPercentage": 50,
-        "websitePresenterPercentage": 50,
+        "fieldResearchPercentage": 10,
+        "websitePresenterPercentage": 40,
         "memberName": "Raymond Jay Torlao",
         "gsap": {
             "name": "cardTwo",
@@ -36,14 +36,30 @@
         "frontendPercentage": 0,
         "backendPercentage": 0,
         "uiuxdesingPercentage": 0,
-        "fieldResearchPercentage": 0,
-        "websitePresenterPercentage": 40,
+        "fieldResearchPercentage": 10,
+        "websitePresenterPercentage": 30,
         "memberName": "Brian Paul Agsaoay",
         "gsap": {
             "name": "cardThree",
             "delay": 1.5
         },
         "source": "/images/MemberPhotos/memberBrian.jpg",
+        "fullname": "Brian Paul Agsaoay",
+        "paragraph": "As a student involved in our system, my dual role as the Data Collector and Website Presenter has been invaluable to our project's success. Through meticulous data collection and verification, I've ensured the integrity and accuracy of our information, laying a solid foundation for our analyses and decision making processes. Simultaneously, as the Website Presenter, I've crafted an intuitive and visually appealing online platform, effectively communicating our findings and progress to stakeholders and users alike, thereby enhancing the accessibility and impact of our project within the academic community and beyond."
+    },
+    {
+        "id": 4,
+        "frontendPercentage": 0,
+        "backendPercentage": 0,
+        "uiuxdesingPercentage": 0,
+        "fieldResearchPercentage": 40,
+        "websitePresenterPercentage": 20,
+        "memberName": "Brian Paul Agsaoay",
+        "gsap": {
+            "name": "cardFour",
+            "delay": 2
+        },
+        "source": "/images/MemberPhotos/memberRogin.svg",
         "fullname": "Brian Paul Agsaoay",
         "paragraph": "As a student involved in our system, my dual role as the Data Collector and Website Presenter has been invaluable to our project's success. Through meticulous data collection and verification, I've ensured the integrity and accuracy of our information, laying a solid foundation for our analyses and decision making processes. Simultaneously, as the Website Presenter, I've crafted an intuitive and visually appealing online platform, effectively communicating our findings and progress to stakeholders and users alike, thereby enhancing the accessibility and impact of our project within the academic community and beyond."
     }

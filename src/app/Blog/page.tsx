@@ -64,7 +64,7 @@ const Blog = () => {
                   return (
                     <div className="relative flex lg:w-[320px] xl:w-[430px] h-[400px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
   <div className="relative mx-4 -mt-6 h-[350px] overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/400">
-  <Image src={`/${item.link}`} className="w-full h-full object-cover object-[0px,-100px] "  alt="..." fill={true} ></Image>
+  <Image src={`/${item.link}`} className="w-full h-full object-cover"  alt="..." fill={true} ></Image>
   </div>
   <div className="p-6">
     <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">

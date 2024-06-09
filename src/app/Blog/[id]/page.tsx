@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import BlogData from "../../../json/blogData.json";
-import Navbar from "../../../components/Navbar/navbar";
 import Footer from "../../../components/Footer/footer"
 import Loading from "../../loading"
 import Image from "next/image";
@@ -40,6 +39,7 @@ const MyBlog = ({ params }: { params: { id: string } }) => {
     creatorHeadings: "",
     creatorParagraphs: "",
     image: "",
+    imageTwo: "",
     headingTwo: "",
     paragraphTwo: ""
   });
@@ -50,7 +50,8 @@ const MyBlog = ({ params }: { params: { id: string } }) => {
                 heading: item.heading1, 
                 paragraph: item.paragraph1, 
                 created: item.creteBy, 
-                image: item.link, 
+                image: item.link,
+                imageTwo: item.link2, 
                 createdLink: item.createdByLink, 
                 creatorHeadings: item.creatorHeading, 
                 creatorParagraphs: item.creatorParagraph,
@@ -84,10 +85,13 @@ const MyBlog = ({ params }: { params: { id: string } }) => {
         <div className="w-3/4 flex flex-col gap-4 justify-center items-center " >
         <h3 className=" font-extrabold lg:text-3xl xl:text-4xl text-start w-full text-[#1E1E1E]">{description.heading}</h3>
         <span className="xl:text-lg lg:text-base text-[#313a4b] text-start w-full" >{description.created}</span>
-        <p className="font-base leading-[50px] lg:text-lg xl:text-xl text-[#313a4b] pr-10" >{description.paragraph}</p>
+        <p className="font-base leading-[50px] whitespace-pre-line lg:text-lg xl:text-xl text-[#313a4b] pr-10" >{description.paragraph}</p>
         <Image width={600} height={600} alt="..." src={`/${description.image}`}  ></Image>
         <h3 className=" font-extrabold lg:text-3xl xl:text-4xl text-start w-full text-[#1E1E1E]">{description.headingTwo}</h3>
-        <p className="font-base leading-[50px] lg:text-lg xl:text-xl text-[#313a4b] pr-10" >{description.paragraphTwo}</p>
+        <p className="font-base leading-[50px] whitespace-pre-line lg:text-lg xl:text-xl text-[#313a4b] pr-10" >{description.paragraphTwo}</p>
+        {
+          description.imageTwo !== "" && <Image width={600} height={600} alt="..." src={`/${description.imageTwo}`}  ></Image>
+        }
         </div >
         <div className="w-1/4 h-fit flex flex-col items-center py-10 lg:gap-5 xl:gap-10" >
           <Image src={`/${description.createdLink}`} className="rounded-full aspect-square object-center object-cover" width={250} height={250} alt="..."></Image>
