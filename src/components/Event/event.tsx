@@ -226,8 +226,8 @@ const Event = () => {
           </div>
 
           <div id="paragraph4" className="absolute opacity-0 translate-x-[-650px]" >
-            <h1 className=" font-bold text-3xl mb-10" >Celebrating Success: Volleyball Team Clinches First Runner-Up in Intramurals 2024</h1>
-            <p>Our volleyball team had an incredible run in the Intramurals 2024, showcasing skill, determination, and teamwork. After a series of intense matches, we emerged as the first runners-up, a testament to our hard work and resilience. Each game was a display of our strategic plays and unwavering spirit, pushing us closer to victory with every serve, spike, and block. Although we fell just short of the championship, our performance was nothing short of outstanding, and we take immense pride in our accomplishment. This experience has not only strengthened our bonds but also set a higher benchmark for future competitions.</p>
+            <h1 className=" font-bold text-3xl text-justify mb-10" >Celebrating Success: Volleyball Team Clinches First Runner-Up in Intramurals 2024</h1>
+            <p className="text-justify" >Our volleyball team had an incredible run in the Intramurals 2024, showcasing skill, determination, and teamwork. After a series of intense matches, we emerged as the first runners-up, a testament to our hard work and resilience. Each game was a display of our strategic plays and unwavering spirit, pushing us closer to victory with every serve, spike, and block. Although we fell just short of the championship, our performance was nothing short of outstanding, and we take immense pride in our accomplishment. This experience has not only strengthened our bonds but also set a higher benchmark for future competitions.</p>
           </div>
 
           </div>
