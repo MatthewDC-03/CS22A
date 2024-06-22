@@ -3,24 +3,36 @@
         "id": 1,
         "name": "Rogin Nuza Duran",
         "link": "/images/InfoPhotos/InfoRogin.svg",
+        "linkTikTok": "",
+        "linkFacebook": "",
+        "linkInstragram": "",
         "about": "Hello i'm Rogin, my achievements include Arm Wrestler, showcasing a dedication to excellence. At 21 years old, I've already made significant strides in my field. Beyond my professional endeavors, I find joy in hobbies like billiards, where precision and strategy intersect for a fulfilling pastime."
     },
     {
         "id": 2,
         "name": "Raymond Jay Torlao",
         "link": "/images/InfoPhotos/memberRaymond.jpg",
+        "linkTikTok": "",
+        "linkFacebook": "",
+        "linkInstragram": "",
         "about": "'We only live once make every moment counts' Hello every one I'm Raymond Jay, but you can call me Jay for short or to my nickname Bebe. I'm 23 years old and my birthday is May 15,2001, I live my childhood in my beautiful province the samar leyte with my older brother, grandmother and grandfather. And now I am currently living in Pulong Buhangin Santa Maria Bulacan. I really loves sport that's why I participate a lot of sports games including Soccer,Chess, Sepak takraw, and my favorite sports Basketball. Also I love listening to music playing guitar and sometimes dancing it depends to my mood. Im currently a 2nd year college taking Bachelor of science in computer science(COMSCI) in ACLC Santa Maria Bulacan Branch. In this school I participate a lot of competition including mobile legends tournament 1st runner up, pogay 2023 1st runner up Mr and Ms aclc 2nd runner up and etc.Before I finish I just Want to say that be proud to your self and show what you got."
     },
     {
         "id": 3,
         "name": "Matthew Dela Cruz",
         "link": "/images/InfoPhotos/memberMatthew.jpg",
+        "linkTikTok": "https://www.tiktok.com/@theoneanimations",
+        "linkFacebook": "https://www.facebook.com/matthew.delacruz.125",
+        "linkInstragram": "https://www.instagram.com/dawano_o/?igsh=MTlqN2pkM210ZHJocQ%3D%3D",
         "about": "Hello, I'm Matthew Dela Cruz, but you can call me Mat for short. I live in Mahabang Parang, Sta. Maria, and I'm 21 years old. Notable achievements include being named an Oracle Database Champion and winning the Oracle Database Solace 2024 competition, as well as being an Oracle Database Champion at InterAMA 2024. My hobbies include web programming, watching videos online, and playing games, but I spend most of my time programming, depending on my mood. Watching courses is also my passion; I enjoy spending hours on platforms like YouTube and specialized websites, diving into topics like Python, Data Analysis, and Cybersecurity. My current goal is to become a full-stack web developer, but once I feel satisfied with my expertise in web development, I plan to venture into data analysis and DevOps. Learning new programming languages and tools is what motivates me the most. Thank you for taking the time to read this paragraph; once again, I'm Matthew Dela Cruz, your future senior developer."
     },
     {
         "id": 4,
         "name": "Brian Paul Agsaoay",
         "link": "/images/InfoPhotos/memberBrian.jpg",
+        "linkTikTok": "",
+        "linkFacebook": "",
+        "linkInstragram": "",
         "about": "My name is Brian Paul Agsaoay, a 20 years old student from ACLC College of Sta. Maria. Born on March 4, 2004, I've always embraced a dynamic and fulfilling lifestyle, balancing academics with my passions and responsibilities. As a student, I am deeply committed to my education, striving to excel in my studies and actively engaging in campus life. My academic journey at ACLC College has equipped me with a diverse set of skills and knowledge, preparing me for future challenges and opportunities. In addition to my academic pursuits, I am a dedicated student athlete, where I channel my energy and passion into sports. Being part of the athletic community has taught me the importance of teamwork, discipline, and perseverance. These experiences have not only honed my physical abilities but also strengthened my character and resilience. Furthermore, I serve as a member of the student council, where I advocate for my peers, organize events, and contribute to enhancing the overall student experience. Balancing these roles requires dedication and time management, but I thrive on the challenge and the opportunity to make a positive impact."
     }
 ]

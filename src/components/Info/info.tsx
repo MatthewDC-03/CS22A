@@ -78,13 +78,13 @@ return (
                     </div>
                     <div className="flex w-full justify-evenly " >
                         <div className="h-10 w-10 rounded-full cursor-pointer ">
-                            <a href="#"><Image src={Tiktok} alt="Tiktok" width={500} height={500} ></Image></a>
+                            <a target="_blank" href={`${item.linkTikTok}`}><Image src={Tiktok} alt="Tiktok" width={500} height={500} ></Image></a>
                         </div>
                         <div className="h-10 w-10 rounded-full cursor-pointer" >
-                        <a href="#"><Image src={Facebook} alt="Tiktok" width={500} height={500} ></Image></a>
+                        <a target="_blank" href={item.linkFacebook}><Image src={Facebook} alt="Facebook" width={500} height={500} ></Image></a>
                         </div>
                         <div className="h-10 w-10 rounded-full cursor-pointer" >
-                            <a href="#"><Image src={Instagram} alt="Tiktok" width={500} height={500} ></Image></a>
+                            <a target="_blank" href={item.linkInstragram}><Image src={Instagram} alt="Instagram" width={500} height={500} ></Image></a>
                         </div>
                     </div>
                     </div>
