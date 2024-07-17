@@ -67,9 +67,9 @@ const Member = ()=>{
     return (
         <div className="w-full h-fit" ref={memberRef} >
         <div id="memberContainer" className="w-full h-fit relative">
-            <div id="left" className="absolute z-20 left-0 top-0 translate-y-[-170vw] bg-[#008DDA] h-full w-[33.33%]" ></div>
-            <div id="center" className="absolute z-20 left-1/2 bottom-0 translate-y-[170vw] -translate-x-1/2 bg-[#008DDA] h-full w-[34%]" ></div>
-            <div id="right" className="absolute z-20 right-0 top-0 translate-y-[-170vw] bg-[#008DDA] h-full w-[33.33%]" ></div>
+            <div id="left" className="absolute max-sm:hidden z-20 left-0 top-0 translate-y-[-170vw] bg-[#008DDA] h-full w-[33.33%]" ></div>
+            <div id="center" className="absolute z-20 left-1/2 bottom-0 max-sm:translate-y-0 max-sm:-translate-x-0 max-sm:-left-0 max-sm:w-full translate-y-[170vw] -translate-x-1/2 bg-[#008DDA] h-full w-[34%]" ></div>
+            <div id="right" className="absolute max-sm:hidden z-20 right-0 top-0 translate-y-[-170vw] bg-[#008DDA] h-full w-[33.33%]" ></div>
             <div id="cardContainer" className="relative p-7 pb-28 gap-y-16 gap-x-7 left-0 grid place-items-center xl:grid-cols-3 lg:grid-cols-2 z-20 w-full -skew-y-3 h-fit" >
             {
                 Data.map(item => {
@@ -78,13 +78,13 @@ const Member = ()=>{
                             <div className="relative left-1/2 -translate-x-1/2 top-0 translate-y-11 z-10 h-40 w-40 lg:h-32 lg:w-32 rounded-full object-cover overflow-hidden border-4 border-[#F6F6F6]" >
                                 <Image src={item.source} width={2000} height={2000} className="h-full w-full object-cover object-center" alt="..." ></Image>
                             </div>
-                            <div className="relative w-full px-4 pb-4 flex flex-col justify-between pt-[100px] lg:pt-[50px] items-center rounded-lg translate-x-0 h-[600px] bg-[#F6F6F6] shadow-2xl" >
+                            <div className="relative w-full px-4 pb-4 flex flex-col max-sm:h-fit max-sm:pt-12 justify-between pt-[100px] lg:pt-[50px] items-center rounded-lg translate-x-0 h-[600px] bg-[#F6F6F6] shadow-2xl" >
                             
                             <h1 className="text-2xl font-bold text-[#1E1E1E] mb-5" >{item.memberName}</h1>
-                            <p className="w-full text-sm leading-5 text-center font-medium" >
+                            <p className="w-full text-sm leading-5 text-justify font-medium" >
                             {item.paragraph}
                             </p>
-                            <div className="flex flex-col w-full text-sm mt-5 tracking-widest lg:font-medium font-bold h-fit gap-2">
+                            <div className="flex max-sm:hidden flex-col w-full text-sm mt-5 tracking-widest lg:font-medium font-bold h-fit gap-2">
                                 <div className="flex flex-col items-center justify-between gap-1" >
                                     <h3>Frontend</h3>
                                     <div className="relative h-3 w-full rounded-full bg-gray-400" >
@@ -124,7 +124,7 @@ const Member = ()=>{
             }
 
             </div>
-            <h1 className="absolute h-fit text-[200px] top-0 z-10 font-extrabold drop-shadow-xl w-full text-center text-gray-200 -skew-y-3" >TEAM MEMBERS</h1>
+            <h1 className="absolute max-sm:hidden h-fit text-[200px] top-0 z-10 font-extrabold drop-shadow-xl w-full text-center text-gray-200 -skew-y-3" >TEAM MEMBERS</h1>
             </div>
         </div>
     )

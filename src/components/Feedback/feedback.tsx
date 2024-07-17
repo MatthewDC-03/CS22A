@@ -104,7 +104,7 @@ const Feedback = ()=>{
   };
 
     return (
-        <form onSubmit={sendEmail} ref={form} className="w-full h-full flex justify-between items-center"  >
+        <form onSubmit={sendEmail} ref={form} className="w-full h-full flex justify-between items-center max-sm:flex-col"  >
             <div className={`${pop.pop == true ? "visible" : "hidden"} fixed py-4 px-10 left-1/2 -translate-x-1/2 top-1/2 -translate-y-[40vh] z-50 bg-[#1E1E1E] rounded-lg text-[#F6F6F6]`} >Thank you for giving us your feedback ✔</div>
             <div className="xl:w-1/2 lg:w-1/2 h-full grid place-items-center">
                 <section className="px-10 lg:pl-[20px] flex flex-col gap-5 text-[#1E1E1E]" >

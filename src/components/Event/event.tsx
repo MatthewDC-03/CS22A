@@ -202,10 +202,10 @@ const Event = () => {
       })
     },{scope: eventContainer})
   return (
-    <main id="eventWrapper" className="mt-[100px] w-full h-full lg:mt-[500px]" ref={eventContainer} >
-      <div id="eventContainer" className="w-full relative h-[900vh] overflow-hidden mt-10 flex" >
-        <div id="left" className="w-1/2 h-full relative pt-[500px] pl-[40px]">
-          <div id="textContainer" className="absolute text-lg font-medium lg:w-[500px] xl:w-[650px] pl-[10px] top-0 left-0 flex-col h-[600px] flex justify-center items-center">
+    <main id="eventWrapper" className="mt-[100px] w-full h-full max-sm:mt-[25rem]" ref={eventContainer} >
+      <div id="eventContainer" className="w-full relative h-[900vh] overflow-hidden mt-10 flex max-sm:flex-col" >
+        <div id="left" className="max-sm:absolute z-10 w-1/2 h-full max-sm:w-full relative pt-[500px] pl-[40px]">
+          <div id="textContainer" className="absolute text-lg max-sm:w-full font-medium w-[650px] pl-[10px] top-0 left-0 flex-col h-[600px] flex justify-center items-center">
           {/* Paragraphs Here... */}
 
           {/* #1 */}
@@ -234,14 +234,14 @@ const Event = () => {
         </div>
         <div
           id="right"
-          className="w-1/2 h-full relative"
+          className="w-1/2 h-full relative max-sm:w-full max-sm:absolute"
         >
           
           {/* 3D Trophy */}
-          <div id="trophyContainer" className="relative xl:scale-1 lg:scale-90 top-0 right-[-50px] lg:right-[-40px] w-full h-[600px]" >
+          <div id="trophyContainer" className=" max-sm:hidden relative xl:scale-1 lg:scale-90 top-0 right-[-50px] lg:right-[-40px] w-full h-[600px]" >
             <Spline scene="https://prod.spline.design/5vG7OCMJUKlG9K0H/scene.splinecode" ></Spline>
           </div>
-          <div id="eventImageContainer" className="absolute xl:scale-1 lg:scale-90 w-full top-0 left-0 flex-col h-[600px] flex justify-center items-center">
+          <div id="eventImageContainer" className="absolute max-sm:scale-50 scale-1 w-full top-0 left-0 flex-col h-[600px] flex justify-center items-center">
           {/* PHotos Here... */}
           <Image id="img1" src={Photo1} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl left-[10px] top-[50px]" ></Image>
           <Image id="img2" src={Photo3} width={300} height={300} alt="..." className="rounded-sm scale-0 absolute shadow-xl right-[10px] top-[180px]" ></Image>

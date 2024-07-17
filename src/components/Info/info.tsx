@@ -52,6 +52,26 @@ export default function Info() {
             slider.scrollLeft = scrollLeft - walk
             console.log("move")
     }
+
+    const handleTouchStart = (e: any) => {
+        let slider: any = document.getElementById("slider");
+        setIsMouseDown(true);
+        setStartX(e.touches[0].pageX - slider.offsetLeft);
+        setScrollLeft(slider.scrollLeft);
+    }
+
+    const handleTouchEnd = () => {
+        setIsMouseDown(false);
+    }
+
+    const handleTouchMove = (e: any) => {
+        let slider: any = document.getElementById("slider");
+        if(!isMouseDown) return;
+        const x = e.touches[0].pageX - slider.offsetLeft;
+        let walk = x - startX;
+        slider.scrollLeft = scrollLeft - walk;
+    }
+
 return (
     <>
         <div 
@@ -60,21 +80,24 @@ return (
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        onTouchMove={handleTouchMove}
         className={`w-full relative z-10 overflow-hidden cursor-grab ${isMouseDown && "cursor-grabbing"} skew-y-3 p-5 h-[690px] mt-0`}>
         <div
         className=" gap-28 absolute w-fit h-fit flex mx-0" >
         {
             InfoData.map((item) => {
                 return (
-                    <div key={item.id} className="justify-between relative transition-all duration-500 hover:translate-y-2 w-[500px] h-[700px] bg-neutral-50 rounded-lg shadow-xl flex flex-col items-center gap-2 py-12 px-3 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 overflow-hidden before:h-[5px] before:bg-gray-500">
+                    <div key={item.id} className="justify-between relative transition-all duration-500 hover:translate-y-2 w-[500px] max-sm:w-[300px] max-sm:h-[500px] h-[700px] bg-neutral-50 rounded-lg shadow-xl flex flex-col items-center gap-2 py-12 px-3 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 overflow-hidden before:h-[5px] before:bg-gray-500">
                     <div>
                     <div className=" h-32 w-32 rounded-full overflow-hidden" >
                                 <Image src={item.link} width={2000} height={2000} className="h-full w-full object-cover object-center" alt="..." ></Image>
-                            </div>
+                    </div>
                     <h1 className="mt-3 font-bold text-lg text-center" >{item.name}</h1>
                     </div>
                     <div className="flex flex-col justify-cente items-center w-full h-fit" >
-                    <p className="text-center text-sm leading-6" >{item.about}</p>
+                    <p className="text-center text-sm leading-6 bg-red-500 max-sm:h-48 max-sm:overflow-hidden" >{item.about}</p>
                     </div>
                     <div className="flex w-full justify-evenly " >
                         <div className="h-10 w-10 rounded-full cursor-pointer ">
