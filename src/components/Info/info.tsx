@@ -97,7 +97,7 @@ return (
                     <h1 className="mt-3 font-bold text-lg text-center" >{item.name}</h1>
                     </div>
                     <div className="flex flex-col justify-cente items-center w-full h-fit" >
-                    <p className="text-center text-sm leading-6 bg-red-500 max-sm:h-48 max-sm:overflow-hidden" >{item.about}</p>
+                    <p className="text-center text-sm leading-6 max-sm:h-48 max-sm:overflow-hidden" >{item.about}</p>
                     </div>
                     <div className="flex w-full justify-evenly " >
                         <div className="h-10 w-10 rounded-full cursor-pointer ">
