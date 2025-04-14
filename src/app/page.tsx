@@ -164,45 +164,45 @@ export default function Home() {
 
       {/* Home */}
       <div className="relative w-full" >
-      <span id="homeSpan" className="absolute px-10 bottom-[150px] left-1/2 -translate-x-1/2 z-20 py-3 rounded-full tracking-widest border-[3px] h-fit w-fit text-[#F6F6F6] text-xl font-bold border-[#F6F6F6] bg-transparent " >HOME</span>
-      <div id="arr1" className=" scale-y-0 h-[180px] max-sm:hidden origin-bottom w-[3px] bg-[#008DDA] rotate-180 bottom-[150px] left-1/2 -translate-x-1/2 absolute z-10 " ></div>
-      <section id="homePage" className="h-[110vh] translate-y-[-65px] w-full overflow-hidden z-10 skew-y-3 origin-top-right">
+      <span id="homeSpan" className="absolute px-6 sm:px-10 bottom-[100px] sm:bottom-[150px] left-1/2 -translate-x-1/2 z-20 py-2 sm:py-3 rounded-full tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#F6F6F6] text-lg sm:text-xl font-bold border-[#F6F6F6] bg-transparent" >HOME</span>
+      <div id="arr1" className="scale-y-0 h-[120px] sm:h-[180px] max-sm:hidden origin-bottom w-[3px] bg-[#008DDA] rotate-180 bottom-[100px] sm:bottom-[150px] left-1/2 -translate-x-1/2 absolute z-10" ></div>
+      <section id="homePage" className="h-[90vh] sm:h-[110vh] translate-y-[-45px] sm:translate-y-[-65px] w-full overflow-hidden z-10 skew-y-3 origin-top-right">
         <HomePage></HomePage>
       </section>
       </div>
 
         {/* ABOUT */}
-      <div id="aboutPage" className="h-[190vh] w-full relative" >
-      <span id="aboutSpan" className="absolute left-1/2 -translate-x-1/2 top-[10px] px-10 z-20 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold border-[#1E1E1E] bg-[#F6F6F6] " >ABOUT</span>
+      <div id="aboutPage" className="h-[150vh] sm:h-[190vh] w-full relative" >
+      <span id="aboutSpan" className="absolute left-1/2 -translate-x-1/2 top-[10px] px-6 sm:px-10 z-20 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-lg sm:text-xl font-bold border-[#1E1E1E] bg-[#F6F6F6]" >ABOUT</span>
         <About/>
       </div>
 
       {/* Members */}
       <div className="relative h-fit w-full" >
-      <span id="memberSpan" className="absolute max-sm:tracking-normal max-sm:whitespace-nowrap max-sm:text-center max-sm:px-7 top-[-150px] left-1/2 -translate-x-1/2 px-10 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >TEAM MEMBERS</span>
+      <span id="memberSpan" className="absolute max-sm:tracking-normal max-sm:whitespace-nowrap max-sm:text-center max-sm:px-4 sm:px-7 top-[-100px] sm:top-[-150px] left-1/2 -translate-x-1/2 px-6 sm:px-10 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-lg sm:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >TEAM MEMBERS</span>
       <div className="h-fit w-full origin-top-right skew-y-3 overflow-hidden" >
       <Member></Member>
       </div>
       </div>
 
       {/* Event */}
-      <div id="eventPage" className=" relative" >
-      <span id="eventSpan" className="absolute px-10 top-[-300px] left-1/2 -translate-x-1/2 py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >EVENTS</span>
+      <div id="eventPage" className="relative" >
+      <span id="eventSpan" className="absolute px-6 sm:px-10 top-[-200px] sm:top-[-300px] left-1/2 -translate-x-1/2 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-lg sm:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >EVENTS</span>
       {/* Basketball Icon */}
-      <div className="absolute top-[-100px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
-      <Image id="basketballDiv" className="z-10 border-[3px] border-[#1E1E1E] p-3" src={Basketball} alt="..." width={100} height={100} ></Image>
+      <div className="absolute top-[-70px] sm:top-[-100px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
+      <Image id="basketballDiv" className="z-10 border-[2px] sm:border-[3px] border-[#1E1E1E] p-2 sm:p-3" src={Basketball} alt="..." width={80} height={80} ></Image>
       </div>
       {/* Volleyball Icon */}
       <div className="absolute top-[4000px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
-      <Image id="volleyballDiv" className="z-10 border-[3px] border-[#1E1E1E] p-3" src={Volleyball} alt="..." width={100} height={100} ></Image>
+      <Image id="volleyballDiv" className="z-10 border-[2px] sm:border-[3px] border-[#1E1E1E] p-2 sm:p-3" src={Volleyball} alt="..." width={80} height={80} ></Image>
       </div>
       <Event></Event>
       </div>
       
       {/* Info */}
       <div className="relative" >
-      <span id="infoSpan" className="absolute px-10 left-1/2 -translate-x-1/2 top-[-150px] py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >PERSONAL INFORMATION</span>
-      <div id="infoPage" className="h-[130vh] max-sm:h-[80vh] w-full relative mt-[350px] z-40 overflow-hidden -skew-y-3 grid place-items-center bg-[#008DDA] " >
+      <span id="infoSpan" className="absolute px-6 sm:px-10 left-1/2 -translate-x-1/2 top-[-100px] sm:top-[-150px] py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-lg sm:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >PERSONAL INFORMATION</span>
+      <div id="infoPage" className="h-[100vh] sm:h-[130vh] w-full relative mt-[200px] sm:mt-[350px] z-40 overflow-hidden -skew-y-3 grid place-items-center bg-[#008DDA]" >
         <Image className="absolute max-sm:hidden h-auto w-auto top-[-70px] left-0" src={Camera} alt="..." width={600} height={600} ></Image>
         <Image className="absolute max-sm:hidden h-auto w-auto top-[-140px] right-0" src={Facebook} alt="..." width={600} height={600} ></Image>
         <Info/>
@@ -210,8 +210,8 @@ export default function Home() {
       </div>
       
       {/* Feedback */}
-      <div id="feedbackPage" className="w-full h-[100vh] max-sm:mt-[13rem]" >
-      <span id="feedSpan" className="absolute px-10 left-1/2 -translate-x-1/2 translate-y-[70px] max-sm:translate-y-[-120px] py-3 tracking-widest border-[3px] h-fit w-fit text-[#1E1E1E] rounded-full text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6] " >FEEDBACK</span>
+      <div id="feedbackPage" className="w-full h-[90vh] sm:h-[100vh] max-sm:mt-[8rem] sm:mt-[13rem]" >
+      <span id="feedSpan" className="absolute px-6 sm:px-10 left-1/2 -translate-x-1/2 translate-y-[50px] sm:translate-y-[70px] max-sm:translate-y-[-100px] py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] rounded-full text-lg sm:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >FEEDBACK</span>
         <Feedback></Feedback>
       </div>
 
