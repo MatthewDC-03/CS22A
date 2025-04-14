@@ -152,71 +152,71 @@ export default function Home() {
     <>
     {/* Loading Page */}
     <Loading />
-    <main className="w-full h-full relative" ref={container}  >
+    <main className="w-full h-full relative p-0 m-0 max-sm:pt-0" ref={container}  >
       {/* Flow / Arrow Guide Pinned */}
 
       <div id="arrPinned" className="fixed max-sm:hidden h-[90vh] left-1/2 -translate-x-1/2 w-[3px] bg-[#008DDA]" ></div>
       
         {/* Navbar */}
-      <header className={`navbar w-full ${scrolled ? "bg-[#1E1E1E] h-12" : "bg-[black]/20 h-16 backdrop-blur-sm"} sticky top-0 left-0 z-50`}> 
+      <header className={`navbar w-full ${scrolled ? "bg-[#1E1E1E] h-12" : "bg-[black]/20 h-16 backdrop-blur-sm"} fixed top-0 left-0 z-50 max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:right-0`}> 
         <Navbar isBlog={true} ></Navbar>
       </header>
 
       {/* Home */}
-      <div className="relative w-full" >
-      <span id="homeSpan" className="absolute px-6 sm:px-10 bottom-[100px] sm:bottom-[150px] left-1/2 -translate-x-1/2 z-20 py-2 sm:py-3 rounded-full tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#F6F6F6] text-lg sm:text-xl font-bold border-[#F6F6F6] bg-transparent" >HOME</span>
-      <div id="arr1" className="scale-y-0 h-[120px] sm:h-[180px] max-sm:hidden origin-bottom w-[3px] bg-[#008DDA] rotate-180 bottom-[100px] sm:bottom-[150px] left-1/2 -translate-x-1/2 absolute z-10" ></div>
-      <section id="homePage" className="h-[90vh] sm:h-[110vh] translate-y-[-45px] sm:translate-y-[-65px] w-full overflow-hidden z-10 skew-y-3 origin-top-right">
+      <div className="relative w-full p-0 m-0 max-sm:mt-0" >
+      <span id="homeSpan" className="absolute px-4 sm:px-6 md:px-10 bottom-[80px] sm:bottom-[100px] md:bottom-[150px] left-1/2 -translate-x-1/2 z-20 py-2 sm:py-3 rounded-full tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#F6F6F6] text-base sm:text-lg md:text-xl font-bold border-[#F6F6F6] bg-transparent" >HOME</span>
+      <div id="arr1" className="scale-y-0 h-[100px] sm:h-[120px] md:h-[180px] max-sm:hidden origin-bottom w-[3px] bg-[#008DDA] rotate-180 bottom-[80px] sm:bottom-[100px] md:bottom-[150px] left-1/2 -translate-x-1/2 absolute z-10" ></div>
+      <section id="homePage" className="h-[80vh] sm:h-[90vh] md:h-[110vh] translate-y-[-35px] sm:translate-y-[-45px] md:translate-y-[-65px] w-full overflow-hidden z-10 skew-y-3 max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 origin-top-right p-0 m-0 max-sm:translate-y-0">
         <HomePage></HomePage>
       </section>
       </div>
 
         {/* ABOUT */}
-      <div id="aboutPage" className="h-[150vh] sm:h-[190vh] w-full relative" >
-      <span id="aboutSpan" className="absolute left-1/2 -translate-x-1/2 top-[10px] px-6 sm:px-10 z-20 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-lg sm:text-xl font-bold border-[#1E1E1E] bg-[#F6F6F6]" >ABOUT</span>
+      <div id="aboutPage" className="h-[130vh] sm:h-[150vh] md:h-[190vh] w-full relative p-0 m-0" >
+      <span id="aboutSpan" className="absolute left-1/2 -translate-x-1/2 top-[10px] px-4 sm:px-6 md:px-10 z-20 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold border-[#1E1E1E] bg-[#F6F6F6]" >ABOUT</span>
         <About/>
       </div>
 
       {/* Members */}
-      <div className="relative h-fit w-full" >
-      <span id="memberSpan" className="absolute max-sm:tracking-normal max-sm:whitespace-nowrap max-sm:text-center max-sm:px-4 sm:px-7 top-[-100px] sm:top-[-150px] left-1/2 -translate-x-1/2 px-6 sm:px-10 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-lg sm:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >TEAM MEMBERS</span>
-      <div className="h-fit w-full origin-top-right skew-y-3 overflow-hidden" >
+      <div className="relative h-fit w-full p-0 m-0" >
+      <span id="memberSpan" className="absolute max-sm:tracking-normal max-sm:whitespace-nowrap max-sm:text-center max-sm:px-4 sm:px-6 md:px-7 top-[-80px] sm:top-[-100px] md:top-[-150px] left-1/2 -translate-x-1/2 px-4 sm:px-6 md:px-10 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >TEAM MEMBERS</span>
+      <div className="h-fit w-full origin-top-right skew-y-3 max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 overflow-hidden p-0 m-0" >
       <Member></Member>
       </div>
       </div>
 
       {/* Event */}
-      <div id="eventPage" className="relative" >
-      <span id="eventSpan" className="absolute px-6 sm:px-10 top-[-200px] sm:top-[-300px] left-1/2 -translate-x-1/2 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-lg sm:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >EVENTS</span>
+      <div id="eventPage" className="relative p-0 m-0" >
+      <span id="eventSpan" className="absolute px-4 sm:px-6 md:px-10 top-[-150px] sm:top-[-200px] md:top-[-300px] left-1/2 -translate-x-1/2 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >EVENTS</span>
       {/* Basketball Icon */}
-      <div className="absolute top-[-70px] sm:top-[-100px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
-      <Image id="basketballDiv" className="z-10 border-[2px] sm:border-[3px] border-[#1E1E1E] p-2 sm:p-3" src={Basketball} alt="..." width={80} height={80} ></Image>
+      <div className="absolute top-[-50px] sm:top-[-70px] md:top-[-100px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
+      <Image id="basketballDiv" className="z-10 border-[2px] sm:border-[3px] border-[#1E1E1E] p-2 sm:p-3 w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]" src={Basketball} alt="..." width={60} height={60}></Image>
       </div>
       {/* Volleyball Icon */}
       <div className="absolute top-[4000px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
-      <Image id="volleyballDiv" className="z-10 border-[2px] sm:border-[3px] border-[#1E1E1E] p-2 sm:p-3" src={Volleyball} alt="..." width={80} height={80} ></Image>
+      <Image id="volleyballDiv" className="z-10 border-[2px] sm:border-[3px] border-[#1E1E1E] p-2 sm:p-3 w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]" src={Volleyball} alt="..." width={60} height={60}></Image>
       </div>
       <Event></Event>
       </div>
       
       {/* Info */}
-      <div className="relative" >
-      <span id="infoSpan" className="absolute px-6 sm:px-10 left-1/2 -translate-x-1/2 top-[-100px] sm:top-[-150px] py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-lg sm:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >PERSONAL INFORMATION</span>
-      <div id="infoPage" className="h-[100vh] sm:h-[130vh] w-full relative mt-[200px] sm:mt-[350px] z-40 overflow-hidden -skew-y-3 grid place-items-center bg-[#008DDA]" >
-        <Image className="absolute max-sm:hidden h-auto w-auto top-[-70px] left-0" src={Camera} alt="..." width={600} height={600} ></Image>
-        <Image className="absolute max-sm:hidden h-auto w-auto top-[-140px] right-0" src={Facebook} alt="..." width={600} height={600} ></Image>
+      <div className="relative p-0 m-0" >
+      <span id="infoSpan" className="absolute px-4 sm:px-6 md:px-10 left-1/2 -translate-x-1/2 top-[-80px] sm:top-[-100px] md:top-[-150px] py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >PERSONAL INFORMATION</span>
+      <div id="infoPage" className="h-[90vh] sm:h-[100vh] md:h-[130vh] w-full relative mt-[150px] sm:mt-[200px] md:mt-[350px] z-40 overflow-hidden -skew-y-3 max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 grid place-items-center bg-[#008DDA] p-0 m-0" >
+        <Image className="absolute max-sm:hidden h-auto w-auto top-[-70px] left-0 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px]" src={Camera} alt="..." width={400} height={400}></Image>
+        <Image className="absolute max-sm:hidden h-auto w-auto top-[-140px] right-0 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px]" src={Facebook} alt="..." width={400} height={400}></Image>
         <Info/>
       </div>
       </div>
       
       {/* Feedback */}
-      <div id="feedbackPage" className="w-full h-[90vh] sm:h-[100vh] max-sm:mt-[8rem] sm:mt-[13rem]" >
-      <span id="feedSpan" className="absolute px-6 sm:px-10 left-1/2 -translate-x-1/2 translate-y-[50px] sm:translate-y-[70px] max-sm:translate-y-[-100px] py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] rounded-full text-lg sm:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >FEEDBACK</span>
+      <div id="feedbackPage" className="w-full h-[80vh] sm:h-[90vh] md:h-[100vh] max-sm:mt-[6rem] sm:mt-[8rem] md:mt-[13rem] p-0 m-0" >
+      <span id="feedSpan" className="absolute px-4 sm:px-6 md:px-10 left-1/2 -translate-x-1/2 translate-y-[30px] sm:translate-y-[50px] md:translate-y-[70px] max-sm:translate-y-[-80px] py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] rounded-full text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >FEEDBACK</span>
         <Feedback></Feedback>
       </div>
 
       {/* Footer */}
-      <div className="z-50" >
+      <div className="z-50 p-0 m-0" >
       <Footer showNewsletter={true} />
       </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>

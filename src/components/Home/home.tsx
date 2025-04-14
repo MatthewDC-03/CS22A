@@ -39,6 +39,7 @@ export default function Home() {
                 runOut = setTimeout(()=>{
                     setClick(true)
                     setBar(false)
+                    setNext(false)
                 },runTime)
             }
     }
@@ -61,20 +62,20 @@ export default function Home() {
     return (
     /* Container */
     <div
-        className={`h-[100vh] sm:h-[120vh] w-full skew-y-[-3deg] flex relative overflow-hidden 
+        className={`h-[100vh] sm:h-[120vh] w-full skew-y-[-3deg] max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 flex relative overflow-hidden p-0 m-0 max-sm:h-[100vh] max-sm:overflow-hidden
         ${isNext ? nextStyle : ''}
         `}
     >
         
       {/* SLIDER */}
-        <div id="list" className="h-full w-full">
+        <div id="list" className="h-full w-full p-0 m-0 max-sm:h-[100vh]">
         {
         SliderData.map(item =>{
         return (
-        <div id="item" key={item.id} className="w-full h-full absolute item-2">
-        <Image src={item.image} alt="..." width={1000} height={1000} className='w-full h-full skew-y-[0deg] brightness-50 object-cover' ></Image>
+        <div id="item" key={item.id} className="w-full h-full absolute item-2 p-0 m-0 max-sm:h-[100vh]">
+        <Image src={item.image} alt="..." width={1000} height={1000} className='w-full h-full skew-y-[0deg] max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 brightness-50 object-cover max-sm:h-[100vh]' ></Image>
           {/* Content -- 1 */}
-            <div className="absolute top-1/4 max-sm:top-1/2 max-sm:-translate-y-1/2 left-[5%] max-sm:left-[10%] max-sm:w-full max-sm:px-6 w-2/4 flex flex-col gap-3 sm:gap-5">
+            <div className="absolute top-1/4 max-sm:top-1/2 max-sm:-translate-y-1/2 left-[5%] max-sm:left-0 max-sm:right-0 max-sm:mx-auto max-sm:px-6 w-2/4 max-sm:w-full flex flex-col gap-3 sm:gap-5">
             <h1
                 className="text-[#F6F6F6] text-3xl sm:text-5xl max-sm:text-center font-semibold w-fit max-sm:w-full"
                 style={{ animationDelay: "1.2s" }}
@@ -82,7 +83,7 @@ export default function Home() {
                 {item.heading}
             </h1>
             <p
-                className="text-[#F6F6F6] font-thin text-xs sm:text-sm max-sm:hidden w-fit antialiased leading-6 sm:leading-7"
+                className="text-[#F6F6F6] font-thin text-xs sm:text-sm max-sm:text-center max-sm:px-4 max-sm:mx-auto w-fit max-sm:w-full antialiased leading-6 sm:leading-7"
                 style={{ animationDelay: "1.4s" }}
             >
                 {item.paragraph}
@@ -103,7 +104,7 @@ export default function Home() {
         </div>
 
         {/* Thumbnail */}
-        <div className={`top-[65%] max-sm:hidden max-md:hidden max-lg:hidden -right-40 max-xl:-right-[320px]  absolute flex flex-col gap-3 sm:gap-5`}>
+        <div className={`top-[65%] max-sm:hidden max-md:hidden max-lg:hidden -right-40 max-xl:-right-[320px] absolute flex flex-col gap-3 sm:gap-5`}>
         <div
             id="thumpnailList"
             className={`w-fit h-fit flex gap-4 sm:gap-7 z-10 ${isNext && 'translate-x-[150px] animate-transformThumbnail'}`}
@@ -147,7 +148,7 @@ export default function Home() {
         </div>
 
         {/* Number List */}
-        <div className="absolute top-[35%] z-10 right-[4%] text-2xl sm:text-3xl font-thin" >
+        <div className="absolute top-[35%] z-10 right-[4%] text-2xl sm:text-3xl font-thin max-sm:right-0 max-sm:left-0 max-sm:mx-auto max-sm:text-center" >
         <div id="numList" className="relative max-sm:hidden
                                     [&>*:nth-child(2)]:relative [&>*:nth-child(2)]:bottom-[-20px] sm:[&>*:nth-child(2)]:bottom-[-24px] [&>*:nth-child(2)]:left-[5px] [&>*:nth-child(2)]:opacity-0 [&>*:nth-child(2)]:animate-numTranslate [&>*:nth-child(2)]:text-sm sm:[&>*:nth-child(2)]:text-base [&>*:nth-child(2)]:text-black/45 [&>*:nth-child(2)]:font-bold
                                     [&>*:nth-child(1)]:text-[#F6F6F6] [&>*:nth-child(1)]:left-0 [&>*:nth-child(1)]:bottom-[-20px] sm:[&>*:nth-child(1)]:bottom-[-24px] [&>*:nth-child(1)]:text-[18px] sm:[&>*:nth-child(1)]:text-[22px] [&>*:nth-child(1)]:relative [&>*:nth-child(1)]:opacity-0 [&>*:nth-child(1)]:animate-numBlackTranslate
@@ -156,7 +157,7 @@ export default function Home() {
             <h1 className="tracking-widest">01</h1>
             <h1 className="tracking-widest">02</h1>
         </div>
-        <div className="absolute w-8 sm:w-10 rounded-full h-[2px] sm:h-[2.5px] top-1/2 left-6 sm:left-8 bg-[#F6F6F6]/70" ></div>
+        <div className="absolute w-8 sm:w-10 rounded-full h-[2px] sm:h-[2.5px] top-1/2 left-6 sm:left-8 bg-[#F6F6F6]/70 max-sm:left-1/2 max-sm:-translate-x-1/2" ></div>
         </div>
 
         {/* Progress Bar */}
