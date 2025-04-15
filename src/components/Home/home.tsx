@@ -26,6 +26,7 @@ export default function Home() {
     const [isClick,setClick] = useState(true)
     const [isNext,setNext] = useState(true)
     const [isBar,setBar] = useState(false)
+    const [currentSlideIndex, setCurrentSlideIndex] = useState(0)
 
     function nextBtn() {
             if(isClick) {
@@ -53,6 +54,8 @@ export default function Home() {
         let list = document.querySelector("#list");
 
         if (type === "next") {
+            setCurrentSlideIndex((prevIndex) => (prevIndex + 1) % SliderData.length);
+            
             list?.appendChild(slideItems[0]);
             thumpnailList?.appendChild(thumpnailItems[0]);
             numList?.appendChild(nums[0])
@@ -70,9 +73,9 @@ export default function Home() {
       {/* SLIDER */}
         <div id="list" className="h-full w-full p-0 m-0 max-sm:h-[100vh]">
         {
-        SliderData.map(item =>{
+        SliderData.map((item, index) =>{
         return (
-        <div id="item" key={item.id} className="w-full h-full absolute item-2 p-0 m-0 max-sm:h-[100vh]">
+        <div id="item" key={item.id} className={`w-full h-full absolute item-2 p-0 m-0 max-sm:h-[100vh] ${index === currentSlideIndex ? 'z-10' : 'z-0'}`}>
         <Image src={item.image} alt="..." width={1000} height={1000} className='w-full h-full skew-y-[0deg] max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 brightness-50 object-cover max-sm:h-[100vh]' ></Image>
           {/* Content -- 1 */}
             <div className="absolute top-1/4 max-sm:top-1/2 max-sm:-translate-y-1/2 left-[5%] max-sm:left-0 max-sm:right-0 max-sm:mx-auto max-sm:px-6 w-2/4 max-sm:w-full flex flex-col gap-3 sm:gap-5">
@@ -110,12 +113,33 @@ export default function Home() {
             className={`w-fit h-fit flex gap-4 sm:gap-7 z-10 ${isNext && 'translate-x-[150px] animate-transformThumbnail'}`}
         >
             {
-                SliderData.map(item => {
-                    return(
-                        <div id="thumpnailItem" key={item.id} className="h-24 sm:h-32 w-40 sm:w-52">
-                        <Image id='thumpnailItem' src={item.image} width={1000} height={1000} alt='...' className='brightness-75 rounded-md h-full w-full object-cover shadow-xl sm:shadow-2xl' ></Image>
-                        </div>
-                    )
+                SliderData.map((item, index) => {
+                    // Show the next image and the two images after it
+                    const nextIndex = (currentSlideIndex + 1) % SliderData.length;
+                    const secondIndex = (currentSlideIndex + 2) % SliderData.length;
+                    const thirdIndex = (currentSlideIndex + 3) % SliderData.length;
+                    
+                    if (index === nextIndex || index === secondIndex || index === thirdIndex) {
+                        return(
+                            <div 
+                                id="thumpnailItem" 
+                                key={item.id} 
+                                className={`h-24 sm:h-32 w-40 sm:w-52 transition-all duration-300 ${
+                                    index === currentSlideIndex ? 'opacity-100' : 'opacity-50'
+                                }`}
+                            >
+                                <Image 
+                                    id='thumpnailItem' 
+                                    src={item.image} 
+                                    width={1000} 
+                                    height={1000} 
+                                    alt='...' 
+                                    className='brightness-75 rounded-md h-full w-full object-cover shadow-xl sm:shadow-2xl' 
+                                />
+                            </div>
+                        )
+                    }
+                    return null;
                 })
             }
         </div>
@@ -161,7 +185,7 @@ export default function Home() {
         </div>
 
         {/* Progress Bar */}
-        <div className={`absolute left-0 h-0.5 sm:h-1 w-0 bg-white translate-y-[103px] z-50 ${isBar && 'w-full animate-timeRunning'} `} ></div>
+        <div className={`fixed left-0 h-2 sm:h-3 w-0 bg-white bottom-0 z-[999] ${isBar ? 'w-full transition-all duration-[3000ms] ease-linear' : ''}`}></div>
     </div>
     );
 }
