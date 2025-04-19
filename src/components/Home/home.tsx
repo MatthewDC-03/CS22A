@@ -80,19 +80,19 @@ export default function Home() {
           {/* Content -- 1 */}
             <div className="absolute top-1/4 max-sm:top-1/2 max-sm:-translate-y-1/2 left-[5%] max-sm:left-0 max-sm:right-0 max-sm:mx-auto max-sm:px-6 w-2/4 max-sm:w-full flex flex-col gap-3 sm:gap-5">
             <h1
-                className="text-[#F6F6F6] text-3xl sm:text-5xl max-sm:text-center font-semibold w-fit max-sm:w-full"
+                className="text-[#F6F6F6] max-sm:text-md text-3xl sm:text-5xl lg:text-4xl max-sm:text-center font-semibold w-fit max-sm:w-full"
                 style={{ animationDelay: "1.2s" }}
             >
                 {item.heading}
             </h1>
             <p
-                className="text-[#F6F6F6] font-thin text-xs sm:text-sm max-sm:text-center max-sm:px-4 max-sm:mx-auto w-fit max-sm:w-full antialiased leading-6 sm:leading-7"
+                className="text-[#F6F6F6] font-thin text-xs sm:text-sm lg:text-xs max-sm:text-center max-sm:px-4 max-sm:mx-auto w-fit max-sm:w-full antialiased leading-5 sm:leading-6 max-sm:text-[10px] max-sm:leading-4"
                 style={{ animationDelay: "1.4s" }}
             >
                 {item.paragraph}
             </p>
             <button
-                className="bg-[#F6F6F6] border-0 max-sm:hidden outline-none relative rounded-full text-base sm:text-lg h-10 sm:h-11 overflow-hidden w-28 sm:w-32 before:content[''] before:w-0 before:h-full before:ease-out before:bg-[#008DDA] before:z-0 before:absolute before:inset-0 before:rounded-full hover:before:w-full before:duration-500 before:transition-[width,left] hover:text-[#F6F6F6]"
+                className="bg-[#F6F6F6] border-0 outline-none relative rounded-full text-base sm:text-lg h-10 sm:h-11 overflow-hidden w-28 sm:w-32 before:content[''] before:w-0 before:h-full before:ease-out before:bg-[#008DDA] before:z-0 before:absolute before:inset-0 before:rounded-full hover:before:w-full before:duration-500 before:transition-[width,left] hover:text-[#F6F6F6] max-sm:mx-auto max-sm:mt-4"
                 style={{ animationDelay: "1.6s" }}
             >
                 <Link href={item.link} className="absolute left-[50%] w-full top-[50%] translate-x-[-50%] translate-y-[-50%]">
@@ -107,7 +107,7 @@ export default function Home() {
         </div>
 
         {/* Thumbnail */}
-        <div className={`top-[65%] max-sm:hidden max-md:hidden max-lg:hidden -right-40 max-xl:-right-[320px] absolute flex flex-col gap-3 sm:gap-5`}>
+        <div className={`top-[55%] max-sm:hidden max-md:hidden max-lg:hidden -right-40 max-xl:-right-[320px] absolute flex flex-col gap-3 sm:gap-5`}>
         <div
             id="thumpnailList"
             className={`w-fit h-fit flex gap-4 sm:gap-7 z-10 ${isNext && 'translate-x-[150px] animate-transformThumbnail'}`}
@@ -181,11 +181,11 @@ export default function Home() {
             <h1 className="tracking-widest">01</h1>
             <h1 className="tracking-widest">02</h1>
         </div>
-        <div className="absolute w-8 sm:w-10 rounded-full h-[2px] sm:h-[2.5px] top-1/2 left-6 sm:left-8 bg-[#F6F6F6]/70 max-sm:left-1/2 max-sm:-translate-x-1/2" ></div>
+        <div className="absolute max-sm:hidden w-8 sm:w-10 rounded-full h-[2px] sm:h-[2.5px] top-1/2 left-6 sm:left-8 bg-[#F6F6F6]/70 max-sm:left-1/2 max-sm:-translate-x-1/2" ></div>
         </div>
 
         {/* Progress Bar */}
-        <div className={`fixed left-0 h-2 sm:h-3 w-0 bg-white bottom-0 z-[999] ${isBar ? 'w-full transition-all duration-[3000ms] ease-linear' : ''}`}></div>
+        <div className={`fixed left-0 h-2 max-sm:hidden max-md:hidden sm:h-3 w-0 bg-white bottom-0 z-[999] ${isBar ? 'w-full transition-all duration-[3000ms] ease-linear' : ''}`}></div>
     </div>
     );
 }
