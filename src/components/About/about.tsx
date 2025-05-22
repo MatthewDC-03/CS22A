@@ -115,22 +115,49 @@ export default function About(){
     }, []);
 
     return(
-        <div className="w-full h-full flex flex-col md:flex-row overflow-x-hidden" ref={container} >
+        <div className="w-full h-full flex flex-row overflow-x-hidden overflow-y-hidden
+                        /* TABLET/IPAD AND BELOW RESPOSNIVE  */  max-lg:flex-col
+        " ref={container} >
             {/* About the Website */}
-            <div className="w-full md:w-1/2 h-auto md:h-1/2 flex relative justify-center md:justify-start translate-y-0 py-10 md:py-0" >
-                <div className="w-full max-w-2xl md:max-w-none h-full py-10 md:py-[150px] px-5 md:px-10 flex flex-col gap-5 items-center md:items-start" >
-                    <span id="websiteSpan" className="px-7 md:px-10 py-3 z-10 tracking-widest border-[2px] md:border-[3px] h-fit w-fit text-center md:text-left text-[#1E1E1E] text-lg md:text-xl font-bold border-[#1E1E1E] bg-[#F6F6F6] transition-all duration-300 max-sm:text-[#008DDA] max-sm:border-[#008DDA] max-sm:shadow-[0_0_15px_1px_#008DDA]" >About the Website</span>
-                    <p id="websiteParagraph" className="text-[#1E1E1E] text-base md:text-xl opacity-0 translate-x-[-100%] md:translate-x-[-100%] font-lg leading-relaxed md:leading-[35px] text-center md:text-left md:pr-14 max-sm:opacity-100 max-sm:translate-x-0" >
+            <div className="w-1/2 flex relative justify-center translate-y-0 py-10
+                            /* TABLET/IPAD AND BELOW RESPONSIVE */ max-lg:w-full max-lg:h-fit max-lg:justify-center max-lg:items-center max-lg:pt-10 max-lg:py-0
+            " >
+                <div className="w-full h-full py-10 px-5  flex flex-col gap-5 items-center
+                                /* TABLET/IPAD AND BELOW RESPONSIVE */ max-lg:py-0
+                " >
+                    <span id="websiteSpan" className="px-7 py-3 z-10 tracking-widest border-[2px] h-fit w-fit text-center text-[#1E1E1E] text-lg font-bold border-[#1E1E1E] bg-[#F6F6F6] transition-all duration-300 
+                                                      /* SMALL MOBILE RESPONSIVE  */ max-[320px]:text-sm
+                                                      /* MOBILE RESPONSIVE */ max-sm:text-base max-sm:text-[#008DDA] max-sm:border-[#008DDA] max-sm:shadow-[0_0_15px_1px_#008DDA]
+                    " >About the Website</span>
+                    <p id="websiteParagraph" className="text-[#1E1E1E] text-base opacity-0 translate-x-[-100%] font-lg leading-relaxed text-justify
+                                                        /* SMALL MOBILE RESPONSIVE  */ max-[320px]:text-sm
+                                                        /* MOBILE RESPONSIVE */ max-sm:text-base max-sm:leading-relaxed
+                                                        /* LAPTOP RESPONSIVE */  max-xl:text-lg
+                                                        /* DESKTOP RESPONSIVE */ max-2xl:text-xl max-2xl:px-5
+                    " >
                     Welcome to our website's Web Blog section! Here, you'll find a dynamic collection of articles, updates, and resources that cater to our diverse community. Our blog covers a wide array of topics, including academic insights, student achievements, event highlights, and expert tips on various subjects. Whether you're looking to catch up on the latest school news, delve into educational trends, or explore inspiring stories from our community, our Web Blog is your go-to destination. Stay informed, engaged, and inspired with our regularly updated posts. Dive in and discover the vibrant life and happenings of our school through our blog!
                     </p>
                 </div>
             </div>
 
             {/* About CS22A */}
-            <div className="w-full md:w-1/2 h-auto md:h-1/2 flex relative justify-center md:justify-end translate-y-0 py-10 md:py-0" >
-                <div className="w-full max-w-2xl md:max-w-none h-full py-10 md:py-[150px] px-5 md:px-10 flex flex-col gap-5 items-center md:items-end" >
-                    <span id="cs22aSpan" className="px-7 md:px-10 py-3 tracking-widest border-[2px] md:border-[3px] h-fit w-fit text-center md:text-left bg-[#F6F6F6] text-[#1E1E1E] text-lg md:text-xl font-bold border-[#1E1E1E] z-10 transition-all duration-300 max-sm:text-[#008DDA] max-sm:border-[#008DDA] max-sm:shadow-[0_0_15px_1px_#008DDA]" >About CS22A</span>
-                    <p id="cs22Paragraph" className="font-lg text-base md:text-xl leading-relaxed md:leading-[35px] opacity-0 translate-x-[100%] md:translate-x-[200%] text-[#1E1E1E] text-center md:text-right md:pl-14 max-sm:text-sm max-sm:leading-6 max-sm:px-2 max-sm:opacity-100 max-sm:translate-x-0" >
+            <div className="w-1/2 flex relative justify-center translate-y-0 py-10
+                            /* TABLET/IPAD AND BELOW RESPONSIVE */ max-lg:w-full max-lg:h-fit max-lg:justify-center max-lg:items-center
+            " >
+                <div className="w-full h-full py-10 px-5 flex flex-col gap-5 items-center
+                                /* SMALL MOBILE RESPOSIVE */ max-[320px]:pt-5
+                                /* TABLET/IPAD AND BELOW RESPONSIVE */ max-lg:py-0
+                " >
+                    <span id="cs22aSpan" className="px-7 md:px-10 py-3 tracking-widest border-[2px] h-fit w-fit text-center bg-[#F6F6F6] text-[#1E1E1E] text-lg font-bold border-[#1E1E1E] z-10 transition-all duration-300 
+                                                    /* SMALL MOBILE RESPONSIVE  */ max-[320px]:text-sm
+                                                    /* MOBILE RESPONSIVE */ max-sm:text-base max-sm:text-[#008DDA] max-sm:border-[#008DDA] max-sm:shadow-[0_0_15px_1px_#008DDA]
+                    " >About CS22A</span>
+                    <p id="cs22Paragraph" className="font-lg text-base leading-relaxed opacity-0 translate-x-[100%] text-[#1E1E1E] text-justify
+                                                    /* SMALL MOBILE RESPONSIVE  */ max-[320px]:text-sm
+                                                    /* MOBILE RESPONSIVE */ max-sm:text-base max-sm:leading-relaxed
+                                                    /* LAPTOP RESPONSIVE */ max-xl:text-lg
+                                                    /* DESKTOP RESPONSIVE */ max-2xl:text-xl max-2xl:px-5
+                    " >
                     We're not just a group, we're a family - a community bound by humor, camaraderie, and an unquenchable zest for life. Whether we're embarking on wild adventures, sharing inside jokes, or simply enjoying each other's company.
                     </p>
                 </div>
