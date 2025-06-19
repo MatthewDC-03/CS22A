@@ -175,11 +175,15 @@ export default function Home() {
       <div id="eventPage" className="relative p-0 mt-[25rem]" >
       <span id="eventSpan" className="absolute px-4 sm:px-6 md:px-10 top-[-150px] sm:top-[-200px] md:top-[-300px] left-1/2 -translate-x-1/2 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >EVENTS</span>
       {/* Basketball Icon */}
-      <div className="absolute top-[-50px] sm:top-[-70px] md:top-[-100px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
+      <div className="absolute top-[-50px] sm:top-[-70px] md:top-[-100px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2
+                      /* MOBILE RESPONSIVE  */ max-sm:hidden
+      " >
       <Image id="basketballDiv" className="z-10 border-[2px] sm:border-[3px] border-[#1E1E1E] p-2 sm:p-3 w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]" src={Basketball} alt="..." width={60} height={60}></Image>
       </div>
       {/* Volleyball Icon */}
-      <div className="absolute top-[4000px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2" >
+      <div className="absolute top-[4000px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2
+                      /* MOBILE RESPONSIVE */ max-sm:hidden
+      " >
       <Image id="volleyballDiv" className="z-10 border-[2px] sm:border-[3px] border-[#1E1E1E] p-2 sm:p-3 w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]" src={Volleyball} alt="..." width={60} height={60}></Image>
       </div>
       <Event></Event>
