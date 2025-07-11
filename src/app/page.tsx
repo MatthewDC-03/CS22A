@@ -215,8 +215,8 @@ export default function Home() {
       </div>
       
       {/* Feedback */}
-      <div id="feedbackPage" className="w-full h-[80vh] sm:h-[90vh] md:h-[100vh] max-sm:mt-[6rem] sm:mt-[8rem] md:mt-[13rem] p-0 m-0" >
-      <span id="feedSpan" className="absolute px-4 sm:px-6 md:px-10 left-1/2 -translate-x-1/2 translate-y-[30px] sm:translate-y-[50px] md:translate-y-[70px] max-sm:translate-y-[-80px] py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] rounded-full text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >FEEDBACK</span>
+      <div id="feedbackPage" className="w-full h-fit p-0 m-0" >
+      <span id="feedSpan" className="absolute px-4 left-1/2 -translate-x-1/2 py-2 tracking-widest border-[2px] h-fit w-fit text-[#1E1E1E] rounded-full text-base font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >FEEDBACK</span>
         <Feedback></Feedback>
       </div>
 

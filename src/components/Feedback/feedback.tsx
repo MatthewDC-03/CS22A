@@ -104,16 +104,33 @@ const Feedback = ()=>{
   };
 
     return (
-        <form onSubmit={sendEmail} ref={form} className="w-full h-full flex justify-between items-center max-sm:flex-col"  >
+        <form onSubmit={sendEmail} ref={form} className="w-full h-full flex justify-between items-center
+                                                        /* << TABLET/IPAD RESPONSIVE */ max-lg:flex-col max-lg:pt-16 max-lg:gap-7
+                                                        /* << DESKTOP RESPONSIVE */ max-2xl:flex-rowmax-2xl:gap-12
+        "  >
             <div className={`${pop.pop == true ? "visible" : "hidden"} fixed py-4 px-10 left-1/2 -translate-x-1/2 top-1/2 -translate-y-[40vh] z-50 bg-[#1E1E1E] rounded-lg text-[#F6F6F6]`} >Thank you for giving us your feedback ✔</div>
-            <div className="xl:w-1/2 lg:w-1/2 h-full grid place-items-center">
-                <section className="px-10 lg:pl-[20px] flex flex-col gap-5 text-[#1E1E1E]" >
-                    <h1 className="text-5xl font-bold" >We Value Your Opinion!</h1>
-                    <p className=" text-xl leading-8 font-medium" >We appreciate you taking the time to visit our web blog! Your opinions and suggestions are invaluable to us as we strive to improve our content and user experience. Please share your thoughts on what you enjoyed, any areas for improvement, or any topics you'd like to see covered in the future. Thank you for helping us make our blog even better!</p>
+            <div className=" h-full grid place-items-center
+                            /* << TABLET/IPAD RESPONSIVE */ max-lg:w-full
+                            /* << DESKTOP RESPONSIVE */ max-2xl:w-1/2 
+            ">
+                <section className="px-10 flex flex-col gap-5 text-[#1E1E1E]
+                                    /* << TABLET/IPAD RESPONSIVE */ max-lg:px-5
+                " >
+                    <h1 className="text-5xl font-bold 
+                                    /* << TABLET/IPAD RESPONSIVE */ max-lg:text-3xl max-lg:text-center
+                    " >We Value Your Opinion!</h1>
+                    <p className=" text-xl leading-8 font-medium
+                                /* << TABLET/IPAD RESPONSIVE */ max-lg:text-base max-lg:text-justify
+                    " >We appreciate you taking the time to visit our web blog! Your opinions and suggestions are invaluable to us as we strive to improve our content and user experience. Please share your thoughts on what you enjoyed, any areas for improvement, or any topics you'd like to see covered in the future. Thank you for helping us make our blog even better!</p>
                 </section>
             </div>
-            <div className="xl:w-1/2 lg:w-1/2 xl:ml-24 lg:ml-[120px] h-fit grid place-items-center">
-                <section className="w-3/4 h-fit flex flex-col gap-10" >
+            <div className=" h-fit w-full grid place-items-center px-5
+                            /* << TABLET/IPAD RESPONSIVE */ max-lg:w-full
+                            /* << DESKTOP RESPONSIVE */ max-2xl:w-1/2
+                            ">
+                <section className="w-3/4 h-fit flex flex-col gap-10
+                                    /* << TABLET/IPAD RESPONSIVE */ max-lg:w-full
+                " >
                     <input id="name" type="text" name="name" placeholder="Name" className={`w-full z-10 bg-transparent border-0 border-b-2 ${invalid.name ? "border-[#1E1E1E]" : "border-red-400"} placeholder-[#1E1E1E] outline-none text-[#1E1E1E]`} />
                     <input id="email" type="email" name="email" placeholder="Email" className={`w-full z-10 bg-transparent border-0 border-b-2 ${invalid.email ? "border-[#1E1E1E]" : "border-red-400"} placeholder-[#1E1E1E] outline-none text-[#1E1E1E]`} />
                     <textarea id="message" name="message" placeholder="Comment here..." className={`w-full z-10 h-[200px] bg-transparent border-2 rounded-lg p-2 ${invalid.message ? "border-[#1E1E1E]" : "border-red-400"} placeholder-[#1E1E1E] outline-none text-[#1E1E1E]`}></textarea>
