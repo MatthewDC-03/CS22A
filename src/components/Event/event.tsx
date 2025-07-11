@@ -482,7 +482,7 @@ const Event = () => {
   return (
     <main
       id="eventWrapper"
-      className="mt-[100px] w-full h-full max-lg:mt-[25rem]
+      className="w-full h-full
       "
       ref={eventContainer}
     >
@@ -514,7 +514,7 @@ const Event = () => {
             {/* BASKETBALL ICON FOR MOBILE DEVICES */}
             <div
               id="basketballContainer"
-              className="absolute bg-[#F6F6F6] rotate-45 top-7
+              className="absolute bg-[#F6F6F6] rotate-45 top-20
                       /* TABLET/IPAD AND BELOW RESPONSIVE */ max-lg:block
                       /* LAPTOP RESPONSIVE */ max-xl:hidden
                       /* DESKTOP RESPONSIVE */ max-2xl:hidden
@@ -532,7 +532,7 @@ const Event = () => {
             {/* VOLEYBALL ICON FOR MOBILE DEVICES */}
             <div
               id="volleyballContainer"
-              className="absolute bg-[#F6F6F6] rotate-45 left-1/2 top-7
+              className="absolute bg-[#F6F6F6] rotate-45 left-1/2 top-20
                       /* TABLET/IPAD AND BELOW RESPONSIVE */ max-lg:block
                       /* LAPTOP RESPONSIVE */ max-xl:hidden
                       /* DESKTOP RESPONSIVE */ max-2xl:hidden

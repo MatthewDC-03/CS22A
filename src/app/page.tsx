@@ -140,7 +140,7 @@ export default function Home() {
     <>
     {/* Loading Page */}
     <Loading />
-    <main className="w-full h-full relative p-0 m-0 max-sm:pt-0" ref={container}  >
+    <main className="w-full h-full relative flex flex-col gap-20" ref={container}  >
       {/* Flow / Arrow Guide Pinned */}
 
       <div id="arrPinned" className="fixed max-lg:hidden max-sm:hidden h-0 opacity-0 left-1/2 -translate-x-1/2 w-[3px] bg-[#008DDA] origin-top" ></div>
@@ -151,20 +151,23 @@ export default function Home() {
       </header>
 
       {/* Home */}
-      <div className="relative w-full p-0 m-0 max-sm:mt-0" >
-      <section id="homePage" className="h-[100vh] max-sm:h-[100vh] md:h-[100vh] translate-y-[-35px] sm:translate-y-[-45px] md:translate-y-[-65px] w-full overflow-hidden z-10 skew-y-3 max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 origin-top-right p-0 m-0 max-sm:translate-y-0">
+      <div className="relative h-[100vh] w-full
+      " >
+      <section id="homePage" className="h-[100vh] w-full overflow-hidden z-10 skew-y-3 origin-top-right p-0 m-0
+                      /* << TABLET/IPAD RESPONSIVE */ max-lg:skew-y-0
+                      /* DESKTOP RESPONSIVE */ max-2xl:bg-red-500">
         <HomePage></HomePage>
       </section>
       </div>
 
         {/* ABOUT */}
-      <div id="aboutPage" className="h-fit w-full relative p-0" >
+      <div id="aboutPage" className="h-fit w-full relative p-0 " >
       <span id="aboutSpan" className="absolute left-1/2 max-lg:hidden -translate-x-1/2 top-[10px] max-sm:hidden px-4 sm:px-6 md:px-10 z-20 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold border-[#1E1E1E] bg-[#F6F6F6]" >ABOUT</span>
         <About/>
       </div>
 
       {/* Members */}
-      <div className="relative h-fit w-full p-0 mt-32" >
+      <div className="relative h-fit w-full p-0 mt-40" >
       <span id="memberSpan" className="absolute max-sm:tracking-normal max-sm:whitespace-nowrap max-sm:text-center max-sm:px-4 sm:px-6 md:px-7 top-[-80px] sm:top-[-100px] md:top-[-120px] left-1/2 -translate-x-1/2 px-4 sm:px-6 md:px-10 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >TEAM MEMBERS</span>
       <div className="h-fit w-full origin-top-right skew-y-3 max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 overflow-hidden p-0 m-0" >
       <Member></Member>
@@ -172,10 +175,10 @@ export default function Home() {
       </div>
 
       {/* Event */}
-      <div id="eventPage" className="relative p-0 mt-[25rem]" >
-      <span id="eventSpan" className="absolute px-4 sm:px-6 md:px-10 top-[-150px] sm:top-[-200px] md:top-[-300px] left-1/2 -translate-x-1/2 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >EVENTS</span>
+      <div id="eventPage" className="relative p-0" >
+      <span id="eventSpan" className="absolute px-4 left-1/2 -translate-x-1/2 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >EVENTS</span>
       {/* Basketball Icon */}
-      <div className="absolute top-[-50px] sm:top-[-70px] md:top-[-100px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2
+      <div className="absolute top-60 bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2
                       /* MOBILE RESPONSIVE  */ max-sm:hidden
                       /* TABLET/IPAD RESPONSIVE */ max-lg:hidden
       " >

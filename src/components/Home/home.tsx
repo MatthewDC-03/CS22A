@@ -95,7 +95,7 @@ export default function Home() {
     return (
     /* Container */
     <div
-        className={`h-[100vh] sm:h-[120vh] w-full skew-y-[-3deg] max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 flex relative overflow-hidden p-0 m-0 
+        className={`h-[110vh] w-full skew-y-[-3deg] max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 flex relative overflow-hidden p-0 m-0 
                     /* MOBILE RESPONSIVE */ max-sm:h-[100vh] max-sm:overflow-hidden
                     /* TABLET/IPAD RESPONSIVE */ max-lg:h-[100vh] max-lg:overflow-hidden max-lg:skew-y-0 max-lg:translate-x-0 max-lg:translate-y-0
         ${isNext ? nextStyle : ''}
@@ -251,7 +251,7 @@ export default function Home() {
 
         {/* Progress Bar */}
         <div
-          className={`fixed h-2 w-0 bg-white top-[160px] z-50
+          className={`fixed h-2 w-0 bg-white top-[95px] z-50
                     /* TABLE/IPAD RESPONSIVE */ max-lg:hidden
             ${
             isBar ? 'w-full transition-all duration-[3000ms] ease-linear' : ''
@@ -260,8 +260,6 @@ export default function Home() {
         {/* Progress Bar for Tablet and Mobile */}
         <div
             className="fixed h-2 bg-white left-0 z-50 lg:hidden top-[65px]
-                        /* MOBILE RESPONSIVE */ max-sm:top-[65px]
-                        /* TABLET/IPAD RESPONSIVE */ max-lg:top-[130px]
             "
             style={{
                 width: `${progress}%`, // Dynamically set the width based on progress
