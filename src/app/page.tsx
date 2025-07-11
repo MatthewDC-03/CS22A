@@ -168,7 +168,7 @@ export default function Home() {
 
       {/* Members */}
       <div className="relative h-fit w-full p-0 mt-40" >
-      <span id="memberSpan" className="absolute max-sm:tracking-normal max-sm:whitespace-nowrap max-sm:text-center max-sm:px-4 sm:px-6 md:px-7 top-[-80px] sm:top-[-100px] md:top-[-120px] left-1/2 -translate-x-1/2 px-4 sm:px-6 md:px-10 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >TEAM MEMBERS</span>
+      <span id="memberSpan" className="absolute max-sm:tracking-normal max-sm:whitespace-nowrap max-sm:text-center max-sm:px-4 top-[-80px] sm:top-[-100px] md:top-[-120px] left-1/2 -translate-x-1/2 px-4 sm:px-6 md:px-10 py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >TEAM MEMBERS</span>
       <div className="h-fit w-full origin-top-right skew-y-3 max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 overflow-hidden p-0 m-0" >
       <Member></Member>
       </div>
