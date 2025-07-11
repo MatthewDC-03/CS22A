@@ -177,12 +177,14 @@ export default function Home() {
       {/* Basketball Icon */}
       <div className="absolute top-[-50px] sm:top-[-70px] md:top-[-100px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2
                       /* MOBILE RESPONSIVE  */ max-sm:hidden
+                      /* TABLET/IPAD RESPONSIVE */ max-lg:hidden
       " >
       <Image id="basketballDiv" className="z-10 border-[2px] sm:border-[3px] border-[#1E1E1E] p-2 sm:p-3 w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]" src={Basketball} alt="..." width={60} height={60}></Image>
       </div>
       {/* Volleyball Icon */}
       <div className="absolute top-[4000px] bg-[#F6F6F6] rotate-45 left-1/2 -translate-x-1/2
                       /* MOBILE RESPONSIVE */ max-sm:hidden
+                      /* TABLET/IPAD RESPONSIVE */ max-lg:hidden
       " >
       <Image id="volleyballDiv" className="z-10 border-[2px] sm:border-[3px] border-[#1E1E1E] p-2 sm:p-3 w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]" src={Volleyball} alt="..." width={60} height={60}></Image>
       </div>

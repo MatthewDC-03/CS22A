@@ -38,6 +38,96 @@ const Event = () => {
     mm.add("(max-width: 900px)", () => {
       // Mobile-specific animations
       gsap.to("#img1", {
+        scale: 0.5,
+        rotate: "15deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "10% center",
+          end: "50% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img2", {
+        scale: 0.5,
+        rotate: "-15deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "20% center",
+          end: "50% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img3", {
+        scale: 0.5,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "30% center",
+          end: "50% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img4", {
+        scale: 0.5,
+        rotate: "20deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "40% center",
+          end: "50% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img5", {
+        scale: 0.5,
+        rotate: "-15deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "60% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img6", {
+        scale: 0.5,
+        rotate: "25deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "70% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img7", {
+        scale: 0.5,
+        rotate: "-20deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "80% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img8", {
+        scale: 0.5,
+        rotate: "8deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "90% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+    });
+    mm.add("(max-width: 500px)", () => {
+      // Mobile-specific animations
+      gsap.to("#img1", {
         scale: 0.8,
         rotate: "15deg",
         scrollTrigger: {
@@ -80,12 +170,56 @@ const Event = () => {
           toggleActions: "play reverse play reverse",
         },
       });
+      gsap.to("#img5", {
+        scale: 0.8,
+        rotate: "-15deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "60% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img6", {
+        scale: 0.8,
+        rotate: "25deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "70% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img7", {
+        scale: 0.8,
+        rotate: "-20deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "80% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img8", {
+        scale: 0.8,
+        rotate: "8deg",
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "90% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
     });
 
     mm.add("(min-width: 901px)", () => {
       // Desktop-specific animations
       gsap.to("#img1", {
-        scale: 1,
+        scale: 0.8,
         scrollTrigger: {
           trigger: "#eventContainer",
           start: "10% center",
@@ -95,7 +229,7 @@ const Event = () => {
         },
       });
       gsap.to("#img2", {
-        scale: 1,
+        scale: 0.8,
         scrollTrigger: {
           trigger: "#eventContainer",
           start: "20% center",
@@ -105,7 +239,7 @@ const Event = () => {
         },
       });
       gsap.to("#img3", {
-        scale: 1,
+        scale: 0.8,
         scrollTrigger: {
           trigger: "#eventContainer",
           start: "30% center",
@@ -115,11 +249,51 @@ const Event = () => {
         },
       });
       gsap.to("#img4", {
-        scale: 1,
+        scale: 0.8,
         scrollTrigger: {
           trigger: "#eventContainer",
           start: "40% center",
           end: "50% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img5", {
+        scale: 0.8,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "60% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img6", {
+        scale: 0.8,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "70% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img7", {
+        scale: 0.8,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "80% center",
+          end: "98% center",
+          markers: false,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to("#img8", {
+        scale: 0.8,
+        scrollTrigger: {
+          trigger: "#eventContainer",
+          start: "90% center",
+          end: "98% center",
           markers: false,
           toggleActions: "play reverse play reverse",
         },
@@ -191,46 +365,6 @@ const Event = () => {
     });
 
     /* Volleyball Images */
-    gsap.to("#img5", {
-      scale: 1,
-      scrollTrigger: {
-        trigger: "#eventContainer",
-        start: "60% center",
-        end: "98% center",
-        markers: false,
-        toggleActions: "play reverse play reverse",
-      },
-    });
-    gsap.to("#img6", {
-      scale: 1,
-      scrollTrigger: {
-        trigger: "#eventContainer",
-        start: "70% center",
-        end: "98% center",
-        markers: false,
-        toggleActions: "play reverse play reverse",
-      },
-    });
-    gsap.to("#img7", {
-      scale: 1,
-      scrollTrigger: {
-        trigger: "#eventContainer",
-        start: "80% center",
-        end: "98% center",
-        markers: false,
-        toggleActions: "play reverse play reverse",
-      },
-    });
-    gsap.to("#img8", {
-      scale: 1,
-      scrollTrigger: {
-        trigger: "#eventContainer",
-        start: "90% center",
-        end: "98% center",
-        markers: false,
-        toggleActions: "play reverse play reverse",
-      },
-    });
 
     /* Volleyball Paragraphs */
     gsap.to("#paragraph3", {
@@ -258,7 +392,7 @@ const Event = () => {
     });
 
     gsap.set("#basketballContainer", {
-      translateX: "-500px", // Default position
+      translateX: "-800px", // Default position
     });
 
     gsap.to("#basketballDiv", {
@@ -302,7 +436,7 @@ const Event = () => {
     });
 
     gsap.set("#volleyballContainer", {
-      translateX: "-500px", // Default position
+      translateX: "-800px", // Default position
     });
 
     gsap.to("#volleyballDiv", {
@@ -348,30 +482,42 @@ const Event = () => {
   return (
     <main
       id="eventWrapper"
-      className="mt-[100px] w-full h-full max-sm:mt-[25rem]"
+      className="mt-[100px] w-full h-full max-lg:mt-[25rem]
+      "
       ref={eventContainer}
     >
       <div
         id="eventContainer"
-        className="w-full relative h-[900vh] overflow-hidden mt-10 flex max-sm:flex-col"
+        className="w-full relative h-[900vh] overflow-hidden mt-10 flex 
+                  /* MOBILE RESPONSIVE */ max-sm:flex-col
+                  /* TABLET/IPAD RESPONSIVE */ max-lg:flex-col 
+                  
+        "
       >
         <div
           id="left"
-          className="max-sm:absolute z-10 w-1/2 h-full max-sm:w-full relative pt-[500px] pl-[60px] 
-                                /* MOBILE RESPONSIVE */ max-sm:pt-0 max-sm:pl-0
+          className="max-sm:absolute z-10 w-1/2 h-full relative pt-[500px] pl-[60px] 
+                                /* MOBILE RESPONSIVE */ max-sm:pt-0 max-sm:pl-0 max-sm:w-full max-sm:h-full
+                                /* TABLET\IPAD RESPONSIVE */ max-lg:pt-0 max-lg:pl-0 max-lg:w-full max-lg:h-full
+                                
+                                
         "
         >
           <div
             id="textContainer"
-            className="absolute text-lg font-medium w-[500px] top-0 left-0 flex-col h-[600px] flex justify-center items-center
+            className="absolute text-lg font-medium w-full top-0 left-0 flex-col h-[600px] flex justify-center items-center
                                             /* MOBILE RESPONSIVE */ max-sm:text-center max-sm:w-full
+                                            /* TABLET/IPAD RESPONSIVE */ max-lg:text-center max-lg:w-full
+                                            
           "
           >
             {/* BASKETBALL ICON FOR MOBILE DEVICES */}
             <div
               id="basketballContainer"
               className="absolute bg-[#F6F6F6] rotate-45 top-7
-                      /* MOBILE RESPONSIVE  */
+                      /* TABLET/IPAD AND BELOW RESPONSIVE */ max-lg:block
+                      /* LAPTOP RESPONSIVE */ max-xl:hidden
+                      /* DESKTOP RESPONSIVE */ max-2xl:hidden
       "
             >
               <Image
@@ -387,7 +533,9 @@ const Event = () => {
             <div
               id="volleyballContainer"
               className="absolute bg-[#F6F6F6] rotate-45 left-1/2 top-7
-                      /* MOBILE RESPONSIVE */
+                      /* TABLET/IPAD AND BELOW RESPONSIVE */ max-lg:block
+                      /* LAPTOP RESPONSIVE */ max-xl:hidden
+                      /* DESKTOP RESPONSIVE */ max-2xl:hidden
       "
             >
               <Image
@@ -406,11 +554,14 @@ const Event = () => {
               id="paragraph1"
               className="absolute opacity-0 translate-x-[-650px] w-full
                                           /* MOBILE RESPONSIVE */ max-sm:px-4
+                                          /* LAPTOP RESPONSIVE */ max-xl:px-4
+                                          /* DESKTOP RESPONSIVE */ xl:px-4
           "
             >
               <h1
-                className=" font-bold text-3xl mb-10
+                className=" font-bold text-center text-3xl mb-10
                           /* MOBILE RESPONSIVE */ max-sm:text-xl max-sm:mb-2
+                          /* DESKTOP RESPONSIVE */ xl:text-3xl
             "
               >
                 Unstoppable Force: Our Basketball Team Wins Big in Intramurals
@@ -419,6 +570,8 @@ const Event = () => {
               <p
                 className="
                           /* MOBILE RESPONISVE */ max-sm:text-justify max-sm:text-sm
+                          /* LAPTOP RESPONSIVE */ max-xl:text-justify xl:text-justify xl:text-xl
+                          /* DESKTOP RESPONSIVE */
             "
               >
                 Our basketball team dominated the court in the Intramurals 2024
@@ -435,11 +588,16 @@ const Event = () => {
             <div
               id="paragraph2"
               className="absolute opacity-0 translate-x-[-650px] w-full
-                                          /* MOBILE RESPONSIVE */ max-sm:px-4"
+                                          /* MOBILE RESPONSIVE */ max-sm:px-4
+                                          /* LAPTOP RESPONSIVE */ max-xl:px-4
+                                          /* DESKTOP RESPONSIVE */ xl:px-4
+                                          "
+                                          
             >
               <h1
-                className=" font-bold text-3xl mb-10
-                          /* MOBILE RESPONSIVE */ max-sm:text-xl max-sm:mb-2 max-sm:mb-2"
+                className=" font-bold text-center text-3xl mb-10
+                          /* MOBILE RESPONSIVE */ max-sm:text-xl max-sm:mb-2 max-sm:mb-2
+                          /* DESKTOP RESPONSIVE */ xl:text-3xl"
               >
                 Victorious Moment: Our Basketball Team Shines in Intramurals
                 2024!
@@ -447,6 +605,7 @@ const Event = () => {
               <p
                 className="
                           /* MOBILE RESPONISVE */ max-sm:text-justify max-sm:text-sm
+                          /* LAPTOP RESPONSIVE */ max-xl:text-justify
             "
               >
                 Our team achieved a remarkable victory in the Intramurals 2024
@@ -468,11 +627,14 @@ const Event = () => {
             <div
               id="paragraph3"
               className="absolute opacity-0 translate-x-[-650px] w-full
-                                          /* MOBILE RESPONSIVE */ max-sm:px-4"
+                                          /* MOBILE RESPONSIVE */ max-sm:px-4
+                                          /* LAPTOP RESPONSIVE */ max-xl:px-4
+                                          /* DESKTOP RESPONSIVE */ xl:px-4"
             >
               <h1
-                className=" font-bold text-3xl mb-10
-                          /* MOBILE RESPONSIVE */ max-sm:text-xl max-sm:mb-2"
+                className=" font-bold text-center text-3xl mb-10
+                          /* MOBILE RESPONSIVE */ max-sm:text-xl max-sm:mb-2
+                          /* DESKTOP RESPONSIVE */ xl:text-3xl"
               >
                 Triumph and Teamwork: Our Volleyball Team Secures First
                 Runner-Up in Intramurals 2024
@@ -480,6 +642,7 @@ const Event = () => {
               <p
                 className="
                           /* MOBILE RESPONISVE */ max-sm:text-justify max-sm:text-sm
+                          /* LAPTOP RESPONSIVE */ max-xl:text-justify
             "
               >
                 Our volleyball team had an incredible run in the Intramurals
@@ -499,11 +662,16 @@ const Event = () => {
             <div
               id="paragraph4"
               className="absolute opacity-0 translate-x-[-650px] w-full
-                                          /* MOBILE RESPONSIVE */ max-sm:px-4"
+                                          /* MOBILE RESPONSIVE */ max-sm:px-4
+                                          /* LAPTOP RESPONSIVE */ max-xl:px-4
+                                          /* DESKTOP RESPONSIVE */ xl:px-4"
             >
               <h1
                 className=" font-bold text-3xl text-center mb-10
-                          /* MOBILE RESPONSIVE */ max-sm:text-xl max-sm:mb-2"
+                          /* MOBILE RESPONSIVE */ max-sm:text-xl max-sm:mb-2
+                          /* DESKTOP RESPONSIVE */ xl:text-3xl
+                          "
+                          
               >
                 Celebrating Success: Volleyball Team Clinches First Runner-Up in
                 Intramurals 2024
@@ -511,6 +679,7 @@ const Event = () => {
               <p
                 className="
                           /* MOBILE RESPONISVE */ max-sm:text-justify max-sm:text-sm
+                          /* LAPTOP RESPONSIVE */ max-xl:text-justify
             "
               >
                 Our volleyball team had an incredible run in the Intramurals
@@ -531,13 +700,15 @@ const Event = () => {
           id="right"
           className="w-1/2 h-full relative 
                   /* MOBILE RESPONSIVE */  max-sm:absolute max-sm:w-full max-sm:h-full
+                  /* TABLET/IPAD RESPONSIVE */ max-lg:absolute max-lg:w-full max-lg:h-full
           "
         >
           {/* 3D Trophy */}
           <div
             id="trophyContainer"
             className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[600px]
-                        /* MOBILE RESPONSIVE */ max-sm:scale-[0.5] max-sm:w-[600px] max-sm:h-[600px] max-sm:blur-sm max-sm:rotate-[-15deg] max-sm:opacity-50"
+                        /* MOBILE RESPONSIVE */ max-sm:scale-[0.5] max-sm:w-[600px] max-sm:h-[600px] max-sm:blur-sm max-sm:rotate-[-15deg] max-sm:opacity-50
+                        /* TABLET/IPAD RESPONSIVE */ max-lg:scale-[0.7] max-lg:w-[600px] max-lg:h-[600px] max-lg:blur-sm max-lg:rotate-[-15deg] max-lg:opacity-50"
           >
             <Spline scene="https://prod.spline.design/5vG7OCMJUKlG9K0H/scene.splinecode"></Spline>
           </div>
@@ -553,7 +724,8 @@ const Event = () => {
               height={300}
               alt="..."
               className="rounded-sm scale-0 absolute shadow-xl left-[10px] top-[50px]
-                        /* MOBILE RESPONSIVE */ max-sm:-top-[400px] max-sm:-left-[170px]
+                        /* MOBILE RESPONSIVE */ max-sm:-top-[400px] max-sm:-left-[170px] max-sm:opacity-[85%]
+                        /* TABLET/IPAD RESPONSIVE */ max-lg:-top-[150px] max-lg:-left-[20px] max-lg:opacity-[85%]
           "
             ></Image>
             <Image
@@ -563,7 +735,9 @@ const Event = () => {
               height={300}
               alt="..."
               className="rounded-sm scale-0 absolute shadow-xl right-[10px] top-[180px]
-                        /* MOBILE RESPONSIVE */ max-sm:top-[500px] max-sm:left-[170px]"
+                        /* MOBILE RESPONSIVE */ max-sm:top-[500px] max-sm:left-[170px] max-sm:opacity-[85%]
+                        /* TABLET/IPAD RESPONSIVE */ max-lg:top-[300px] max-lg:left-[500px] max-lg:opacity-[85%]
+                        "
             ></Image>
             <Image
               id="img3"
@@ -572,7 +746,9 @@ const Event = () => {
               height={300}
               alt="..."
               className="rounded-sm scale-0 absolute shadow-xl right-[150px] top-[10px]
-                        /* MOBILE RESPONSIVE */ max-sm:-top-[350px] max-sm:left-[170px]"
+                        /* MOBILE RESPONSIVE */ max-sm:-top-[350px] max-sm:left-[170px] max-sm:opacity-[85%]
+                        /* TABLET/IPAD RESPONSIVE */ max-lg:-top-[30px] max-lg:left-[450px] max-lg:opacity-[85%]
+                        "
             ></Image>
             <Image
               id="img4"
@@ -581,7 +757,9 @@ const Event = () => {
               height={300}
               alt="..."
               className="rounded-sm scale-0 absolute shadow-xl left-[100px] top-[190px]
-                        /* MOBILE RESPONSIVE */ max-sm:top-[580px] max-sm:-left-[170px]"
+                        /* MOBILE RESPONSIVE */ max-sm:top-[580px] max-sm:-left-[170px] max-sm:opacity-[85%]
+                        /* TABLET/IPAD RESPONSIVE */ max-lg:top-[280px] max-lg:-left-[10px] max-lg:opacity-[85%]
+                        "
             ></Image>
 
             <Image
@@ -590,7 +768,10 @@ const Event = () => {
               width={300}
               height={300}
               alt="..."
-              className="rounded-sm scale-0 absolute shadow-xl left-[10px] top-[50px]"
+              className="rounded-sm scale-0 absolute shadow-xl left-[10px] top-[50px]
+                        /* MOBILE RESPONSIVE */ max-sm:top-[650px] max-sm:left-[170px] max-sm:opacity-[85%]
+                        /* TABLET/IPAD RESPONSIVE */ max-lg:top-[450px] max-lg:left-[480px] max-lg:opacity-[85%]
+              "
             ></Image>
             <Image
               id="img6"
@@ -598,7 +779,10 @@ const Event = () => {
               width={300}
               height={300}
               alt="..."
-              className="rounded-sm scale-0 absolute shadow-xl right-[10px] top-[180px]"
+              className="rounded-sm scale-0 absolute shadow-xl right-[10px] top-[180px]
+                        /* MOBILE RESPONSIVE */ max-sm:top-[-400px] max-sm:left-[-170px] max-sm:opacity-[85%]
+                        /* TABLET/IPAD RESPONSIVE */ max-lg:top-[-150px] max-lg:left-[-50px] max-lg:opacity-[85%]
+              "
             ></Image>
             <Image
               id="img7"
@@ -606,7 +790,10 @@ const Event = () => {
               width={300}
               height={300}
               alt="..."
-              className="rounded-sm scale-0 absolute shadow-xl right-[150px] top-[10px]"
+              className="rounded-sm scale-0 absolute shadow-xl right-[150px] top-[10px]
+                        /* MOBILE RESPONSIVE */ max-sm:-top-[350px] max-sm:left-[170px] max-sm:opacity-[85%]
+                        /* TABLET/IPAD RESPONSIVE */ max-lg:-top-[130px] max-lg:left-[460px] max-lg:opacity-[85%]
+              "
             ></Image>
             <Image
               id="img8"
@@ -614,7 +801,10 @@ const Event = () => {
               width={300}
               height={300}
               alt="..."
-              className="rounded-sm scale-0 absolute shadow-xl left-[100px] top-[190px]"
+              className="rounded-sm scale-0 absolute shadow-xl left-[100px] top-[190px]
+                        /* MOBILE RESPONSIVE */ max-sm:top-[500px] max-sm:-left-[150px] max-sm:opacity-[85%]
+                        /* TABLET/IPAD RESPONSIVE */ max-lg:top-[320px] max-lg:-left-[50px] max-lg:opacity-[85%]
+              "
             ></Image>
           </div>
         </div>

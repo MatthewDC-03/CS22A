@@ -15,18 +15,59 @@ const Member = ()=>{
     
     useGSAP(()=>{
         // Create a timeline for the background elements
+        const mm = gsap.matchMedia();
+        mm.add("(max-width: 800px)", () => {
+                
+            const bgTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#memberContainer",
+                    start: "19.5% 80%",
+                    end: "bottom top",
+                    markers: false,
+                    fastScrollEnd: true,
+                    preventOverlaps: true,
+                    once: true
+                }
+            });
+            
+    
+            // Animate the background elements and cards
+            bgTl
+                .to("#left", {
+                    transform: "translateY(0)",
+                    duration: 0.8
+                })
+                .to("#center", {
+                    left: "50%",
+                    top: "50%",
+                    transform: "translateY(-50%) translateX(-50%)",
+                    duration: 0.8
+                }, "<")
+                .to("#right", {
+                    transform: "translateY(0)",
+                    duration: 0.8
+                }, "<")
+                .to("#cardContainer > div", {
+                    scale: 1,
+                    duration: 1,
+                    stagger: 0.2
+                });
+
+        });
+        mm.add("(min-width: 801px)", () => {
+                
         const bgTl = gsap.timeline({
             scrollTrigger: {
                 trigger: "#memberContainer",
                 start: "35% 80%",
                 end: "bottom top",
-                toggleActions: "play none none none",
                 markers: false,
                 fastScrollEnd: true,
                 preventOverlaps: true,
                 once: true
             }
         });
+        
 
         // Animate the background elements and cards
         bgTl
@@ -49,14 +90,19 @@ const Member = ()=>{
                 duration: 1,
                 stagger: 0.2
             });
+
+        });
     },{scope: memberRef})
 
     return (
         <div className="w-full h-fit" ref={memberRef} >
         <div id="memberContainer" className="w-full h-fit relative pb-20">
-            <div id="left" className="absolute max-sm:hidden z-20 left-0 top-0 translate-y-[-170vw] bg-[#008DDA] h-full w-[33.33%]" ></div>
+            <div id="left" className="absolute max-sm:hidden z-20 left-0 top-0 translate-y-[-170vw] bg-[#008DDA] h-full w-[33.33%]
+                                        /* TABLET/IPAD RESPONSIVE */ max-lg:translate-y-[200vw]
+            " ></div>
             <div id="center" className="absolute z-20 left-1/2 bottom-0 max-sm:translate-y-0 max-sm:-translate-x-0 max-sm:-left-0 max-sm:w-full max-sm:right-0 translate-y-[170vw] -translate-x-1/2 bg-[#008DDA] h-full w-[34%]" ></div>
-            <div id="right" className="absolute max-sm:hidden z-20 right-0 top-0 translate-y-[-170vw] bg-[#008DDA] h-full w-[33.33%]" ></div>
+            <div id="right" className="absolute max-sm:hidden z-20 right-0 top-0 translate-y-[-170vw] bg-[#008DDA] h-full w-[33.33%]
+                                        /* TABLET/IPAD RESPONSIVE */ max-lg:translate-y-[200vw]" ></div>
             <div id="cardContainer" className="relative p-4 sm:p-7 pb-16 gap-y-8 gap-x-4 left-0 grid place-items-center xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 z-20 w-full -skew-y-3 h-fit
                                                 /* TABLET/IPAD AND BELOW RESPONSIVE */ max-lg:skew-y-0 
             " >
@@ -114,7 +160,12 @@ const Member = ()=>{
             }
 
             </div>
-            <h1 className="absolute max-sm:hidden h-fit text-[100px] sm:text-[150px] md:text-[200px] top-0 z-10 font-extrabold drop-shadow-xl w-full text-center text-gray-200 max-md:skew-y-0 -skew-y-3" >TEAM MEMBERS</h1>
+            <h1 className="absolute max-sm:hidden h-fit text-[100px] top-0 z-10 font-extrabold drop-shadow-xl w-full text-center text-gray-200 max-md:skew-y-0 -skew-y-3
+                            /* MOBILE RESPONSIVE */ max-sm:-skew-y-0 max-sm:text-[150px]
+                            /* TABLET/IPAD RESPONSIVE */ max-lg:-skew-y-0 max-lg:text-[150px]
+                            /* LAPTOP RESPONSIVE */ max-xl:-skew-y-0 max-xl:text-[200px]
+                            /* DESKTOP RESPONSIVE */ max-2xl:text-[250px]
+            " >TEAM MEMBERS</h1>
             </div>
         </div>
     )
