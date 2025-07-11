@@ -43,26 +43,38 @@ const Footer: FC<showNewsletterType> = ({showNewsletter}) => {
                 {
                     showNewsletter && <NewsletterSubscribe/>
                 }
-        <footer className="py-10 relative px-10 bg-[#008DDA] flex flex-col gap-7">
-        <div className={`w-full ${showNewsletter && "mt-16"} h-fit text-[#F6F6F6] overflow-x-hidden grid grid-cols-4 gap-x-7`} >
+        <footer className="py-10 relative px-10 bg-[#008DDA] flex flex-col gap-7
+                        /* MOBILE RESPONSIVE */  max-sm:py-2 max-sm:px-2
+        ">
+        <div className={`w-full ${showNewsletter && "mt-16"} h-fit text-[#F6F6F6] overflow-x-hidden grid grid-cols-4 gap-x-7
+                        /* MOBILE RESPONSIVE */ max-sm:gap-x-0 max-sm:grid-cols-1 max-sm:items-center max-sm:gap-5
+        `} >
             {/* Section #1 */}
             <div className="w-62" >
-                <div className="flex items-center" >
+                <div className="flex items-center 
+                                /* MOBILE RESPONSIVE */ max-sm:justify-center
+                " >
                 <Image src={AclcImage} height={50} alt='Aclc Icon' ></Image>
-                <span className=" text-3xl font-bold tracking-wider" >CS22A</span>
+                <span className=" text-3xl font-bold tracking-wider
+                " >CS22A</span>
                 </div>
-                <h1 className="text-xs mt-3" >your tech hub for coding insights and innovations. Join our community and explore the latest in computer science. Let's code the future together!</h1>
+                <h1 className="text-xs mt-3
+                                /* MOBILE RESPONSIVE */ max-sm:text-sm max-sm:text-justify
+                " >your tech hub for coding insights and innovations. Join our community and explore the latest in computer science. Let's code the future together!</h1>
             </div>
             {/* Section #2 */}
             <div className="flex w-62 flex-col justify-between" >
                 <h1 className=" font-black tracking-wide text-xl text-center" >Services</h1>
                 <div className="flex gap-7 text-lg justify-center items-start h-full mt-3" >
-                    <div className="flex flex-col" >
+                    <div className="flex flex-col
+                    " >
                     <Link href="/#homePage"><span onClick={handleScrollHome} className=" cursor-pointer" >Home</span></Link>
                     <Link href="/#eventPage"><span onClick={handleScrollEvent} className=" cursor-pointer" >Event</span></Link>
                     <Link href="/Blog"><span className=" cursor-pointer" >Blog</span></Link>
                     </div>
-                    <div className="flex flex-col" >
+                    <div className="flex flex-col
+                                    /* MOBILE RESPONSIVE */ max-sm:text-base
+                                    " >
                     <Link href="/#aboutPage"><span onClick={handleScrollAbout} className=" cursor-pointer" >About</span></Link>
                     <Link href="/#infoPage"><span onClick={handleScrollInfo} className=" cursor-pointer" >Info</span></Link>
                     <Link href="/#feedbackPage"><span onClick={handleScrollFeedback} className=" cursor-pointer" >Feedback</span></Link>
@@ -72,7 +84,9 @@ const Footer: FC<showNewsletterType> = ({showNewsletter}) => {
             {/* Section #3 */}
             <div className="flex flex-col w-62 justify-between" >
             <h1 className=" font-semibold tracking-wide text-xl text-center" >Contact Us</h1>
-            <div className="flex flex-col h-full justify-start mt-3" >
+            <div className="flex flex-col h-full justify-start mt-3
+                                /* MOBILE RESPONSIVE */ max-sm:justify-center max-sm:items-center
+                                " >
             <h2><u>theonesama03@gmail.com</u></h2>
             <h2>+639458280029</h2>
             </div>
@@ -90,7 +104,7 @@ const Footer: FC<showNewsletterType> = ({showNewsletter}) => {
         </div>
         <div className="w-full flex flex-col gap-6 items-center">
         <hr className="w-full z-50 h-[2px] bg-[#F6F6F6] border-none" />
-        <p className="text-xs text-[#F6F6F6]" >© 2024 localhost:3000 | All right reserved.</p>
+        <p className="text-xs text-[#F6F6F6]" >© 2024 cs-22-a.vercel.app | All right reserved.</p>
         </div>
         </footer>
         </div>

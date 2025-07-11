@@ -24,7 +24,7 @@ const Navbar: React.FC<ArgType> =({isBlog}) => {
         document.getElementById("feedbackPage")?.scrollIntoView()
     }
     return (
-        <nav className=" h-full w-full text-[#F6F6F6] flex items-center justify-between px-14
+        <nav className=" h-full w-full text-[#F6F6F6] flex items-center justify-between px-14 z-50
                         /* MOBILE RESPONSIVE  */ max-sm:px-2
                         /* TABLET/IPAD RESPONSIVE */ max-lg:px-6
         " >
