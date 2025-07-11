@@ -195,11 +195,21 @@ export default function Home() {
       </div>
       
       {/* Info */}
-      <div className="relative p-0 m-0" >
-      <span id="infoSpan" className="absolute px-4 sm:px-6 md:px-10 left-1/2 -translate-x-1/2 top-[-80px] sm:top-[-100px] md:top-[-150px] py-2 sm:py-3 tracking-widest border-[2px] sm:border-[3px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg md:text-xl font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >PERSONAL INFORMATION</span>
-      <div id="infoPage" className="h-[90vh] sm:h-[100vh] md:h-[130vh] w-full relative mt-[150px] sm:mt-[200px] md:mt-[350px] z-40 overflow-hidden -skew-y-3 max-sm:skew-y-0 max-md:skew-y-0 max-lg:skew-y-0 grid place-items-center bg-[#008DDA] p-0 m-0" >
-        <Image className="absolute max-sm:hidden h-auto w-auto top-[-70px] left-0 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px]" src={Camera} alt="..." width={400} height={400}></Image>
-        <Image className="absolute max-sm:hidden h-auto w-auto top-[-140px] right-0 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px]" src={Facebook} alt="..." width={400} height={400}></Image>
+      <div className="relative p-0 m-0 flex flex-col justify-center items-center gap-16" >
+      <span id="infoSpan" className="px-4 py-2 tracking-widest border-[2px] h-fit w-fit text-[#1E1E1E] text-base sm:text-lg font-bold z-10 border-[#1E1E1E] bg-[#F6F6F6]" >PERSONAL INFORMATION</span>
+      <div id="infoPage" className="h-[100vh] w-full relative z-40 overflow-hidden -skew-y-3 grid place-items-center bg-[#008DDA] p-0 m-0
+                                    /* << TABLET/IPAD RESPONSIVE */ max-lg:-skew-y-0 max-lg:h-[100vhgit ]
+                                    /* LAPTOP RESPONSIVE */ max-xl:h-[120vh]
+      " >
+        <Image className="absolute -top-15 left-0 w-[400px] h-[400px]
+                          /* MOBILE RESPONSIVE */ max-sm:-top-15
+                          /* TABLET/IPAD REPONSIVE */ max-lg:-top-24
+                          /* LAPTOP RESPONSIVE */ max-xl:-top-16
+        " src={Camera} alt="..." ></Image>
+        <Image className="absolute top-[25rem] right-0 w-[400px] h-[400px]
+                          /* MOBILE RESPONSIVE */ max-sm:top-[25rem]
+                          /* TABLET/IPAD RESPONSIVE */ max-lg:top-[25rem]
+        " src={Facebook} alt="..." ></Image>
         <Info/>
       </div>
       </div>
