@@ -596,7 +596,7 @@ const Event = () => {
             >
               <h1
                 className=" font-bold text-center text-3xl mb-10
-                          /* MOBILE RESPONSIVE */ max-sm:text-xl max-sm:mb-2 max-sm:mb-2
+                          /* MOBILE RESPONSIVE */ max-sm:text-xl max-sm:mb-2
                           /* DESKTOP RESPONSIVE */ xl:text-3xl"
               >
                 Victorious Moment: Our Basketball Team Shines in Intramurals
