@@ -58,11 +58,18 @@ const Blog = () => {
             <header className={`navbar w-full z-50 ${scrolled ? "bg-[#1E1E1E] h-12" : "bg-[#1E1E1E] h-16"} sticky top-0 left-0 z-10`}> 
             <BlogNavbar/>
             </header>
-            <div className="w-full h-fit gap-y-[100px] grid grid-cols-3 mt-10 place-items-center" >
+            <div className="w-full h-fit gap-y-[100px] grid grid-cols-3 mt-10 place-items-center
+                          /* MOBILE RESPONSIVE */ max-sm:grid-cols-1 max-sm:gap-y-16
+                          /* IPAD/TABLET RESPONSIVE */ max-lg:grid-cols-2 max-lg:gap-x-6 max-lg:px-6
+                          /* LAPTOP RESPONSIVE */ max-xl:grid-cols-3 max-xl:gap-x-3 max-xl:px-3
+                          /* DESKTOP RESPONIVE */ max-2xl:grid-cols-3 max-2xl:gap-x-6 max-2xl:px-6
+            " >
               {
                 BlogData.map((item)=>{
                   return (
-                    <div className="relative flex lg:w-[320px] xl:w-[430px] h-[400px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div className="relative flex h-[400px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md
+
+                    ">
   <div className="relative mx-4 -mt-6 h-[350px] overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/400">
   <Image src={`/${item.link}`} className="w-full h-full object-cover"  alt="..." fill={true} ></Image>
   </div>

@@ -10,18 +10,32 @@ import AclcImage from '/public/images/Aclc-Icon-White.svg';
 const BlogNavbar = () => {
 
   return  (
-  <nav className="h-full w-full text-[#F6F6F6] flex items-center justify-between px-14" >
+  <nav className="h-full w-full text-[#F6F6F6] flex items-center justify-between px-14
+                /* << TABLET/IPAD RESPONSIVE */ max-lg:justify-start max-lg:px-2
+  " >
             <span className='flex items-center gap-2' >
                 <Image src={AclcImage} height={40} alt='Aclc Icon' ></Image>
                 <span className=" text-2xl font-semibold tracking-wider" >CS22A</span>
             </span>
                 <div className='flex text-lg text-gray-200 items-center justify-center gap-16'>
-                <Link href="/"> <span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]" >Home</span></Link>
-                <Link href="/#aboutPage" ><span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]" >About</span></Link>
-                <Link href="/#eventPage" ><span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]" >Event</span></Link>
-                <Link href="/#infoPage" ><span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]" >Info</span></Link>
-                <Link href="/Blog"> <span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]" >Blog</span></Link>
-                <Link href="/#feedbackPage" ><span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]" >Feedback</span></Link>
+                <Link href="/"> <span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]
+                                                /* << TABLET/IPAD RESPONSIVE */ max-lg:hidden
+                " >Home</span></Link>
+                <Link href="/#aboutPage" ><span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]
+                                                            /* << TABLET/IPAD RESPONSIVE */ max-lg:hidden
+                " >About</span></Link>
+                <Link href="/#eventPage" ><span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]
+                                                            /* << TABLET/IPAD RESPONSIVE */ max-lg:hidden
+                " >Event</span></Link>
+                <Link href="/#infoPage" ><span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]
+                                                            /* << TABLET/IPAD RESPONSIVE */ max-lg:hidden
+                " >Info</span></Link>
+                <Link href="/Blog"> <span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]
+                                                            /* << TABLET/IPAD RESPONSIVE */ max-lg:hidden
+                " >Blog</span></Link>
+                <Link href="/#feedbackPage" ><span className=" ease-out h-fit relative w-fit flex items-center justify-center duration-500 before:content-[''] before:pointer-events-none before:absolute before:w-0 before:h-[3px] before:rounded-md before:bottom-0 before:bg-[#F6F6F6] hover:before:w-full transition-[width,left] before:duration-500 hover:text-[#F6F6F6]
+                                                            /* << TABLET/IPAD RESPONSIVE */ max-lg:hidden
+                " >Feedback</span></Link>
                 
                 </div>
 
@@ -81,22 +95,48 @@ const MyBlog = ({ params }: { params: { id: string } }) => {
         <BlogNavbar/>
       </header>
       <div>
-      <div className="py-[40px] pl-[40px] pr-[20px] w-full h-full flex flex-row lg:gap-3 xl:gap-5" >
-        <div className="w-3/4 flex flex-col gap-4 justify-center items-center " >
-        <h3 className=" font-extrabold lg:text-3xl xl:text-4xl text-start w-full text-[#1E1E1E]">{description.heading}</h3>
-        <span className="xl:text-lg lg:text-base text-[#313a4b] text-start w-full" >{description.created}</span>
-        <p className="font-base leading-[50px] whitespace-pre-line lg:text-lg xl:text-xl text-[#313a4b] pr-10" >{description.paragraph}</p>
+      <div className="py-[40px] pl-[40px] pr-[20px] w-full h-full flex flex-row
+                    /* << TABLET/IPAD RESPONSIVE */ max-lg:flex-col max-lg:pl-2 max-lg:py-10 max-lg:pr-2
+      " >
+        <div className="w-3/4 flex flex-col gap-4 justify-center items-center 
+                      /* << TABLET/IPAD RESPONSIVE */ max-lg:w-full max-lg:gap-6 max-lg:px-0
+        " >
+        <h3 className=" font-extrabold text-start w-full text-[#1E1E1E]
+                        /* << TABLET/IPAD RESPONSIVE */ max-lg:text-center max-lg:text-xl
+        ">{description.heading}</h3>
+        <span className="text-[#313a4b] text-start w-full
+                          /* << TABLET/IPAD RESPONSIVE */ max-lg:text-xs max-lg:text-center max-lg:w-fit
+        " >{description.created}</span>
+        <p className="font-base leading-7 whitespace-pre-line text-[#313a4b] pr-10
+                    /* << MOBILE RESPONSIVE  */ max-sm:leading-6
+                    /* << TABLET/IPAD RESPONSIVE */ max-lg:leading-8 max-lg:text-lg max-lg:text-justify max-lg:pr-0
+                    /* LAPTOP RESPONSIVE */ max-xl:leading-7
+        " >{description.paragraph}</p>
         <Image width={600} height={600} alt="..." src={`/${description.image}`}  ></Image>
-        <h3 className=" font-extrabold lg:text-3xl xl:text-4xl text-start w-full text-[#1E1E1E]">{description.headingTwo}</h3>
-        <p className="font-base leading-[50px] whitespace-pre-line lg:text-lg xl:text-xl text-[#313a4b] pr-10" >{description.paragraphTwo}</p>
+        <h3 className=" font-extrabold lg:text-3xl xl:text-4xl text-start w-full text-[#1E1E1E]
+                        /* << TABLET/IPAD RESPONSIVE */ max-lg:text-center max-lg:text-xl
+        ">{description.headingTwo}</h3>
+        <p className="font-base leading-7 whitespace-pre-line text-[#313a4b] pr-10
+                    /* << MOBILE RESPONSIVE  */ max-sm:leading-6
+                    /* << TABLET/IPAD RESPONSIVE */ max-lg:leading-8 max-lg:text-lg max-lg:text-justify max-lg:pr-0
+                    /* LAPTOP RESPONSIVE */ max-xl:leading-7
+                    " >{description.paragraphTwo}</p>
         {
           description.imageTwo !== "" && <Image width={600} height={600} alt="..." src={`/${description.imageTwo}`}  ></Image>
         }
         </div >
-        <div className="w-1/4 h-fit flex flex-col items-center py-10 lg:gap-5 xl:gap-10" >
+        <div className="w-1/4 h-fit flex flex-col items-center py-10 lg:gap-5
+                        /* << TABLET/IPAD RESPONSIVE */ max-lg:w-full max-lg:py-0 max-lg:gap-4 max-lg:px-2
+        " >
           <Image src={`/${description.createdLink}`} className="rounded-full aspect-square object-center object-cover" width={250} height={250} alt="..."></Image>
-          <h3 className="xl:text-3xl lg:text-xl font-extrabold w-full text-start" >{description.creatorHeadings}</h3>
-          <p className="w-full font-base h-fit xl:text-xl lg:text-lg leading-[35px]" >{description.creatorParagraphs}</p>
+          <h3 className="font-extrabold w-full text-start
+                        /* << TABLET/IPAD RESPONSIVE */ max-lg:text-center
+          " >{description.creatorHeadings}</h3>
+          <p className="w-full font-base h-fit leading-7
+                    /* << MOBILE RESPONSIVE  */ max-sm:leading-6
+                      /* << TABLET/IPAD RESPONSIVE */ max-lg:leading-8 max-lg:text-justify
+                    /* LAPTOP RESPONSIVE */ max-xl:leading-7
+          " >{description.creatorParagraphs}</p>
         </div>
       </div>
         <Footer showNewsletter={false} />
